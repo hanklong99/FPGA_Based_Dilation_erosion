@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3974812222009198190  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto a553cc64d70b4c4c904577c499d15841 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ov7670_top_behav xil_defaultlib.ov7670_top xil_defaultlib.glbl" , 
+    buildDate : "Oct 24 2019" , 
+    buildTime : "19:01:44" , 
+    linkCmd : "G:\\Vivado\\2019.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/ov7670_top_behav/xsimk.exe\"   \"xsim.dir/ov7670_top_behav/obj/xsim_0.win64.obj\" \"xsim.dir/ov7670_top_behav/obj/xsim_1.win64.obj\" \"xsim.dir/ov7670_top_behav/obj/xsim_2.win64.obj\" \"xsim.dir/ov7670_top_behav/obj/xsim_3.win64.obj\" \"xsim.dir/ov7670_top_behav/obj/xsim_4.win64.obj\" \"xsim.dir/ov7670_top_behav/obj/xsim_5.win64.obj\" -L\"G:\\Vivado\\2019.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

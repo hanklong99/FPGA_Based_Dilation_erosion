@@ -1,0 +1,15 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/ClockGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ClockGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/SyncAsync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncAsync'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/SyncAsyncReset.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ResetBridge'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/DVI_Constants.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/OutputSERDES.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'OutputSERDES'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/TMDS_Encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TMDS_Encoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/rgb2dvi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rgb2dvi'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/sim/rgb2dvi_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rgb2dvi_0'

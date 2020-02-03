@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/ClockGen.vhd" \
+"../../../../OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/SyncAsync.vhd" \
+"../../../../OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/SyncAsyncReset.vhd" \
+"../../../../OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/DVI_Constants.vhd" \
+"../../../../OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/OutputSERDES.vhd" \
+"../../../../OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/TMDS_Encoder.vhd" \
+"../../../../OV7670_VGA_Dispaly.ip_user_files/ipstatic/src/rgb2dvi.vhd" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/sim/rgb2dvi_0.vhd" \
+
+# Do not sort compile order
+nosort

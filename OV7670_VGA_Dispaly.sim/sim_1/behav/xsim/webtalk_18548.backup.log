@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Thu Dec 26 22:01:46 2019
+# Process ID: 18548
+# Current directory: C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim/xsim.dir/ov7670_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim/xsim.dir/ov7670_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim/xsim.dir/ov7670_top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Dec 26 22:01:50 2019. For additional details about this file, please refer to the WebTalk help file at G:/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 26 22:01:50 2019...

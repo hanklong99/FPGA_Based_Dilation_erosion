@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Sun Feb  2 17:01:12 2020
+| Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file ov7670_top_bus_skew_routed.rpt -pb ov7670_top_bus_skew_routed.pb -rpx ov7670_top_bus_skew_routed.rpx
+| Design       : ov7670_top
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

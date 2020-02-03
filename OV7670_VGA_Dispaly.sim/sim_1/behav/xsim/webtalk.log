@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Thu Dec 26 23:21:39 2019
+# Process ID: 1420
+# Current directory: C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim/xsim.dir/ov7670_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/11986/Desktop/ZYNQ_OV7670_hdmi_Dispaly/OV7670_VGA_Dispaly.sim/sim_1/behav/xsim/xsim.dir/ov7670_top_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 79.805 ; gain = 11.672
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 26 23:21:46 2019...

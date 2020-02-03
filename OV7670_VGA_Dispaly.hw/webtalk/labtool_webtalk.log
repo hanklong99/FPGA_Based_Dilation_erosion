@@ -1,0 +1,16 @@
+WARNING: Ignoring invalid XILINX_PATH location D:\Xilinx\Vivado\2015.4\ar62969_cr835348_xelab_2014_4_preliminary_vivado_patch.
+Resolution: An invalid XILINX_PATH location has been detected. To resolve this issue:
+
+1. Verify the value of XILINX_PATH is accurate by viewing the value the variable via 'set XILINX_PATH' for Windows or 'echo $XILINX_PATH' for Linux, and update it as needed.
+
+2. To unset the variable using on Windows using 'set XILINX_PATH=' or remove it from Advanced System Settings\Environment Variables. On Linux 'unsetenv XILINX_PATH'
+
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Vivado/ZYNQ_OV7670_VGA_Dispaly/OV7670_VGA_Dispaly.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/Vivado/ZYNQ_OV7670_VGA_Dispaly/OV7670_VGA_Dispaly.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Jan 21 21:07:34 2018. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado2017.3/Vivado/2017.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 21 21:07:34 2018...

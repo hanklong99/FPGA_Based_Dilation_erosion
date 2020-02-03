@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer_sim_netlist.v" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock_sim_netlist.v" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v" \
+"../../../../OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

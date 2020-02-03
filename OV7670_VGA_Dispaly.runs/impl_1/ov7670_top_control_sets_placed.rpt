@@ -1,0 +1,93 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Thu Dec 26 16:46:56 2019
+| Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ov7670_top_control_sets_placed.rpt
+| Design       : ov7670_top
+| Device       : xc7z010
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             129 |           48 |
+| No           | No                    | Yes                    |              12 |            6 |
+| No           | Yes                   | No                     |              61 |           22 |
+| Yes          | No                    | No                     |              58 |           21 |
+| Yes          | No                    | Yes                    |              27 |            8 |
+| Yes          | Yes                   | No                     |              33 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-----------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+|        Clock Signal       |           Enable Signal           |                               Set/Reset Signal                              | Slice Load Count | Bel Load Count |
++---------------------------+-----------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+|  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/mI2C_GO4_out |                                                                             |                2 |              4 |
+|  OV7670_PCLK_IBUF_BUFG    |                                   | OV7670_VSYNC_IBUF                                                           |                2 |              6 |
+|  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/SD_COUNTER   |                                                                             |                4 |              6 |
+|  clock_inst/inst/clk_out1 |                                   | your_instance_name/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                3 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/vCounter             | u_VGA_Dispay/hCounter[9]_i_2_n_0                                            |                3 |             10 |
+|  clock_inst/inst/clk_out1 |                                   | u_VGA_Dispay/hCounter[9]_i_2_n_0                                            |                6 |             12 |
+|  OV7670_PCLK_IBUF_BUFG    |                                   | capture/address[15]_i_1_n_0                                                 |                2 |             13 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/dout[15]_i_1_n_0          |                                                                             |                5 |             16 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/d_latch[15]_i_1_n_0       |                                                                             |                5 |             16 |
+|  clock_inst/inst/clk_out1 | IIC/LUT_INDEX_rep[7]_i_1_n_0      |                                                                             |                5 |             16 |
+|  clock_inst/inst/clk_out1 | rst_n_IBUF                        | u_VGA_Dispay/lcd_data_r0[15]_i_1_n_0                                        |               11 |             16 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/p_0_in1_in                | OV7670_VSYNC_IBUF                                                           |                5 |             17 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/address[0]_i_1_n_0   | u_VGA_Dispay/hCounter[9]_i_2_n_0                                            |                5 |             17 |
+|  clock_inst/inst/clk_out1 |                                   | your_instance_name/U0/DataEncoders[0].DataEncoder/SR[0]                     |               15 |             32 |
+|  clock_inst/inst/clk_out1 |                                   |                                                                             |               48 |            129 |
++---------------------------+-----------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+
+

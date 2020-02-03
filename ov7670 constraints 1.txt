@@ -1,0 +1,92 @@
+#OV7670
+
+set_property IOSTANDARD LVCMOS33 [get_ports OV7670_SIOC]
+set_property IOSTANDARD LVCMOS33 [get_ports OV7670_VSYNC]
+set_property IOSTANDARD LVCMOS33 [get_ports OV7670_PCLK]
+set_property IOSTANDARD LVCMOS33 [get_ports {OV7670_D[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {OV7670_D[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {OV7670_D[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {OV7670_D[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports OV7670_RESET]
+
+set_property IOSTANDARD LVCMOS33 [get_ports OV7670_SIOD]
+set_property IOSTANDARD LVCMOS33 [get_ports OV7670_HREF]
+set_property IOSTANDARD LVCMOS33 [get_ports OV7670_XCLK]
+set_property IOSTANDARD LVCMOS33 [get_ports {OV7670_D[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {OV7670_D[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {OV7670_D[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {OV7670_D[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports OV7670_PWDN]
+
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets OV7670_PCLK_IBUF]
+
+#VGA
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_blue[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_blue[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_blue[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_blue[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_blue[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_green[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_green[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_green[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_green[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_green[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_green[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_red[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_red[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_red[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_red[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vga_red[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports vga_hsync]
+set_property IOSTANDARD LVCMOS33 [get_ports vga_vsync]
+
+
+
+#OV7670
+set_property PACKAGE_PIN V15 [get_ports OV7670_SIOC]
+set_property PACKAGE_PIN W15 [get_ports OV7670_VSYNC]
+set_property PACKAGE_PIN T11 [get_ports OV7670_PCLK]
+set_property PACKAGE_PIN T10 [get_ports {OV7670_D[7]}]
+set_property PACKAGE_PIN T14 [get_ports {OV7670_D[5]}]
+set_property PACKAGE_PIN T15 [get_ports {OV7670_D[3]}]
+set_property PACKAGE_PIN P14 [get_ports {OV7670_D[1]}]
+set_property PACKAGE_PIN R14 [get_ports OV7670_RESET]
+
+set_property PACKAGE_PIN W14 [get_ports OV7670_SIOD]
+set_property PACKAGE_PIN Y14 [get_ports OV7670_HREF]
+set_property PACKAGE_PIN T12 [get_ports OV7670_XCLK]
+set_property PACKAGE_PIN U12 [get_ports {OV7670_D[6]}]
+set_property PACKAGE_PIN U14 [get_ports {OV7670_D[4]}]
+set_property PACKAGE_PIN U15 [get_ports {OV7670_D[2]}]
+set_property PACKAGE_PIN V17 [get_ports {OV7670_D[0]}]
+set_property PACKAGE_PIN V18 [get_ports OV7670_PWDN]
+
+#VGA
+set_property PACKAGE_PIN G19 [get_ports {vga_blue[4]}]
+set_property PACKAGE_PIN J18 [get_ports {vga_blue[3]}]
+set_property PACKAGE_PIN K19 [get_ports {vga_blue[2]}]
+set_property PACKAGE_PIN M20 [get_ports {vga_blue[1]}]
+set_property PACKAGE_PIN P20 [get_ports {vga_blue[0]}]
+set_property PACKAGE_PIN F20 [get_ports {vga_green[5]}]
+set_property PACKAGE_PIN H20 [get_ports {vga_green[4]}]
+set_property PACKAGE_PIN J19 [get_ports {vga_green[3]}]
+set_property PACKAGE_PIN L19 [get_ports {vga_green[2]}]
+set_property PACKAGE_PIN N20 [get_ports {vga_green[1]}]
+set_property PACKAGE_PIN H18 [get_ports {vga_green[0]}]
+set_property PACKAGE_PIN F19 [get_ports {vga_red[4]}]
+set_property PACKAGE_PIN G20 [get_ports {vga_red[3]}]
+set_property PACKAGE_PIN J20 [get_ports {vga_red[2]}]
+set_property PACKAGE_PIN L20 [get_ports {vga_red[1]}]
+set_property PACKAGE_PIN M19 [get_ports {vga_red[0]}]
+set_property PACKAGE_PIN P19 [get_ports vga_hsync]
+set_property PACKAGE_PIN R19 [get_ports vga_vsync]
+
+
+#other
+set_property IOSTANDARD LVCMOS33 [get_ports clk_125M]
+set_property IOSTANDARD LVCMOS33 [get_ports LED]
+set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
+
+set_property PACKAGE_PIN K17 [get_ports clk_125M]
+set_property PACKAGE_PIN M15 [get_ports LED]
+set_property PACKAGE_PIN T16 [get_ports rst_n]
