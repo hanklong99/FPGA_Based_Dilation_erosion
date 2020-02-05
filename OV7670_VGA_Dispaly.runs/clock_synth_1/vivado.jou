@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Sun Feb  2 15:17:34 2020
-# Process ID: 3424
+# Start of session at: Wed Feb  5 15:06:45 2020
+# Process ID: 16248
 # Current directory: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/clock_synth_1
 # Command line: vivado.exe -log clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock.tcl
 # Log file: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/clock_synth_1/clock.vds

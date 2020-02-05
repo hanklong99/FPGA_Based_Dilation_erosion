@@ -42,12 +42,13 @@ input [9:0] lcd_y,
 
 //---------------------------------------------------
 //RGB_YCbCr_Skin_Dection
-wire	[7:0]	cmos_R = {per_data[15:11], per_data[15:13]};
-wire	[7:0]	cmos_G = {per_data[10:5], per_data[10:9]};
-wire	[7:0]	cmos_B = {per_data[4:0], per_data[4:2]};
+//wire	[7:0]	cmos_R = {per_data[15:11], per_data[15:13]};
+//wire	[7:0]	cmos_G = {per_data[10:5], per_data[10:9]};
+//wire	[7:0]	cmos_B = {per_data[4:0], per_data[4:2]};
 wire	[7:0]	gray_data;
-wire 			post_clken_Gray;
-wire            post_vsync_Gray;
+assign gray_data = per_data[15:8];
+//wire 			post_clken_Gray;
+//wire            post_vsync_Gray;
 
 //Mean_Filer
 wire	[7:0]	per_data_Median = gray_data;
@@ -79,29 +80,30 @@ wire [7:0] post_data_Position;
 
 //-------------------------------------------------------
 //RGB_YCbCr_Gray
-RGB_YCbCr_Gray u_RGB_YCbCr_Gray(
-.lcd_x(lcd_x),
-.lcd_y(lcd_y),
-	.clk			(clk),
-	.rst_n			(rst_n),
-	.per_clken		(per_clken ),
-	.per_vsync      (vsync),
-	.cmos_R			(cmos_R),
-	.cmos_G			(cmos_G),
-	.cmos_B			(cmos_B),
-	.post_clken		(post_clken_Gray),
-	.post_vsync     (post_vsync_Gray),
-	.gray_data		(gray_data),
-	.points         ( )
-    );	
+//RGB_YCbCr_Gray u_RGB_YCbCr_Gray(
+//.lcd_x(lcd_x),
+//.lcd_y(lcd_y),
+//	.clk			(clk),
+//	.rst_n			(rst_n),
+//	.per_clken		(per_clken ),
+//	.per_vsync      (vsync),
+//	.cmos_R			(cmos_R),
+//	.cmos_G			(cmos_G),
+//	.cmos_B			(cmos_B),
+//	.post_clken		(post_clken_Gray),
+//	.post_vsync     (post_vsync_Gray),
+//	.gray_data		(gray_data),
+//	.points         ( )
+//    );	
+
 /**/
 //--------------------------------------------------------------
 //Median_Filter
 Median_Filter Median_Filter_inst(
 	.clk				(clk),//50Mhz
 	.rst_n				(rst_n),
-	.per_clken			(post_clken_Gray),
-	.per_vsync          (post_vsync_Gray),
+	.per_clken			(per_clken),
+	.per_vsync          (vsync),
 	.per_img_Y			(per_data_Median),	
 	.post_clken			(post_clken_Median),
 	.post_img_Y			(post_data_Median),

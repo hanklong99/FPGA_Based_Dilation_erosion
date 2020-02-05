@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7z020clg400-1" LaunchTime="1580662715">
+<GenRun Id="synth_2" LaunchPart="xc7z020clg400-1" LaunchTime="1580924939">
   <File Type="PA-TCL" Name="ov7670_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ov7670_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ov7670_top_reports.tcl"/>
@@ -47,13 +47,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/Median_Filter_3x3.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/RGB_YCbCr_Gray.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -123,6 +116,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/RGB_YCbCr_Gray.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/lcd_para.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -165,13 +166,11 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="rgb2dvi_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Shift_RAM_3X3_8bit"/>
-  <BlockFileSet Type="BlockSrcs" Name="frame_buffer"/>
   <BlockFileSet Type="BlockSrcs" Name="clock"/>
+  <BlockFileSet Type="BlockSrcs" Name="frame_buffer"/>
+  <BlockFileSet Type="BlockSrcs" Name="Shift_RAM_3X3_8bit"/>
 </GenRun>

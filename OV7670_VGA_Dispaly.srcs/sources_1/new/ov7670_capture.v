@@ -76,8 +76,12 @@ always@(posedge pclk)begin
            if (wr_hold[1] ==1 )begin
               
               address_next <=address_next+1;
-
-             dout[15:0]  <= {d_latch[15:11] , d_latch[10:5] , d_latch[4:0] };
+              
+             if (d_latch[15:11] >= 5'b10000)
+                  dout[15:0] <= 16'b1111_1111_1111_1111;
+              else
+                  dout [15:0] <= 16'b0;
+             //dout[15:0]  <= {d_latch[15:11] , d_latch[10:5] , d_latch[4:0] };
            end
         end
  end
