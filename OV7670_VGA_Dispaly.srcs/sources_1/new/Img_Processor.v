@@ -42,12 +42,13 @@ input [9:0] lcd_y,
 
 //---------------------------------------------------
 //RGB_YCbCr_Skin_Dection
-wire	[7:0]	cmos_R = {per_data[15:11], per_data[15:13]};
-wire	[7:0]	cmos_G = {per_data[10:5], per_data[10:9]};
-wire	[7:0]	cmos_B = {per_data[4:0], per_data[4:2]};
+//wire	[7:0]	cmos_R = {per_data[15:11], per_data[15:13]};
+//wire	[7:0]	cmos_G = {per_data[10:5], per_data[10:9]};
+//wire	[7:0]	cmos_B = {per_data[4:0], per_data[4:2]};
 wire	[7:0]	gray_data;
-wire 			post_clken_Gray;
-wire            post_vsync_Gray;
+assign gray_data = per_data[15:8];
+//wire 			post_clken_Gray;
+//wire            post_vsync_Gray;
 
 //Mean_Filer
 wire	[7:0]	per_data_Median = gray_data;
@@ -79,29 +80,30 @@ wire [7:0] post_data_Position;
 
 //-------------------------------------------------------
 //RGB_YCbCr_Gray
-RGB_YCbCr_Gray u_RGB_YCbCr_Gray(
-.lcd_x(lcd_x),
-.lcd_y(lcd_y),
-	.clk			(clk),
-	.rst_n			(rst_n),
-	.per_clken		(per_clken ),
-	.per_vsync      (vsync),
-	.cmos_R			(cmos_R),
-	.cmos_G			(cmos_G),
-	.cmos_B			(cmos_B),
-	.post_clken		(post_clken_Gray),
-	.post_vsync     (post_vsync_Gray),
-	.gray_data		(gray_data),
-	.points         ( )
-    );	
+//RGB_YCbCr_Gray u_RGB_YCbCr_Gray(
+//.lcd_x(lcd_x),
+//.lcd_y(lcd_y),
+//	.clk			(clk),
+//	.rst_n			(rst_n),
+//	.per_clken		(per_clken ),
+//	.per_vsync      (vsync),
+//	.cmos_R			(cmos_R),
+//	.cmos_G			(cmos_G),
+//	.cmos_B			(cmos_B),
+//	.post_clken		(post_clken_Gray),
+//	.post_vsync     (post_vsync_Gray),
+//	.gray_data		(gray_data),
+//	.points         ( )
+//    );	
+
 /**/
 //--------------------------------------------------------------
 //Median_Filter
 Median_Filter Median_Filter_inst(
 	.clk				(clk),//50Mhz
 	.rst_n				(rst_n),
-	.per_clken			(post_clken_Gray),
-	.per_vsync          (post_vsync_Gray),
+	.per_clken			(per_clken),
+	.per_vsync          (vsync),
 	.per_img_Y			(per_data_Median),	
 	.post_clken			(post_clken_Median),
 	.post_img_Y			(post_data_Median),
@@ -148,43 +150,44 @@ erosion erosion_inst(
 //	.post_vsync         (post_vsync)
 //    );
 
-position position_inst(
-    .clk                    (clk             ),
-    .rst_n                  (rst_n           ),
-//    .per_frame_vsync        (post_vsync_Median ),
-//    .per_frame_href         (),
-//    .per_frame_clken        (post_clken_Median ),
-//    .per_img_Bit            (post_data_Median     ),
+//position position_inst(
+//    .clk                    (clk             ),
+//    .rst_n                  (rst_n           ),
+////    .per_frame_vsync        (post_vsync_Median ),
+////    .per_frame_href         (),
+////    .per_frame_clken        (post_clken_Median ),
+////    .per_img_Bit            (post_data_Median     ),
 
-    .per_frame_vsync        (post_vsync_dilation ),
-    .per_frame_href         (),
-    .per_frame_clken        (post_clken_dilation ),
-    .per_img_Bit            (post_data_dilation     ),
-    
-//    .per_frame_vsync        (post_vsync_erosion ),
+//    .per_frame_vsync        (post_vsync_dilation ),
 //    .per_frame_href         (),
-//    .per_frame_clken        (post_clken_erosion ),
-//    .per_img_Bit            (post_data_erosion ),
+//    .per_frame_clken        (post_clken_dilation ),
+//    .per_img_Bit            (post_data_erosion     ),
     
-    .post_frame_vsync       (post_vsync_Position),
-    .post_frame_href        (),
-    .post_frame_clken       (post_clken_Position),
-    .x_min_f                  (x_min),
-    .x_max_f                  (x_max),
-    .y_min_f                  (y_min),
-    .y_max_f                  (y_max),
-//    .x_min                  (x_min),
-//    .x_max                  (x_max),
-//    .y_min                  (y_min),
-//    .y_max                  (y_max),
-    .lcd_x                  (lcd_x),
-	.lcd_y                  (lcd_y),
-    .post_img               (post_data_Position)
-    );
+////    .per_frame_vsync        (post_vsync_erosion ),
+////    .per_frame_href         (),
+////    .per_frame_clken        (post_clken_erosion ),
+////    .per_img_Bit            (post_data_erosion ),
+    
+//    .post_frame_vsync       (post_vsync_Position),
+//    .post_frame_href        (),
+//    .post_frame_clken       (post_clken_Position),
+//    .x_min_f                  (x_min),
+//    .x_max_f                  (x_max),
+//    .y_min_f                  (y_min),
+//    .y_max_f                  (y_max),
+////    .x_min                  (x_min),
+////    .x_max                  (x_max),
+////    .y_min                  (y_min),
+////    .y_max                  (y_max),
+//    .lcd_x                  (lcd_x),
+//	.lcd_y                  (lcd_y),
+//    .post_img               (post_data_Position)
+//    );
+assign post_data = {post_data_erosion[7:3], post_data_erosion[7:2], post_data_erosion[7:3]};
 //assign 	post_data 	= 	{gray_data[7:3], gray_data[7:2], gray_data[7:3]};//Gray
-assign 	post_data 	= 	{post_data_Position[7:3], post_data_Position[7:2], post_data_Position[7:3]};//Median
-assign post_vsync = post_vsync_Position;
-assign post_clken = post_clken_Position;
+//assign 	post_data 	= 	{post_data_Position[7:3], post_data_Position[7:2], post_data_Position[7:3]};//Median
+assign post_vsync = post_vsync_erosion;
+assign post_clken = post_clken_erosion;
 //assign 	post_data 	= 	~{16{post_bit_Sobel}};//Sobel_Edge_Detect
 
 //assign	post_clken	=	post_clken_Gray;
@@ -199,38 +202,5 @@ assign post_clken = post_clken_Position;
 //	else
 //		ram_addr <= ram_addr;
 //end	
-
-
-//-------------------------------------------------------
-//points
-reg [15:0] y1_cnt_f;
-//-----------------------------------------------
-//area counter
-reg [15:0] area_cnt;
-
-always @ (posedge clk or negedge rst_n) begin
-    if(!rst_n)
-        area_cnt <= 16'b0000_0000_0000_0000;
-    else if (post_vsync)
-        area_cnt <= 16'b0000_0000_0000_0000;
-    else if(   (post_data == 16'b1111_1111_1111_1111) 
-            && (lcd_x>=320 && lcd_x < 560 && lcd_y >= 180 && lcd_y < 420 ) )
-        area_cnt <= area_cnt + 1;
-    else
-        area_cnt <= area_cnt;
-    end
-    
-assign points = area_cnt;	 
-    
-always @ (posedge clk or negedge rst_n) begin
-    if(!rst_n)
-        y1_cnt_f <= 16'b0000_0000_0000_0000;
-    else if (lcd_x == 300 && lcd_y == 300)
-        y1_cnt_f <= area_cnt;
-    else
-        y1_cnt_f <= y1_cnt_f;
-end
-    
-assign points = y1_cnt_f;	
 
 endmodule

@@ -19,7 +19,6 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -41,7 +40,6 @@ read_verilog -library xil_defaultlib {
   C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v
   C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter.v
   C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter_3x3.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/RGB_YCbCr_Gray.v
   C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Shift_RAM_3X3.v
   C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Sort.v
   C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v
@@ -57,16 +55,16 @@ set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop
 set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc]
 
-read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit.xci
-set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_ooc.xdc]
-
-read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
-set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer_ooc.xdc]
-
 read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.xci
 set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock_ooc.xdc]
+
+read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
+set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer_ooc.xdc]
+
+read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit.xci
+set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

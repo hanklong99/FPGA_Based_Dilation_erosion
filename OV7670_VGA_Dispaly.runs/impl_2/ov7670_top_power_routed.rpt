@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date             : Sun Feb  2 17:01:12 2020
+| Date             : Thu Feb  6 00:15:48 2020
 | Host             : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
 | Command          : report_power -file ov7670_top_power_routed.rpt -pb ov7670_top_power_summary_routed.pb -rpx ov7670_top_power_routed.rpx
 | Design           : ov7670_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.356        |
+| Total On-Chip Power (W)  | 0.358        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.244        |
+| Dynamic (W)              | 0.247        |
 | Device Static (W)        | 0.112        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 80.9         |
@@ -53,20 +53,20 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.002 |        5 |       --- |             --- |
-| Slice Logic             |     0.001 |     2667 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      919 |     53200 |            1.73 |
-|   CARRY4                |    <0.001 |       86 |     13300 |            0.65 |
-|   Register              |    <0.001 |      791 |    106400 |            0.74 |
-|   LUT as Shift Register |    <0.001 |      322 |     17400 |            1.85 |
+| Slice Logic             |     0.002 |     3081 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      975 |     53200 |            1.83 |
+|   Register              |    <0.001 |      922 |    106400 |            0.87 |
+|   CARRY4                |    <0.001 |       89 |     13300 |            0.67 |
+|   LUT as Shift Register |    <0.001 |      482 |     17400 |            2.77 |
 |   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes           |    <0.001 |       41 |     53200 |            0.08 |
-|   Others                |     0.000 |      164 |       --- |             --- |
-| Signals                 |     0.002 |     1650 |       --- |             --- |
+|   Others                |     0.000 |      170 |       --- |             --- |
+| Signals                 |     0.002 |     1814 |       --- |             --- |
 | Block RAM               |     0.007 |       36 |       140 |           25.71 |
 | PLL                     |     0.098 |        1 |         4 |           25.00 |
-| I/O                     |     0.135 |       27 |       125 |           21.60 |
+| I/O                     |     0.137 |       20 |       125 |           16.00 |
 | Static Power            |     0.112 |          |           |                 |
-| Total                   |     0.356 |          |           |                 |
+| Total                   |     0.358 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.030 |       0.021 |      0.009 |
-| Vccaux    |       1.800 |     0.060 |       0.049 |      0.011 |
+| Vccaux    |       1.800 |     0.061 |       0.050 |      0.011 |
 | Vcco33    |       3.300 |     0.042 |       0.041 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -154,21 +154,21 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| ov7670_top                           |     0.244 |
-|   capture                            |     0.003 |
+| ov7670_top                           |     0.247 |
+|   capture                            |     0.002 |
 |     processor                        |     0.002 |
-|       u_RGB_YCbCr_Gray               |     0.002 |
+|       Median_Filter_inst             |     0.001 |
 |   clock_inst                         |     0.098 |
 |     inst                             |     0.098 |
 |   frame_buffer_inst                  |     0.007 |
 |     U0                               |     0.007 |
 |       inst_blk_mem_gen               |     0.007 |
-|   rgb_to_hdmi                        |     0.132 |
-|     U0                               |     0.132 |
+|   rgb_to_hdmi                        |     0.135 |
+|     U0                               |     0.135 |
 |       ClockSerializer                |     0.033 |
-|       DataEncoders[0].DataSerializer |     0.033 |
-|       DataEncoders[1].DataSerializer |     0.033 |
-|       DataEncoders[2].DataSerializer |     0.033 |
+|       DataEncoders[0].DataSerializer |     0.034 |
+|       DataEncoders[1].DataSerializer |     0.034 |
+|       DataEncoders[2].DataSerializer |     0.034 |
 +--------------------------------------+-----------+
 
 

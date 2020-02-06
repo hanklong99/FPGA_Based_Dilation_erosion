@@ -1,6 +1,69 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Wed Feb  5 15:00:59 2020
+| Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'frame_buffer'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of frame_buffer (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Wed Feb  5 15:00:58 2020
+| Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clock'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clock (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Wed Feb  5 15:00:53 2020
+| Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Shift_RAM_3X3_8bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of Shift_RAM_3X3_8bit (xilinx.com:ip:c_shift_ram:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
 | Date         : Fri Jan 31 22:13:34 2020
 | Host         : LAPTOP-7Q5UGIUP running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

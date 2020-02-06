@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Shift_RAM_3X3_8bit_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1580656649">
+<GenRun Id="Shift_RAM_3X3_8bit_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1580915201">
   <File Type="PA-TCL" Name="Shift_RAM_3X3_8bit.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Shift_RAM_3X3_8bit_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Shift_RAM_3X3_8bit_reports.tcl"/>
   <File Type="RDS-RDS" Name="Shift_RAM_3X3_8bit.vds"/>
   <File Type="RDS-UTIL" Name="Shift_RAM_3X3_8bit_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Shift_RAM_3X3_8bit_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Shift_RAM_3X3_8bit.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Shift_RAM_3X3_8bit_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Shift_RAM_3X3_8bit_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Shift_RAM_3X3_8bit">
     <File Path="$PSRCDIR/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit.xci">
       <FileInfo>

@@ -29,7 +29,7 @@ input rst_n,
 input [9:0] lcd_x,
 input [9:0] lcd_y,
 output[16:0] addr,
-output reg[15:0] post_dout,//modified
+output [15:0] post_dout,//modified
 //output reg post_clken//modified
 output       [11:0]      x_min,
 output       [11:0]      x_max,
@@ -39,7 +39,7 @@ output [15:0] points
     );
     reg [15:0] d_latch;
     reg [15:0] dout;//modified
-    wire [15:0] post_dout;//modified
+   // wire [15:0] post_dout;//modified
     wire pclk;//modified
     wire rst_n;//modified
     wire post_clken;//modified
@@ -76,8 +76,12 @@ always@(posedge pclk)begin
            if (wr_hold[1] ==1 )begin
               
               address_next <=address_next+1;
-
-             dout[15:0]  <= {d_latch[15:11] , d_latch[10:5] , d_latch[4:0] };
+              
+             if (d_latch[15:11] >= 5'b10000)
+                  dout[15:0] <= 16'b1111_1111_1111_1111;
+              else
+                  dout [15:0] <= 16'b0;
+             //dout[15:0]  <= {d_latch[15:11] , d_latch[10:5] , d_latch[4:0] };
            end
         end
  end
