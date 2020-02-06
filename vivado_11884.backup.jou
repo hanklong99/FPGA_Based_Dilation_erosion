@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Wed Feb  5 16:22:52 2020
+# Process ID: 11884
+# Current directory: C:/Users/11986/Desktop/Dilation_erosion
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11944 C:\Users\11986\Desktop\Dilation_erosion\OV7670_VGA_Dispaly.xpr
+# Log file: C:/Users/11986/Desktop/Dilation_erosion/vivado.log
+# Journal file: C:/Users/11986/Desktop/Dilation_erosion\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_2
+reset_run rgb2dvi_0_synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

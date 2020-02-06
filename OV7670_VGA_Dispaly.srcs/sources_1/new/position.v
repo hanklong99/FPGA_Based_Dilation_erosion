@@ -45,8 +45,8 @@ module position(
 
 //parameter   ROW_CNT = 16;   //just test
 //parameter   COL_CNT = 4;    //just test
-parameter   ROW_CNT = 320;
-parameter   COL_CNT = 240;
+parameter   ROW_CNT = 440;
+parameter   COL_CNT = 280;
 
 reg     [11:0]  cnt_x;
 reg     [11:0]  cnt_y;
@@ -99,7 +99,8 @@ always @(posedge clk or negedge rst_n)begin
     end
     else if(flag)
         x_min <= ROW_CNT;
-    else if(per_frame_clken && per_img_Bit == 8'b1111_1111 && x_min > lcd_x )
+    //else if(per_frame_clken && per_img_Bit == 8'b1111_1111 && x_min > lcd_x && (lcd_x < 300 && lcd_x > 20))
+    else if(per_img_Bit == 8'b1111_1111 && x_min > lcd_x && (lcd_x < 420 && lcd_x > 40))
         x_min <= lcd_x;
     else 
         x_min <= x_min;
@@ -112,7 +113,8 @@ always @(posedge clk or negedge rst_n)begin
     end
     else if(flag)
         x_max <= 0;
-    else if(per_frame_clken && per_img_Bit == 8'b1111_1111 && x_max < lcd_x )
+//    else if(per_frame_clken && per_img_Bit == 8'b1111_1111 && x_max < lcd_x && (lcd_x < 300 && lcd_x > 20))
+    else if(per_img_Bit == 8'b1111_1111 && x_max < lcd_x && (lcd_x < 420 && lcd_x > 40))
         x_max <= lcd_x;
     else 
         x_max <= x_max;
@@ -124,7 +126,8 @@ always @(posedge clk or negedge rst_n)begin
     end
     else if(flag)
         y_min <= COL_CNT;
-    else if(per_frame_clken && per_img_Bit == 8'b1111_1111 && y_min > lcd_y && lcd_y > 20)
+    //else if(per_frame_clken && per_img_Bit == 8'b1111_1111 && y_min > lcd_y && lcd_y > 20)
+    else if(per_img_Bit == 8'b1111_1111 && y_min > lcd_y && lcd_y > 60 && lcd_y < 240)
         y_min <= lcd_y;
     else 
         y_min <= y_min;
@@ -136,7 +139,8 @@ always @(posedge clk or negedge rst_n)begin
     end
     else if(flag)
         y_max <= 0;
-    else if(per_frame_clken && per_img_Bit == 8'b1111_1111 && y_max < lcd_y && lcd_y < 220)
+    //else if(per_frame_clken && per_img_Bit == 8'b1111_1111 && y_max < lcd_y && lcd_y < 220)
+    else if(per_img_Bit == 8'b1111_1111 && y_max < lcd_y && lcd_y < 240 && lcd_y > 60)
         y_max <= lcd_y;
     else 
         y_max <= y_max;

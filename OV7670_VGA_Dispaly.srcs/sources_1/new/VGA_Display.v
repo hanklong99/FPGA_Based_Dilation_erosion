@@ -30,10 +30,10 @@ module VGA_Dispay(
 	input 					clk,
 	input 					rst_n,
 	input      [15:0]       points,
-	input       [11:0]      x_min,
-    input       [11:0]      x_max,
-    input       [11:0]      y_min,
-    input       [11:0]      y_max,
+//	input       [11:0]      x_min,
+//    input       [11:0]      x_max,
+//    input       [11:0]      y_min,
+//    input       [11:0]      y_max,
 	
 	output	reg	[15:0]		lcd_data,
 	output 	reg 			vga_hsync,
@@ -87,10 +87,14 @@ reg 	[2:0] frame_en;
 always@(posedge clk or negedge rst_n)begin
 	if(!rst_n)
 		frame_en <= 3'b000;
-	else if(lcd_y == y_min + 40 && lcd_x >= x_min + 120 && lcd_x <= x_max+120
-		|| lcd_y == y_max + 40 && lcd_x >= x_min + 120 && lcd_x <= x_max+120
-		|| lcd_x == x_min+120 && lcd_y >= y_min + 40 && lcd_y <= y_max + 40
-		|| lcd_x == x_max+120 && lcd_y >= y_min + 40 && lcd_y <= y_max + 40)
+//	else if(lcd_y == y_min + 40 && lcd_x >= x_min + 120 && lcd_x <= x_max+120
+//		|| lcd_y == y_max + 40 && lcd_x >= x_min + 120 && lcd_x <= x_max+120
+//		|| lcd_x == x_min+120 && lcd_y >= y_min + 40 && lcd_y <= y_max + 40
+//		|| lcd_x == x_max+120 && lcd_y >= y_min + 40 && lcd_y <= y_max + 40)
+	else if(lcd_y == y_min && lcd_x >= x_min && lcd_x <= x_max
+		|| lcd_y == y_max && lcd_x >= x_min && lcd_x <= x_max
+		|| lcd_x == x_min && lcd_y >= y_min && lcd_y <= y_max
+		|| lcd_x == x_max && lcd_y >= y_min && lcd_y <= y_max)
 		frame_en <= 3'b001;
 		
 	else if(lcd_y == 280 && lcd_x >= 120 && lcd_x <= 440
@@ -309,4 +313,47 @@ end
 wire hs = (hCounter > `H_FRONT + `H_SYNC - 1 && hCounter <= `H_TOTAL  - 1)? 1'b1: 1'b0; 
 wire vs = (vCounter > `V_FRONT + `V_SYNC - 1 && vCounter <=  `V_TOTAL - 1)? 1'b1: 1'b0;
 assign de = hs & vs;  
+
+//-----------------------------------------------------
+//rectangle
+position position_inst(
+    .clk                    (clk             ),
+    .rst_n                  (rst_n           ),
+//    .per_frame_vsync        (post_vsync_Median ),
+//    .per_frame_href         (),
+//    .per_frame_clken        (post_clken_Median ),
+//    .per_img_Bit            (post_data_Median     ),
+
+    .per_frame_vsync        ( ),
+    .per_frame_href         (),
+    .per_frame_clken        ( ),
+    .per_img_Bit            (frame_pixel[7:0]),
+    
+//    .per_frame_vsync        (post_vsync_erosion ),
+//    .per_frame_href         (),
+//    .per_frame_clken        (post_clken_erosion ),
+//    .per_img_Bit            (post_data_erosion ),
+    
+    .post_frame_vsync       ( ),
+    .post_frame_href        (),
+    .post_frame_clken       ( ),
+    .x_min_f                  (x_min),
+    .x_max_f                  (x_max),
+    .y_min_f                  (y_min),
+    .y_max_f                  (y_max),
+//    .x_min                  (x_min),
+//    .x_max                  (x_max),
+//    .y_min                  (y_min),
+//    .y_max                  (y_max),
+    .lcd_x                  (lcd_x),
+	.lcd_y                  (lcd_y),
+	.post_img ( )
+    );
+
+wire [11:0] x_min;
+wire [11:0] x_max;
+wire [11:0] y_min;
+wire [11:0] y_max;
+
+
 endmodule

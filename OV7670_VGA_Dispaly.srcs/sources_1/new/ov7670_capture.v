@@ -29,7 +29,7 @@ input rst_n,
 input [9:0] lcd_x,
 input [9:0] lcd_y,
 output[16:0] addr,
-output reg[15:0] post_dout,//modified
+output [15:0] post_dout,//modified
 //output reg post_clken//modified
 output       [11:0]      x_min,
 output       [11:0]      x_max,
@@ -39,7 +39,7 @@ output [15:0] points
     );
     reg [15:0] d_latch;
     reg [15:0] dout;//modified
-    wire [15:0] post_dout;//modified
+   // wire [15:0] post_dout;//modified
     wire pclk;//modified
     wire rst_n;//modified
     wire post_clken;//modified

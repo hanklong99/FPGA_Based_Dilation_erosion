@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Wed Feb  5 17:49:03 2020
-# Process ID: 10420
+# Start of session at: Thu Feb  6 00:12:43 2020
+# Process ID: 3816
 # Current directory: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
 # Command line: vivado.exe -log ov7670_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_top.tcl
 # Log file: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/ov7670_top.vds
@@ -25,11 +25,23 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12668 
-WARNING: [Synth 8-2611] redeclaration of ansi port post_dout is not allowed [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:42]
-WARNING: [Synth 8-976] post_dout has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:42]
-WARNING: [Synth 8-2654] second declaration of post_dout ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:42]
-INFO: [Synth 8-994] post_dout is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:32]
+INFO: Helper process launched with PID 15148 
+WARNING: [Synth 8-992] x_min is already implicitly declared earlier [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:353]
+WARNING: [Synth 8-992] x_max is already implicitly declared earlier [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:354]
+WARNING: [Synth 8-992] y_min is already implicitly declared earlier [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:355]
+WARNING: [Synth 8-992] y_max is already implicitly declared earlier [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:356]
+WARNING: [Synth 8-6901] identifier 'y_min' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:94]
+WARNING: [Synth 8-6901] identifier 'x_min' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:94]
+WARNING: [Synth 8-6901] identifier 'x_max' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:94]
+WARNING: [Synth 8-6901] identifier 'y_max' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:95]
+WARNING: [Synth 8-6901] identifier 'x_min' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:95]
+WARNING: [Synth 8-6901] identifier 'x_max' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:95]
+WARNING: [Synth 8-6901] identifier 'x_min' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:96]
+WARNING: [Synth 8-6901] identifier 'y_min' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:96]
+WARNING: [Synth 8-6901] identifier 'y_max' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:96]
+WARNING: [Synth 8-6901] identifier 'x_max' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:97]
+WARNING: [Synth 8-6901] identifier 'y_min' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:97]
+WARNING: [Synth 8-6901] identifier 'y_max' is used before its declaration [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:97]
 WARNING: [Synth 8-2611] redeclaration of ansi port pclk is not allowed [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:43]
 WARNING: [Synth 8-2611] redeclaration of ansi port rst_n is not allowed [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:44]
 WARNING: [Synth 8-976] post_clken has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:93]
@@ -48,13 +60,13 @@ WARNING: [Synth 8-976] y_max has already been declared [C:/Users/11986/Desktop/D
 WARNING: [Synth 8-2654] second declaration of y_max ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:101]
 INFO: [Synth 8-994] y_max is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:69]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 996.980 ; gain = 242.391
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 996.543 ; gain = 242.766
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'ov7670_top' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-10420-DESKTOP-QCQ218O/realtime/clock_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clock' (2#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-10420-DESKTOP-QCQ218O/realtime/clock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3816-DESKTOP-QCQ218O/realtime/clock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (2#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3816-DESKTOP-QCQ218O/realtime/clock_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'VGA_Dispay' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
 	Parameter hRez bound to: 640 - type: integer 
 	Parameter hStartSync bound to: 656 - type: integer 
@@ -66,37 +78,42 @@ INFO: [Synth 8-6157] synthesizing module 'VGA_Dispay' [C:/Users/11986/Desktop/Di
 	Parameter vMaxCount bound to: 525 - type: integer 
 	Parameter hsync_active bound to: 0 - type: integer 
 	Parameter vsync_active bound to: 0 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element block_en_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:143]
-WARNING: [Synth 8-5788] Register lcd_data_r0_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:276]
-WARNING: [Synth 8-5788] Register vga_hsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:298]
-WARNING: [Synth 8-5788] Register vga_vsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:303]
-INFO: [Synth 8-6155] done synthesizing module 'VGA_Dispay' (3#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
-INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-10420-DESKTOP-QCQ218O/realtime/frame_buffer_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (4#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-10420-DESKTOP-QCQ218O/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'position' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:23]
+	Parameter ROW_CNT bound to: 440 - type: integer 
+	Parameter COL_CNT bound to: 280 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element per_frame_clken_r_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:190]
+WARNING: [Synth 8-6014] Unused sequential element per_frame_href_r_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:191]
+WARNING: [Synth 8-6014] Unused sequential element per_img_r_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'position' (3#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:23]
+WARNING: [Synth 8-6014] Unused sequential element block_en_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:147]
+WARNING: [Synth 8-5788] Register lcd_data_r0_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:280]
+WARNING: [Synth 8-5788] Register vga_hsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:302]
+WARNING: [Synth 8-5788] Register vga_vsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:307]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Dispay' (4#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3816-DESKTOP-QCQ218O/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (5#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3816-DESKTOP-QCQ218O/realtime/frame_buffer_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Img_Processor' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Median_Filter' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Shift_RAM_3X3.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-10420-DESKTOP-QCQ218O/realtime/Shift_RAM_3X3_8bit_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3_8bit' (5#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-10420-DESKTOP-QCQ218O/realtime/Shift_RAM_3X3_8bit_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3' (6#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Shift_RAM_3X3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3816-DESKTOP-QCQ218O/realtime/Shift_RAM_3X3_8bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3_8bit' (6#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3816-DESKTOP-QCQ218O/realtime/Shift_RAM_3X3_8bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3' (7#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Shift_RAM_3X3.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Median_filter_3x3' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter_3x3.v:23]
 INFO: [Synth 8-6157] synthesizing module 'sort' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Sort.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'sort' (7#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Sort.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Median_filter_3x3' (8#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter_3x3.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Median_Filter' (9#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sort' (8#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Sort.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Median_filter_3x3' (9#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter_3x3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Median_Filter' (10#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter.v:23]
 INFO: [Synth 8-6157] synthesizing module 'dilation' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/dilation.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'dilation' (10#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/dilation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dilation' (11#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/dilation.v:23]
 INFO: [Synth 8-6157] synthesizing module 'erosion' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/erosion.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'erosion' (11#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/erosion.v:23]
-INFO: [Synth 8-6157] synthesizing module 'position' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:23]
-	Parameter ROW_CNT bound to: 320 - type: integer 
-	Parameter COL_CNT bound to: 240 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element per_frame_clken_r_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:186]
-WARNING: [Synth 8-6014] Unused sequential element per_frame_href_r_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:187]
-WARNING: [Synth 8-6014] Unused sequential element per_img_r_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:189]
-INFO: [Synth 8-6155] done synthesizing module 'position' (12#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'erosion' (12#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/erosion.v:23]
 WARNING: [Synth 8-3848] Net ram_addr in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:33]
+WARNING: [Synth 8-3848] Net x_min in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:35]
+WARNING: [Synth 8-3848] Net x_max in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:36]
+WARNING: [Synth 8-3848] Net y_min in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:37]
+WARNING: [Synth 8-3848] Net y_max in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:38]
+WARNING: [Synth 8-3848] Net points in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:40]
 INFO: [Synth 8-6155] done synthesizing module 'Img_Processor' (13#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:23]
 WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:62]
 WARNING: [Synth 8-6014] Unused sequential element address_next_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:63]
@@ -114,8 +131,8 @@ INFO: [Synth 8-6155] done synthesizing module 'I2C_OV7670_RGB565_Config' (15#1) 
 INFO: [Synth 8-6157] synthesizing module 'I2C_Controller' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
 INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller' (16#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
 INFO: [Synth 8-6155] done synthesizing module 'I2C_AV_Config' (17#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:16]
-INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-10420-DESKTOP-QCQ218O/realtime/rgb2dvi_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (18#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-10420-DESKTOP-QCQ218O/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3816-DESKTOP-QCQ218O/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (18#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3816-DESKTOP-QCQ218O/realtime/rgb2dvi_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'ov7670_top' (19#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_PWDN driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1
@@ -136,32 +153,92 @@ WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[3]
 WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[2]
 WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[1]
 WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[0]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port per_data[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port per_data[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port per_data[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port per_data[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port per_data[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port per_data[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port per_data[1]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port per_data[0]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[15]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[14]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[13]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[12]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[11]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[10]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[9]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[8]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[7]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[6]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[5]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[4]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[3]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[2]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[1]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[0]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[11]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[10]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[9]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[8]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[7]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[6]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[5]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[4]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[3]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[2]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[1]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[0]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[11]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[10]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[9]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[8]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[7]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[6]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[5]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[4]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[3]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[2]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[1]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[0]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[11]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[10]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[9]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[8]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[7]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[6]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[5]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[4]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[3]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[2]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[1]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[0]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[11]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[10]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[9]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[8]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[7]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[6]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[5]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[4]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[3]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[2]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[1]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[0]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[15]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[14]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[13]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[12]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[11]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[10]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[9]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[8]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[7]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[6]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[5]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[4]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[3]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[2]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[1]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[0]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[9]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[8]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[7]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[6]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[5]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[4]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[3]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[2]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[1]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[0]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[9]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[8]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[7]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[6]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[5]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[4]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[3]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[2]
+WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.789 ; gain = 300.199
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1053.852 ; gain = 300.074
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -174,12 +251,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.789 ; gain = 300.199
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1053.852 ; gain = 300.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.789 ; gain = 300.199
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1053.852 ; gain = 300.074
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1054.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1053.852 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -210,20 +287,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/ov7670_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1182.668 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1182.188 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1182.668 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1182.188 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1182.668 ; gain = 428.078
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1182.188 ; gain = 428.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1182.668 ; gain = 428.078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1182.188 ; gain = 428.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -256,7 +333,7 @@ Applied set_property DONT_TOUCH = true for capture/processor/Median_Filter_inst/
 Applied set_property DONT_TOUCH = true for capture/processor/dilation_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for capture/processor/erosion_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1182.668 ; gain = 428.078
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1182.188 ; gain = 428.410
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'I2C_AV_Config'
 ---------------------------------------------------------------------------------------------------
@@ -268,7 +345,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'I
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'mSetup_ST_reg' using encoding 'sequential' in module 'I2C_AV_Config'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1182.668 ; gain = 428.078
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1182.188 ; gain = 428.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -282,7 +359,6 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
-	   2 Input     13 Bit       Adders := 4     
 	   2 Input     11 Bit       Adders := 3     
 	   2 Input     10 Bit       Adders := 3     
 	   2 Input      8 Bit       Adders := 1     
@@ -313,8 +389,8 @@ Detailed RTL Component Info :
 	  59 Input      5 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
 	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 80    
 	   6 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 81    
 	   3 Input      1 Bit        Muxes := 6     
 	  41 Input      1 Bit        Muxes := 5     
 	  60 Input      1 Bit        Muxes := 7     
@@ -332,11 +408,18 @@ Module debounce
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
+Module position 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
 Module VGA_Dispay 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
-	   2 Input     13 Bit       Adders := 4     
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 3     
 +---Registers : 
@@ -390,18 +473,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	                8 Bit    Registers := 4     
 	                2 Bit    Registers := 2     
-Module position 
-Detailed RTL Component Info : 
-+---Registers : 
-	               12 Bit    Registers := 8     
-	                4 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     12 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 4     
-Module Img_Processor 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
 Module ov7670_capture 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -462,22 +533,6 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_PWDN driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[15]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[14]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[13]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[12]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[11]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[10]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[9]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[8]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[7]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[6]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[5]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[4]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[3]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[2]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[1]
-WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[0]
 INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[1]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
 INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[0]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[2]'
 INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[2]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[3]'
@@ -520,21 +575,69 @@ INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_
 INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[3]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
 INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[2]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
 INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[1]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[6]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[7]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[5]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[4]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[3]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[2]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
 INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[1]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[0]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[2]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[2]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[3]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[3]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[4]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[4]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[5]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[5]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[6]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[6]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/y_min_reg[10]' (FDCE) to 'capture/processor/position_inst/y_min_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (capture/\processor/position_inst/y_min_reg[11] )
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/x_max_reg[10]' (FDCE) to 'capture/processor/position_inst/x_max_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (capture/\processor/position_inst/x_max_reg[11] )
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/x_min_reg[10]' (FDCE) to 'capture/processor/position_inst/x_min_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (capture/\processor/position_inst/x_min_reg[11] )
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/y_max_reg[10]' (FDCE) to 'capture/processor/position_inst/y_max_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (capture/\processor/position_inst/y_max_reg[11] )
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[6]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[7]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[5]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[4]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[3]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[2]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[1]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[6]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[7]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[7]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[5]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[5]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[4]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[4]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[3]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[3]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[2]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[2]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[1]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[1]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[6]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[7]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[5]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[4]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[3]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[2]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[6]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[7]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[5]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[4]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[3]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[2]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[1]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[6]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[7]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[5]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[4]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[3]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[2]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[1]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[6]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[7]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[5]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[4]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[3]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[2]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[1]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[0]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[1]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[2]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[3]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[4]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[4]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[5]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[6]'
+INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[6]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/position_inst/y_min_reg[10]' (FDCE) to 'u_VGA_Dispay/position_inst/y_min_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\position_inst/y_min_reg[11] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/position_inst/x_max_reg[10]' (FDCE) to 'u_VGA_Dispay/position_inst/x_max_reg[11]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\position_inst/x_max_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\position_inst/x_min_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\position_inst/y_max_reg[11] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\x_g_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\x_g_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\x_g_reg[1] )
@@ -545,27 +648,6 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dis
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\x_g_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\x_g_reg[8] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dispay/\x_g_reg[9] )
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/y_min_f_reg[10]' (FDCE) to 'capture/processor/position_inst/y_max_f_reg[10]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/y_min_f_reg[11]' (FDCE) to 'capture/processor/position_inst/y_max_f_reg[10]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/x_max_f_reg[10]' (FDCE) to 'capture/processor/position_inst/y_max_f_reg[10]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/x_max_f_reg[11]' (FDCE) to 'capture/processor/position_inst/y_max_f_reg[10]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/x_min_f_reg[10]' (FDCE) to 'capture/processor/position_inst/y_max_f_reg[10]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/x_min_f_reg[11]' (FDCE) to 'capture/processor/position_inst/y_max_f_reg[10]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/position_inst/y_max_f_reg[10]' (FDCE) to 'capture/processor/position_inst/y_max_f_reg[11]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[5]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[6]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[6]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[7]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[7]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[8]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[8]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[9]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[9]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[10]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[0]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[1]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[2]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[3]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[4]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[11]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[12]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[13]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
-INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/lcd_block_reg[14]' (FDC) to 'u_VGA_Dispay/lcd_block_reg[15]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\lcd_block_reg[15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[1] )
@@ -591,38 +673,11 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debou
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[21] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[23] )
-INFO: [Synth 8-3886] merging instance 'IIC/mI2C_CLK_DIV_reg[11]' (FDC) to 'IIC/mI2C_CLK_DIV_reg[12]'
-INFO: [Synth 8-3886] merging instance 'IIC/mI2C_CLK_DIV_reg[12]' (FDC) to 'IIC/mI2C_CLK_DIV_reg[13]'
-INFO: [Synth 8-3886] merging instance 'IIC/mI2C_CLK_DIV_reg[13]' (FDC) to 'IIC/mI2C_CLK_DIV_reg[14]'
-INFO: [Synth 8-3886] merging instance 'IIC/mI2C_CLK_DIV_reg[14]' (FDC) to 'IIC/mI2C_CLK_DIV_reg[15]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (IIC/\mI2C_CLK_DIV_reg[15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/o_reg)
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[1]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[0]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[2]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[2]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[3]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[3]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[4]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[4]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[5]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[5]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[6]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[6]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p31_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[1]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[1]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/min_data_reg[1]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/min_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[0]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[0]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/min_data_reg[0]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/min_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[2]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[3]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[4]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[5]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[6]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/max_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[2]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[3]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[4]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[5]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_3/mid_data_reg[7]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/i_1/\y_g_reg[9] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1182.668 ; gain = 428.078
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1182.188 ; gain = 428.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -651,13 +706,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1182.668 ; gain = 428.078
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1182.188 ; gain = 428.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1182.668 ; gain = 428.078
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1191.828 ; gain = 438.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -669,7 +724,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1186.699 ; gain = 432.109
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1201.508 ; gain = 447.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -693,13 +748,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.863 ; gain = 437.273
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1205.305 ; gain = 451.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.863 ; gain = 437.273
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1205.305 ; gain = 451.527
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -718,37 +773,37 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.863 ; gain = 437.273
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1205.305 ; gain = 451.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.863 ; gain = 437.273
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1205.305 ; gain = 451.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.863 ; gain = 437.273
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1205.305 ; gain = 451.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.863 ; gain = 437.273
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1205.305 ; gain = 451.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|ov7670_top  | capture/processor/Median_Filter_inst/per_clken_r_reg[2]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|ov7670_top  | capture/processor/position_inst/per_frame_vsync_r_reg[0] | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-+------------+----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|ov7670_top  | capture/processor/Median_Filter_inst/per_clken_r_reg[2] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|ov7670_top  | capture/processor/erosion_inst/per_vsync_r_reg[1]       | 13     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -781,18 +836,18 @@ Report Cell Usage:
 |8     |frame_buffer           |     1|
 |9     |rgb2dvi_0              |     1|
 |10    |BUFG                   |     1|
-|11    |CARRY4                 |   101|
-|12    |LUT1                   |    22|
-|13    |LUT2                   |   160|
-|14    |LUT3                   |   131|
+|11    |CARRY4                 |    89|
+|12    |LUT1                   |     8|
+|13    |LUT2                   |   170|
+|14    |LUT3                   |   138|
 |15    |LUT4                   |   336|
-|16    |LUT5                   |   110|
-|17    |LUT6                   |   245|
+|16    |LUT5                   |   111|
+|17    |LUT6                   |   251|
 |18    |MUXF7                  |    19|
 |19    |MUXF8                  |     4|
 |20    |SRL16E                 |     2|
-|21    |FDCE                   |   410|
-|22    |FDPE                   |    10|
+|21    |FDCE                   |   463|
+|22    |FDPE                   |    12|
 |23    |FDRE                   |   110|
 |24    |IBUF                   |     5|
 |25    |IOBUF                  |     1|
@@ -803,12 +858,12 @@ Report Instance Areas:
 +------+-------------------------------+-------------------------+------+
 |      |Instance                       |Module                   |Cells |
 +------+-------------------------------+-------------------------+------+
-|1     |top                            |                         |  1745|
+|1     |top                            |                         |  1798|
 |2     |  IIC                          |I2C_AV_Config            |   253|
 |3     |    u_I2C_Controller           |I2C_Controller           |    99|
 |4     |    u_I2C_OV7725_RGB565_Config |I2C_OV7670_RGB565_Config |    84|
-|5     |  capture                      |ov7670_capture           |   998|
-|6     |    processor                  |Img_Processor            |   941|
+|5     |  capture                      |ov7670_capture           |   927|
+|6     |    processor                  |Img_Processor            |   870|
 |7     |      Median_Filter_inst       |Median_Filter            |   646|
 |8     |        u_Median_filter_3x3    |Median_filter_3x3        |   351|
 |9     |          u_sort_1             |sort                     |   114|
@@ -819,37 +874,37 @@ Report Instance Areas:
 |14    |          u_sort_6             |sort_4                   |    31|
 |15    |          u_sort_7             |sort_5                   |    14|
 |16    |        u_Shift_RAM_3X3        |Shift_RAM_3X3__xdcDup__1 |   288|
-|17    |      dilation_inst            |dilation                 |   133|
+|17    |      dilation_inst            |dilation                 |   127|
 |18    |        u_Shift_RAM_3X3        |Shift_RAM_3X3__xdcDup__2 |   100|
-|19    |      erosion_inst             |erosion                  |    24|
-|20    |        u_Shift_RAM_3X3        |Shift_RAM_3X3            |    24|
-|21    |      position_inst            |position                 |   138|
-|22    |  u_VGA_Dispay                 |VGA_Dispay               |   456|
+|19    |      erosion_inst             |erosion                  |    97|
+|20    |        u_Shift_RAM_3X3        |Shift_RAM_3X3            |    74|
+|21    |  u_VGA_Dispay                 |VGA_Dispay               |   581|
+|22    |    position_inst              |position                 |   232|
 +------+-------------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.863 ; gain = 437.273
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1205.305 ; gain = 451.527
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1191.863 ; gain = 309.395
-Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1191.863 ; gain = 437.273
+Synthesis finished with 0 errors, 0 critical warnings and 102 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1205.305 ; gain = 323.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1205.305 ; gain = 451.527
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1191.863 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1216.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1191.863 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1216.129 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-205 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
+205 Infos, 152 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 1191.863 ; gain = 734.566
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1191.863 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1216.129 ; gain = 759.270
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1216.129 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/ov7670_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ov7670_top_utilization_synth.rpt -pb ov7670_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  5 17:50:09 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  6 00:13:51 2020...

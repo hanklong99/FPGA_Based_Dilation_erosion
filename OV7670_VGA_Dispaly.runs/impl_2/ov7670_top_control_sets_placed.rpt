@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date         : Wed Feb  5 17:51:14 2020
+| Date         : Thu Feb  6 00:15:00 2020
 | Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file ov7670_top_control_sets_placed.rpt
 | Design       : ov7670_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    39 |
-|    Minimum number of control sets                        |    39 |
+| Total control sets                                       |    42 |
+|    Minimum number of control sets                        |    42 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    85 |
+| Unused register locations in slices containing registers |    94 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,7 +39,7 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    39 |
+| Total control sets |    42 |
 | >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     2 |
 | >= 6 to < 8        |     2 |
@@ -47,7 +47,7 @@ Table of Contents
 | >= 10 to < 12      |     6 |
 | >= 12 to < 14      |     1 |
 | >= 14 to < 16      |     0 |
-| >= 16              |    16 |
+| >= 16              |    19 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             136 |           58 |
-| No           | No                    | Yes                    |              71 |           31 |
+| No           | No                    | No                     |             136 |           51 |
+| No           | No                    | Yes                    |              83 |           36 |
 | No           | Yes                   | No                     |              59 |           22 |
-| Yes          | No                    | No                     |             123 |           98 |
-| Yes          | No                    | Yes                    |             341 |          121 |
-| Yes          | Yes                   | No                     |              65 |           29 |
+| Yes          | No                    | No                     |             171 |          145 |
+| Yes          | No                    | Yes                    |             392 |          126 |
+| Yes          | Yes                   | No                     |              81 |           37 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,44 +74,47 @@ Table of Contents
 |        Clock Signal       |                                       Enable Signal                                      |                             Set/Reset Signal                            | Slice Load Count | Bel Load Count |
 +---------------------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
 |  OV7670_PCLK_IBUF_BUFG    | capture/d_latch[7]_i_1_n_0                                                               |                                                                         |                1 |              1 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | capture/processor/position_inst/post_vsync                              |                1 |              4 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | capture/processor/erosion_inst/clear                                    |                2 |              4 |
 |  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/mI2C_GO4_out                                                        |                                                                         |                1 |              4 |
-|  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/SD_COUNTER                                                          |                                                                         |                3 |              6 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/y_g0                                                                        | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              7 |
+|  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/SD_COUNTER                                                          |                                                                         |                2 |              6 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/y_g0                                                                        | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                4 |              7 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_1/max_data2_carry_0[0]   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                2 |              8 |
 |  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data2_inferred__0/i__carry[0]   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                2 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data2_inferred__0/i__carry_0[0] | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                4 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data1_inferred__1/i__carry_0[0] | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data1_inferred__1/i__carry[0]   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                4 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/E[0]                                | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/E[0]                   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                2 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_1/E[0]                   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_1/max_data2_carry_0[0]   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data2_carry[0]                  | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                4 |              8 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_1/E[0]                   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                2 |              8 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/E[0]                   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
 |  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_6/E[0]                   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data2_carry[0]                  | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                2 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                                                          |                                                                         |                3 |              9 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/post_img_Bit4_reg[7]_1[0]                                | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |             10 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/post_img_Bit4_reg[7]_2[0]                                | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |             10 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/E[0]                                | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data1_inferred__1/i__carry_0[0] | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data2_inferred__0/i__carry_0[0] | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data1_inferred__1/i__carry[0]   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |              8 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                          |                                                                         |                4 |              9 |
 |  clock_inst/inst/clk_out1 |                                                                                          | rgb_to_hdmi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0    |                3 |             10 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/vCounter                                                                    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                5 |             10 |
-|  OV7670_PCLK_IBUF_BUFG    | u_VGA_Dispay/per_clken_r_reg[1][0]                                                       | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                5 |             10 |
-|  OV7670_PCLK_IBUF_BUFG    | u_VGA_Dispay/vCounter_reg[8]_0[0]                                                        | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                4 |             10 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | capture/processor/position_inst/SR[0]                                   |                3 |             13 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/vCounter                                                                    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_min[9]_i_1_n_0                                              | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                4 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/y_max[9]_i_1_n_0                                              | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                2 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_max[9]_i_1_n_0                                              | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                4 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/y_min[9]_i_1_n_0                                              | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |             10 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | capture/processor/erosion_inst/SR[0]                                    |                2 |             13 |
 |  OV7670_PCLK_IBUF_BUFG    | capture/we                                                                               | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                8 |             16 |
-|  clock_inst/inst/clk_out1 | rst_n_IBUF                                                                               | u_VGA_Dispay/lcd_data_r0[15]_i_1_n_0                                    |                8 |             16 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/lcd_data[15]_i_1_n_0                                                        | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                4 |             16 |
-|  clock_inst/inst/clk_out1 | IIC/LUT_INDEX_rep[7]_i_1_n_0                                                             |                                                                         |                6 |             16 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/Q[0]                                                     | capture/processor/position_inst/post_vsync                              |                5 |             17 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/Q[0]                                                     | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                8 |             16 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/lcd_data[15]_i_1_n_0                                                        | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                3 |             16 |
+|  clock_inst/inst/clk_out1 | rst_n_IBUF                                                                               | u_VGA_Dispay/lcd_data_r0[15]_i_1_n_0                                    |                7 |             16 |
+|  clock_inst/inst/clk_out1 | IIC/LUT_INDEX_rep[7]_i_1_n_0                                                             |                                                                         |                4 |             16 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/erosion_inst/per_clken_r_reg[1]_0[0]                                   | capture/processor/erosion_inst/clear                                    |                5 |             17 |
 |  clock_inst/inst/clk_out1 | u_VGA_Dispay/address[0]_i_1_n_0                                                          | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |                5 |             17 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               13 |             24 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/E[0]                                                | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               11 |             24 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/E[0]                                                | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               12 |             24 |
 |  clock_inst/inst/clk_out1 |                                                                                          | rgb_to_hdmi/U0/DataEncoders[0].DataEncoder/SR[0]                        |               15 |             32 |
-|  OV7670_PCLK_IBUF_BUFG    | u_VGA_Dispay/E[0]                                                                        | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               15 |             40 |
-|  clock_inst/inst/clk_out1 |                                                                                          | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               18 |             47 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/read_clken                          | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               25 |             51 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/u_Shift_RAM_3X3/per_clken_r_reg_n_0_[0]                  | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               17 |             72 |
-|  clock_inst/inst/clk_out1 |                                                                                          |                                                                         |               55 |            129 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/we                                                                               |                                                                         |               53 |            208 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/E[0]                                                |                                                                         |               50 |            208 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               20 |             36 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_max_f0                                                      | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               15 |             40 |
+|  clock_inst/inst/clk_out1 |                                                                                          | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               16 |             47 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/erosion_inst/u_Shift_RAM_3X3/per_clken_r_reg_n_0_[0]                   | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               12 |             51 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/read_clken                          | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               21 |             51 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/u_Shift_RAM_3X3/per_clken_r_reg_n_0_[0]                  | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/rst_n |               19 |             72 |
+|  clock_inst/inst/clk_out1 |                                                                                          |                                                                         |               47 |            129 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/we                                                                               |                                                                         |               56 |            208 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/E[0]                                                |                                                                         |               53 |            208 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/Q[0]                                                     |                                                                         |               53 |            208 |
 +---------------------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7z020clg400-1" LaunchTime="1580924939">
+<GenRun Id="synth_2" LaunchPart="xc7z020clg400-1" LaunchTime="1580947955">
   <File Type="PA-TCL" Name="ov7670_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ov7670_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ov7670_top_reports.tcl"/>
