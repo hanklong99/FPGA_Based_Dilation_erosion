@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date         : Thu Feb  6 00:15:47 2020
+| Date         : Fri Feb  7 18:13:26 2020
 | Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ov7670_top_methodology_drc_routed.rpt -pb ov7670_top_methodology_drc_routed.pb -rpx ov7670_top_methodology_drc_routed.rpx
 | Design       : ov7670_top
