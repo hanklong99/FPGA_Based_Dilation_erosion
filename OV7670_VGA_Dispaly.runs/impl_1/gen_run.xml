@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1577378656">
+  <File Type="BITSTR-BMM" Name="ov7670_top_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="ov7670_top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="ov7670_top.tcl"/>
-  <File Type="BITSTR-BMM" Name="ov7670_top_bd.bmm"/>
+  <File Type="OPT-DCP" Name="ov7670_top_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="ov7670_top_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="ov7670_top_reports.tcl"/>
-  <File Type="OPT-DCP" Name="ov7670_top_opt.dcp"/>
   <File Type="OPT-DRC" Name="ov7670_top_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="ov7670_top.hwdef"/>
   <File Type="PWROPT-DCP" Name="ov7670_top_pwropt.dcp"/>
@@ -24,21 +24,21 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="ov7670_top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="ov7670_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="ov7670_top_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="ov7670_top_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="ov7670_top.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="ov7670_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="ov7670_top_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="ov7670_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ov7670_top_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ov7670_top_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ov7670_top_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="ov7670_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ov7670_top_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="ov7670_top_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="ov7670_top_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="ov7670_top_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="ov7670_top_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="ov7670_top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="ov7670_top_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="ov7670_top_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="ov7670_top.vdi"/>
+  <File Type="ROUTE-CLK" Name="ov7670_top_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="ov7670_top_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ov7670_top_postroute_physopt_bb.dcp"/>
   <File Type="BG-BIT" Name="ov7670_top.bit"/>
@@ -46,8 +46,8 @@
   <File Type="BITSTR-NKY" Name="ov7670_top.nky"/>
   <File Type="PDI-FILE" Name="ov7670_top.pdi"/>
   <File Type="RCFI_FILE" Name="ov7670_top.rcfi"/>
-  <File Type="CFI_FILE" Name="ov7670_top.cfi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="CFI_FILE" Name="ov7670_top.cfi"/>
   <File Type="RNPI_FILE" Name="ov7670_top.rnpi"/>
   <File Type="NPI_FILE" Name="ov7670_top.npi"/>
   <File Type="RBD_FILE" Name="ov7670_top.rbd"/>

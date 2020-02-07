@@ -32,6 +32,11 @@ module ov7670_top(
 	input 		[7:0] 	OV7670_D,
     output 				OV7670_PWDN,
 	output 				OV7670_RESET,
+	input               sw1,
+	input               btn0,
+	input               btn1,
+	input               btn2,
+	input               btn3,
 	
 	output		     	LED,
 //VGA_Display
@@ -111,6 +116,7 @@ VGA_Dispay u_VGA_Dispay (
 	.de (de),
 	.lcd_x (lcd_x),
 	.lcd_y (lcd_y),
+	.sw1(sw1),
 //	.x_min(x_min),
 //    .x_max(x_max),
 //    .y_min(y_min),

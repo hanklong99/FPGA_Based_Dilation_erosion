@@ -38,7 +38,8 @@ module VGA_Dispay(
 	output	reg	[15:0]		lcd_data,
 	output 	reg 			vga_hsync,
 	output 	reg 			vga_vsync,
-
+    input                   sw1,
+    
 	output 		[16:0] 		frame_addr,
 	input 		[15:0] 		frame_pixel,
 	output de,
@@ -74,11 +75,44 @@ assign lcd_x = hCounter;
 assign lcd_y = vCounter;
 reg	[16:0] 	address;  
 reg 				blank;
-   
+
+reg [11:0] x_sum;
+reg [11:0] y_sum;
+reg [11:0] x_center;
+reg [11:0] y_center;
+
+wire [11:0] x_min;
+wire [11:0] x_max;
+wire [11:0] y_min;
+wire [11:0] y_max;
    
 assign	frame_addr = address;
 assign 	HCnt = hCounter;
 assign 	VCnt = vCounter;
+
+//-----------------------------------------------------------
+//center calculation
+always @ (posedge clk or negedge rst_n)begin
+    if(!rst_n)begin
+        x_sum <= 0;
+        y_sum <= 0;
+    end
+    else begin
+        x_sum <= x_min + x_max;
+        y_sum <= y_min + y_max;
+    end
+end
+
+always @ (posedge clk or negedge rst_n)begin
+    if(!rst_n)begin
+        x_center <= 0;
+        y_center <= 0;
+    end
+    else begin
+        x_center <= x_sum[11:1];
+        y_center <= y_sum[11:1];
+    end
+end
 
 //------------------------------------------------------------
 //frame_en
@@ -94,9 +128,14 @@ always@(posedge clk or negedge rst_n)begin
 	else if(lcd_y == y_min && lcd_x >= x_min && lcd_x <= x_max
 		|| lcd_y == y_max && lcd_x >= x_min && lcd_x <= x_max
 		|| lcd_x == x_min && lcd_y >= y_min && lcd_y <= y_max
-		|| lcd_x == x_max && lcd_y >= y_min && lcd_y <= y_max)
-		frame_en <= 3'b001;
+		|| lcd_x == x_max && lcd_y >= y_min && lcd_y <= y_max
+		|| lcd_x == x_center && lcd_y >= y_min && lcd_y <= y_max
+		|| lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max)
 		
+		frame_en <= 3'b001;
+//    else if(   (lcd_x == x_center && lcd_y >= y_min && lcd_y <= y_max)
+//            || (lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max) )
+//         frame_en <= 3'b001;
 	else if(lcd_y == 280 && lcd_x >= 120 && lcd_x <= 440
 		|| lcd_y == 510 && lcd_x >= 120 && lcd_x <= 440
 		|| lcd_x == 120 && lcd_y >= 280 && lcd_y <= 510
@@ -123,52 +162,70 @@ end
 
 //------------------------------------------------------------
 //block_en
-reg 	[2:0] block_en;
-reg [9:0] y_g;
-reg [9:0] x_g;
-reg [31:0] cnt;
-reg       cnt_clk;
-reg 	[15:0]	lcd_block;
-//always @ (posedge clk or negedge rst_n) begin
-//    if(!rst_n) begin
-//	   cnt <= 0;
-//	   cnt_clk <= 0;
+wire [15:0]	lcd_block;
+wire flag;
+
+application u_application(
+    .clk(clk),
+    .rst_n(rst_n),
+    .x_center(x_center),
+    .y_center(y_center),
+    .lcd_x(lcd_x),
+    .lcd_y(lcd_y),
+
+    .sw1(sw1),
+    .lcd_block(lcd_block),
+    .flag(flag)
+    );
+
+//reg 	[2:0] block_en;
+//reg [9:0] y_g;
+//reg [9:0] x_g;
+//reg [31:0] cnt;
+//reg       cnt_clk;
+//reg 	[15:0]	lcd_block;
+
+//always@(posedge clk or negedge rst_n)begin
+//	if(!rst_n) begin
+//		block_en <= 3'b000;
+//		x_g <= 600;
+//		y_g <= 70;
+//		cnt <= 0;
+//		lcd_block <= 0;
 //	end
-//	else if(cnt == 25000000)begin
-//	   cnt <= 0;
-//	   cnt_clk = ~cnt_clk;
+//	else begin
+//	if(lcd_y >= y_g - 5 && lcd_y <= y_g + 5 && lcd_x >= x_g - 5 && lcd_x <= x_g + 5)begin
+//	   lcd_block <= `GREEN;
 //	end
-//	else
-//	   cnt <= cnt + 1;
+//	else 
+//	   lcd_block <= 0;
+	   
+//    cnt <= cnt + 1;
+//	if(y_g >= 240) begin
+//	   y_g <= 70;
+//	   cnt <= 0;
+//	end
+//	else if(cnt == 25000000) begin
+//	   y_g <= y_g + 10;
+//	   cnt <= 0;
+//	end
+//	end
 //end
 
-always@(posedge clk or negedge rst_n)begin
-	if(!rst_n) begin
-		block_en <= 3'b000;
-		x_g <= 600;
-		y_g <= 70;
-		cnt <= 0;
-		lcd_block <= 0;
-	end
-	else begin
-	if(lcd_y >= y_g - 5 && lcd_y <= y_g + 5 && lcd_x >= x_g - 5 && lcd_x <= x_g + 5)begin
-	   lcd_block <= `GREEN;
-	end
-	else 
-	   lcd_block <= 0;
-	   
-    cnt <= cnt + 1;
-	if(y_g >= 240) begin
-	   y_g <= 70;
-	   cnt <= 0;
-	end
-	else if(cnt == 25000000) begin
-	   y_g <= y_g + 10;
-	   cnt <= 0;
-	end
-	end
-end
+//-------------------------------------------------
+//track 
+wire [15:0]	lcd_track;
+track u_track(
+    .clk(clk),
+    .rst_n(rst_n),
+    .x_center(x_center),
+    .y_center(y_center),
+    .lcd_x(lcd_x),
+    .lcd_y(lcd_y),
 
+    .sw1(sw1),
+    .lcd_track(lcd_track)
+    );
 
 
 
@@ -183,7 +240,7 @@ always@(posedge clk or negedge rst_n)begin
 	else if (frame_en == 3'b001) 
 	   lcd_data <= `YELLOW;
 	else if (frame_en == 3'b010)
-	   lcd_data <= `RED;
+	   lcd_data <= lcd_track;
 	else if (frame_en == 3'b011)
 	   lcd_data <= `GREEN;
 	else if (frame_en == 3'b100)
@@ -341,19 +398,12 @@ position position_inst(
     .x_max_f                  (x_max),
     .y_min_f                  (y_min),
     .y_max_f                  (y_max),
-//    .x_min                  (x_min),
-//    .x_max                  (x_max),
-//    .y_min                  (y_min),
-//    .y_max                  (y_max),
     .lcd_x                  (lcd_x),
 	.lcd_y                  (lcd_y),
 	.post_img ( )
     );
 
-wire [11:0] x_min;
-wire [11:0] x_max;
-wire [11:0] y_min;
-wire [11:0] y_max;
+
 
 
 endmodule
