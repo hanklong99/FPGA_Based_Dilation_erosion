@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7z020clg400-1" LaunchTime="1581099011">
+<GenRun Id="impl_2" LaunchPart="xc7z020clg400-1" LaunchTime="1581188004">
   <File Type="BITSTR-BMM" Name="ov7670_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="ov7670_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="ov7670_top_timing_summary_init.rpt"/>
@@ -147,6 +147,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/bin_dec.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/debounce.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -176,6 +183,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/position.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/scoreboard.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

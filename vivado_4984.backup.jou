@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Fri Feb  7 22:12:37 2020
+# Process ID: 4984
+# Current directory: C:/Users/11986/Desktop/Dilation_erosion
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8812 C:\Users\11986\Desktop\Dilation_erosion\OV7670_VGA_Dispaly.xpr
+# Log file: C:/Users/11986/Desktop/Dilation_erosion/vivado.log
+# Journal file: C:/Users/11986/Desktop/Dilation_erosion\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
