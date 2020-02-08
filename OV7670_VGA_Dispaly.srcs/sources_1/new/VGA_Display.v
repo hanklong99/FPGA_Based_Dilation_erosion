@@ -136,16 +136,10 @@ always@(posedge clk or negedge rst_n)begin
 //    else if(   (lcd_x == x_center && lcd_y >= y_min && lcd_y <= y_max)
 //            || (lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max) )
 //         frame_en <= 3'b001;
-	else if(lcd_y == 280 && lcd_x >= 120 && lcd_x <= 440
-		|| lcd_y == 510 && lcd_x >= 120 && lcd_x <= 440
-		|| lcd_x == 120 && lcd_y >= 280 && lcd_y <= 510
-		|| lcd_x == 440 && lcd_y >= 280 && lcd_y <= 510)
+	else if ( lcd_y >= 280  && lcd_y <= 510  && lcd_x >= 120 && lcd_x <= 440)
 		frame_en <= 3'b010;
 		
-    else if(lcd_y == 280 && lcd_x >= 440 && lcd_x <= 780
-		|| lcd_y == 510 && lcd_x >= 440 && lcd_x <= 780
-		|| lcd_x == 440 && lcd_y >= 280 && lcd_y <= 510
-		|| lcd_x == 780 && lcd_y >= 280 && lcd_y <= 510)
+    else if(lcd_y >= 280 && lcd_y <= 510 && lcd_x >= 440 && lcd_x <= 780 )
 		frame_en <= 3'b011;
 	
 	else 
@@ -227,6 +221,17 @@ track u_track(
     .lcd_track(lcd_track)
     );
 
+wire [15:0] lcd_scoreboard;
+scoreboard u_scoreboard(
+    .clk (clk),
+    .rst_n(rst_n),
+    .flag (flag),
+    .lcd_x (lcd_x),
+    .lcd_y (lcd_y),
+
+    .sw1 ( ),
+    .lcd_scoreboard (lcd_scoreboard)
+    );
 
 
 //------------------------------------------------------------------------
@@ -242,7 +247,7 @@ always@(posedge clk or negedge rst_n)begin
 	else if (frame_en == 3'b010)
 	   lcd_data <= lcd_track;
 	else if (frame_en == 3'b011)
-	   lcd_data <= `GREEN;
+	   lcd_data <= lcd_scoreboard;
 	else if (frame_en == 3'b100)
 	   lcd_data <= lcd_block;
 end

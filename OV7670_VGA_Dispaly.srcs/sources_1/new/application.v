@@ -111,7 +111,7 @@ always@(posedge clk or negedge rst_n)begin
 			cnt <= 0;
 		end
 		
-		else if(cnt == 25000000) begin
+		else if(cnt == 2500000) begin
 			     y_g <= y_g + 10;
 			     cnt <= 0;
 		     end
@@ -270,7 +270,6 @@ end
 
 //-----------------------------------------------------------
 //flag 
-reg flag;
 always @ (posedge clk or negedge rst_n)begin
     if (!rst_n) begin
         flag <= 0;
