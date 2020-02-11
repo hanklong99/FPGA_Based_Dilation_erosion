@@ -100,10 +100,10 @@ clock clock_inst(
 //vga 
 wire [9:0] lcd_x;
 wire [9:0] lcd_y;
-wire [11:0] x_min;
-wire [11:0] x_max;
-wire [11:0] y_min;
-wire [11:0] y_max;
+//wire [11:0] x_min;
+//wire [11:0] x_max;
+//wire [11:0] y_min;
+//wire [11:0] y_max;
 
 VGA_Dispay u_VGA_Dispay (
     .clk			(clk_25M), 
@@ -117,6 +117,7 @@ VGA_Dispay u_VGA_Dispay (
 	.lcd_x (lcd_x),
 	.lcd_y (lcd_y),
 	.sw1(sw1),
+	.btn3(btn3),
 //	.x_min(x_min),
 //    .x_max(x_max),
 //    .y_min(y_min),
@@ -146,14 +147,16 @@ frame_buffer frame_buffer_inst (
  	.href  			(OV7670_HREF),
  	.d     			(OV7670_D),
  	.rst_n          (rst_n),
+ 	.btn0                   (btn0),
+    .btn1                   (btn1),
+    .btn2                   (btn2),
+    .btn3                   (btn3),
+     .x_min( ),
+    .x_max( ),
+    .y_min( ),
+    .y_max( ),
  	.addr  			(capture_addr),
- 	.post_dout			(sensor_data),
- 	
-	.x_min(x_min),
-    .x_max(x_max),
-    .y_min(y_min),
-    .y_max(y_max),
- 	.points          (points)
+ 	.post_dout			(sensor_data)
  	//.post_clken   			()
  	);
 

@@ -72,8 +72,8 @@ reg [9:0] disy_n;
 reg [9:0] disx_s;
 reg [9:0] disy_s;
 
-reg [9:0] disx_c;
-reg [9:0] disy_c;
+//reg [9:0] disx_c;
+//reg [9:0] disy_c;
 
 reg [9:0] disx_r;
 reg [9:0] disy_r;

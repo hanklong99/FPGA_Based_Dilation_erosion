@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Feb 10 20:53:50 2020
+# Process ID: 2944
+# Current directory: C:/Dilation_erosion
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9504 C:\Dilation_erosion\OV7670_VGA_Dispaly.xpr
+# Log file: C:/Dilation_erosion/vivado.log
+# Journal file: C:/Dilation_erosion\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Dilation_erosion/OV7670_VGA_Dispaly.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11986/Desktop/vivado-library-master/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 971.484 ; gain = 312.602
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 20:59:41 2020...

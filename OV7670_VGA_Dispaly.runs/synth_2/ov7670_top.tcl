@@ -17,8 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,35 +31,30 @@ set_property parent.project_path C:/Users/11986/Desktop/Dilation_erosion/OV7670_
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths c:/Users/vivado-library-master/ip [current_project]
+set_property ip_repo_paths c:/Users/11986/Desktop/vivado-library-master/ip [current_project]
 update_ip_catalog
 set_property ip_cache_permissions disable [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter_3x3.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v
   C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Shift_RAM_3X3.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Sort.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/dilation.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/erosion.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v
   C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v
-  C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v
+  C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v
 }
-read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc]
-
 read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.xci
 set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.xdc]
@@ -69,6 +65,11 @@ set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop
 
 read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit.xci
 set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_ooc.xdc]
+
+read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

@@ -1,0 +1,433 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 5360
+License: Customer
+
+Current time: 	Mon Feb 10 18:14:59 GMT 2020
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 77 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	11986
+User home directory: C:/Users/11986
+User working directory: C:/Dilation_erosion
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2019.2
+RDI_DATADIR: D:/Vivado/2019.2/data
+RDI_BINDIR: D:/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/11986/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/11986/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/11986/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	D:/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Dilation_erosion/vivado.log
+Vivado journal file location: 	C:/Dilation_erosion/vivado.jou
+Engine tmp dir: 	C:/Dilation_erosion/.Xil/Vivado-5360-DESKTOP-LEMV09J
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2019.2
+XILINX_VIVADO: D:/Vivado/2019.2
+XILINX_VIVADO_HLS: D:/Vivado/2019.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 577 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 72 MB (+72855kb) [00:00:17]
+// [Engine Memory]: 577 MB (+453097kb) [00:00:17]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Dilation_erosion\OV7670_VGA_Dispaly.xpr. Version: Vivado v2019.2 
+// WARNING: HEventQueue.dispatchEvent() is taking  1082 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Dilation_erosion/OV7670_VGA_Dispaly.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 621 MB. GUI used memory: 51 MB. Current time: 2/10/20, 6:15:01 PM GMT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 731 MB. GUI used memory: 49 MB. Current time: 2/10/20, 6:15:16 PM GMT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 753 MB. GUI used memory: 50 MB. Current time: 2/10/20, 6:15:31 PM GMT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 800 MB (+204396kb) [00:00:55]
+// [GUI Memory]: 107 MB (+32997kb) [00:00:56]
+// WARNING: HEventQueue.dispatchEvent() is taking  7427 ms.
+// Tcl Message: open_project C:/Dilation_erosion/OV7670_VGA_Dispaly.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11986/OneDrive/×ÀÃæ/vivado-library-master/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.2/data/ip'. 
+// [Engine Memory]: 861 MB (+21615kb) [00:01:00]
+// WARNING: HEventQueue.dispatchEvent() is taking  1777 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 888.324 ; gain = 276.996 
+// Project name: OV7670_VGA_Dispaly; location: C:/Dilation_erosion; part: xc7z020clg400-1
+// [Engine Memory]: 919 MB (+15580kb) [00:01:03]
+dismissDialog("Open Project"); // bB (cr)
+// [GUI Memory]: 121 MB (+8851kb) [00:01:04]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 2); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 940 MB. GUI used memory: 60 MB. Current time: 2/10/20, 6:15:51 PM GMT
+// PAPropertyPanels.initPanels (ov7670_capture.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), capture : ov7670_capture (ov7670_capture.v)]", 7, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), capture : ov7670_capture (ov7670_capture.v)]", 7, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), capture : ov7670_capture (ov7670_capture.v)]", 7, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 12 seconds
+selectCodeEditor("ov7670_capture.v", 145, 286); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 152, 289); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 152, 289, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("ov7670_capture.v", 137, 167); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 17, 194); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("ov7670_capture.v", 237, 263); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("ov7670_capture.v", 160, 196); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 160, 196, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "ov7670_capture.v", 'c'); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 96, 103); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 102, 73); // ch (w, cr)
+typeControlKey((HResource) null, "ov7670_capture.v", 'v'); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("ov7670_capture.v", 2, 288); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 96, 149); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("ov7670_capture.v", 64, 155); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 64, 155, false, false, false, false, true); // ch (w, cr) - Double Click
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (Q, A): TRUE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_2 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (a, f): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 4 
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Feb 10 18:17:37 2020] Launched synth_2... Run output will be captured here: C:/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log [Mon Feb 10 18:17:37 2020] Launched impl_2... Run output will be captured here: C:/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bB (cr)
+// Elapsed time: 109 seconds
+selectCodeEditor("ov7670_capture.v", 3, 124); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 16, 286); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 88, 195); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 99, 80); // ch (w, cr)
+typeControlKey((HResource) null, "ov7670_capture.v", 'v'); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("ov7670_capture.v", 234, 68); // ch (w, cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 129 MB (+2013kb) [00:06:26]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 534ms to process. Increasing delay to 3000 ms.
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 202 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1444 ms.
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2057 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 4 seconds
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// Elapsed time: 25 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 07 2019-05:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1015.816 ; gain = 1.527 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  6823 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,160 MB. GUI used memory: 74 MB. Current time: 2/10/20, 6:23:59 PM GMT
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2243.180 ; gain = 1227.363 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// [Engine Memory]: 2,161 MB (+1254368kb) [00:09:20]
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+// Elapsed time: 24 seconds
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // t (an, bC)
+setFileChooser("C:/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 9 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// n (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 16 seconds
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (Q, n): TRUE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,209 MB. GUI used memory: 74 MB. Current time: 2/10/20, 6:24:31 PM GMT
+selectCodeEditor("ov7670_capture.v", 405, 262); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 406, 262, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("ov7670_capture.v", 355, 232); // ch (w, cr)
+// Elapsed time: 258 seconds
+selectCodeEditor("ov7670_capture.v", 495, 158); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 496, 158, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 225 seconds
+selectCodeEditor("ov7670_capture.v", 431, 233); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 474, 261); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 585, 262); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 634, 263); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 589, 257); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 596, 262); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("ov7670_capture.v", 102, 264); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 340, 233); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (f, cr)
+selectCodeEditor("ov7670_capture.v", 466, 210); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("ov7670_capture.v", 2, 265); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 96, 61); // ch (w, cr)
+selectCodeEditor("ov7670_capture.v", 259, 245); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (f, cr)
+selectCodeEditor("ov7670_capture.v", 241, 159); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: FILE_SET_CHANGE
+// 'cw' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_2 -prev_step  
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Feb 10 18:33:41 2020] Launched impl_2... Run output will be captured here: C:/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1168 ms. Increasing delay to 3504 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 137 seconds
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (Q, aj): TRUE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // t (an, bC)
+setFileChooser("C:/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A 
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 193 seconds
+selectCodeEditor("ov7670_capture.v", 244, 190); // ch (w, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// [GUI Memory]: 137 MB (+1923kb) [00:25:04]
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), rgb_to_hdmi : rgb2dvi_0 (rgb2dvi_0.xci)]", 10, false); // B (F, cr)
+selectCodeEditor("ov7670_top.v", 234, 195); // ch (w, cr)
+selectCodeEditor("ov7670_top.v", 234, 195, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 32 seconds
+selectCodeEditor("ov7670_top.v", 206, 279); // ch (w, cr)
+selectCodeEditor("ov7670_top.v", 206, 279, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("ov7670_top.v", 135, 269); // ch (w, cr)
+selectCodeEditor("ov7670_top.v", 135, 269, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("ov7670_top.v", 284, 240); // ch (w, cr)
+selectCodeEditor("ov7670_top.v", 284, 240, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("ov7670_top.v", 382, 240); // ch (w, cr)
+selectCodeEditor("ov7670_top.v", 381, 240, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("ov7670_top.v", 186, 243); // ch (w, cr)
+selectCodeEditor("ov7670_top.v", 186, 243, false, false, false, false, true); // ch (w, cr) - Double Click

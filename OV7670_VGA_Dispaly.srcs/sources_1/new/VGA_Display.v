@@ -39,6 +39,7 @@ module VGA_Dispay(
 	output 	reg 			vga_hsync,
 	output 	reg 			vga_vsync,
     input                   sw1,
+    input                   btn3,
     
 	output 		[16:0] 		frame_addr,
 	input 		[15:0] 		frame_pixel,
@@ -130,9 +131,12 @@ always@(posedge clk or negedge rst_n)begin
 		|| lcd_x == x_min && lcd_y >= y_min && lcd_y <= y_max
 		|| lcd_x == x_max && lcd_y >= y_min && lcd_y <= y_max
 		|| lcd_x == x_center && lcd_y >= y_min && lcd_y <= y_max
-		|| lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max)
-		
-		frame_en <= 3'b001;
+		|| lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max)begin
+		if (btn3 == 1)
+		  frame_en <= 3'b001;
+		else
+		  frame_en <= 3'b000;
+    end
 //    else if(   (lcd_x == x_center && lcd_y >= y_min && lcd_y <= y_max)
 //            || (lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max) )
 //         frame_en <= 3'b001;

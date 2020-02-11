@@ -1,11 +1,11 @@
 #-----------------------------------------------------------
 # Vivado v2019.2 (64-bit)
-# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
-# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Sat Feb  8 14:45:16 2020
-# Process ID: 19360
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Feb 10 21:46:05 2020
+# Process ID: 10684
 # Current directory: C:/Users/11986/Desktop/Dilation_erosion
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5452 C:\Users\11986\Desktop\Dilation_erosion\OV7670_VGA_Dispaly.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9204 C:\Users\11986\Desktop\Dilation_erosion\OV7670_VGA_Dispaly.xpr
 # Log file: C:/Users/11986/Desktop/Dilation_erosion/vivado.log
 # Journal file: C:/Users/11986/Desktop/Dilation_erosion\vivado.jou
 #-----------------------------------------------------------
@@ -13,421 +13,609 @@ start_gui
 open_project C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.xpr
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/vivado-library-master/ip'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/vivado-library-master/ip'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2019.2/data/ip'.
-WARNING: [IP_Flow 19-2162] IP 'rgb2dvi_0' is locked:
-* IP definition 'rgb2dvi (1.4)' for IP 'rgb2dvi_0' (customized with software release 2019.2) was not found in the IP Catalog. * Current project part 'xc7z020clg400-1' and the part 'xc7z010clg400-1' used to customize the IP 'rgb2dvi_0' do not match.
-open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:32 . Memory (MB): peak = 895.652 ; gain = 282.383
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11986/Desktop/vivado-library-master/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 945.070 ; gain = 287.250
 update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: ov7670_top
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1487.355 ; gain = 226.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ov7670_top' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/clock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (2#1) [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/clock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Dispay' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
+	Parameter hRez bound to: 640 - type: integer 
+	Parameter hStartSync bound to: 656 - type: integer 
+	Parameter hEndSync bound to: 752 - type: integer 
+	Parameter hMaxCount bound to: 800 - type: integer 
+	Parameter vRez bound to: 480 - type: integer 
+	Parameter vStartSync bound to: 490 - type: integer 
+	Parameter vEndSync bound to: 492 - type: integer 
+	Parameter vMaxCount bound to: 525 - type: integer 
+	Parameter hsync_active bound to: 0 - type: integer 
+	Parameter vsync_active bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'application' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:23]
+WARNING: [Synth 8-6014] Unused sequential element block_en_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:83]
+WARNING: [Synth 8-5788] Register x_loc_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:123]
+WARNING: [Synth 8-5788] Register y_loc_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:124]
+WARNING: [Synth 8-5788] Register disx_a_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:126]
+WARNING: [Synth 8-5788] Register disx_p_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:129]
+WARNING: [Synth 8-5788] Register disy_p_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:130]
+WARNING: [Synth 8-5788] Register disx_p2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:132]
+WARNING: [Synth 8-5788] Register disy_p2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:133]
+WARNING: [Synth 8-5788] Register disx_l_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:135]
+WARNING: [Synth 8-5788] Register disy_l_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:136]
+WARNING: [Synth 8-5788] Register disx_i_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:138]
+WARNING: [Synth 8-5788] Register disy_i_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:139]
+WARNING: [Synth 8-5788] Register disx_c_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:141]
+WARNING: [Synth 8-5788] Register disy_c_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:142]
+WARNING: [Synth 8-5788] Register disx_a2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:144]
+WARNING: [Synth 8-5788] Register disy_a2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:145]
+WARNING: [Synth 8-5788] Register disx_t_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:147]
+WARNING: [Synth 8-5788] Register disy_t_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:148]
+WARNING: [Synth 8-5788] Register disx_i2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:150]
+WARNING: [Synth 8-5788] Register disy_i2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:151]
+WARNING: [Synth 8-5788] Register disx_o_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:153]
+WARNING: [Synth 8-5788] Register disy_o_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:154]
+WARNING: [Synth 8-5788] Register disx_n_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:157]
+WARNING: [Synth 8-5788] Register disy_n_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:158]
+WARNING: [Synth 8-3848] Net disy_a in module/entity application does not have driver. [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'application' (3#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:23]
+INFO: [Synth 8-6157] synthesizing module 'scaling' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:23]
+WARNING: [Synth 8-5788] Register x_loc_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:69]
+WARNING: [Synth 8-5788] Register y_loc_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:70]
+WARNING: [Synth 8-5788] Register disx_s_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:73]
+WARNING: [Synth 8-5788] Register disy_s_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:74]
+WARNING: [Synth 8-5788] Register disx_c_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:76]
+WARNING: [Synth 8-5788] Register disy_c_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:77]
+WARNING: [Synth 8-5788] Register disx_a_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:79]
+WARNING: [Synth 8-5788] Register disy_a_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:80]
+WARNING: [Synth 8-5788] Register disx_l_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:82]
+WARNING: [Synth 8-5788] Register disy_l_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:83]
+WARNING: [Synth 8-5788] Register disx_i_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:85]
+WARNING: [Synth 8-5788] Register disy_i_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:86]
+WARNING: [Synth 8-5788] Register disx_n_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:88]
+WARNING: [Synth 8-5788] Register disy_n_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:89]
+WARNING: [Synth 8-5788] Register disx_g_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:91]
+WARNING: [Synth 8-5788] Register disy_g_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'scaling' (4#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:23]
+INFO: [Synth 8-6157] synthesizing module 'scoreboard' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin_dec' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bin_dec' (5#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v:3]
+WARNING: [Synth 8-5788] Register x_loc_n_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:150]
+WARNING: [Synth 8-5788] Register y_loc_n_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:151]
+WARNING: [Synth 8-5788] Register disx_0_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:164]
+WARNING: [Synth 8-5788] Register disy_0_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:165]
+WARNING: [Synth 8-5788] Register disx_1_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:184]
+WARNING: [Synth 8-5788] Register disy_1_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:185]
+WARNING: [Synth 8-5788] Register disx_2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:197]
+WARNING: [Synth 8-5788] Register disy_2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:198]
+WARNING: [Synth 8-5788] Register disx_3_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:213]
+WARNING: [Synth 8-5788] Register disy_3_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:214]
+WARNING: [Synth 8-5788] Register disx_4_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:229]
+WARNING: [Synth 8-5788] Register disy_4_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:230]
+WARNING: [Synth 8-5788] Register disx_5_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:243]
+WARNING: [Synth 8-5788] Register disy_5_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:244]
+WARNING: [Synth 8-5788] Register disx_6_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:258]
+WARNING: [Synth 8-5788] Register disy_6_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:259]
+WARNING: [Synth 8-5788] Register disx_7_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:273]
+WARNING: [Synth 8-5788] Register disy_7_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:274]
+WARNING: [Synth 8-5788] Register disx_8_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:287]
+WARNING: [Synth 8-5788] Register disy_8_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:288]
+WARNING: [Synth 8-5788] Register disx_9_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:303]
+WARNING: [Synth 8-5788] Register disy_9_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:304]
+WARNING: [Synth 8-5788] Register x_loc_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:479]
+WARNING: [Synth 8-5788] Register y_loc_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:480]
+WARNING: [Synth 8-5788] Register disx_s_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:482]
+WARNING: [Synth 8-5788] Register disy_s_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:483]
+WARNING: [Synth 8-5788] Register disx_c_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:485]
+WARNING: [Synth 8-5788] Register disy_c_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:486]
+WARNING: [Synth 8-5788] Register disx_o_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:488]
+WARNING: [Synth 8-5788] Register disy_o_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:489]
+WARNING: [Synth 8-5788] Register disx_r_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:491]
+WARNING: [Synth 8-5788] Register disy_r_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:492]
+WARNING: [Synth 8-5788] Register disx_e_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:494]
+WARNING: [Synth 8-5788] Register disy_e_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:495]
+WARNING: [Synth 8-5788] Register disx_b_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:497]
+WARNING: [Synth 8-5788] Register disy_b_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:498]
+WARNING: [Synth 8-5788] Register disx_o2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:500]
+WARNING: [Synth 8-5788] Register disy_o2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:501]
+WARNING: [Synth 8-5788] Register disx_a_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:503]
+WARNING: [Synth 8-5788] Register disy_a_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:504]
+WARNING: [Synth 8-5788] Register disx_r2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:506]
+WARNING: [Synth 8-5788] Register disy_r2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:507]
+WARNING: [Synth 8-5788] Register disx_d_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:509]
+WARNING: [Synth 8-5788] Register disy_d_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:510]
+INFO: [Synth 8-6155] done synthesizing module 'scoreboard' (6#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:23]
+WARNING: [Synth 8-5788] Register lcd_data_r0_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:268]
+WARNING: [Synth 8-5788] Register vga_hsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:290]
+WARNING: [Synth 8-5788] Register vga_vsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:295]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Dispay' (7#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (8#1) [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Video_Image_Processor' (9#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:23]
+ERROR: [Synth 8-448] named port connection 'clk' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:147]
+ERROR: [Synth 8-448] named port connection 'rst_n' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:148]
+ERROR: [Synth 8-448] named port connection 'per_frame_vsync' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:151]
+ERROR: [Synth 8-448] named port connection 'per_frame_href' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:152]
+ERROR: [Synth 8-448] named port connection 'per_frame_clken' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:153]
+ERROR: [Synth 8-448] named port connection 'per_img' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:154]
+ERROR: [Synth 8-448] named port connection 'post_frame_vsync' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:157]
+ERROR: [Synth 8-448] named port connection 'post_frame_href' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:158]
+ERROR: [Synth 8-448] named port connection 'post_frame_clken' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:159]
+ERROR: [Synth 8-448] named port connection 'x_min' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:160]
+ERROR: [Synth 8-448] named port connection 'x_max' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:161]
+ERROR: [Synth 8-448] named port connection 'y_min' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:162]
+ERROR: [Synth 8-448] named port connection 'y_max' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:163]
+ERROR: [Synth 8-448] named port connection 'lcd_x' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:164]
+ERROR: [Synth 8-448] named port connection 'lcd_y' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:165]
+ERROR: [Synth 8-448] named port connection 'post_img' does not exist for instance 'u_Video_Image_Processor' of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:166]
+ERROR: [Synth 8-6156] failed synthesizing module 'ov7670_capture' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'ov7670_top' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1577.949 ; gain = 317.148
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+21 Infos, 88 Warnings, 0 Critical Warnings and 19 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
 reset_run synth_2
-reset_run rgb2dvi_0_synth_1
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-WARNING: [Project 1-577] IP run rgb2dvi_0_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
-Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
-WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
-Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
-C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
-
-WARNING: [Project 1-576] IP 'C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' in run rgb2dvi_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
-Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
-[Sat Feb  8 14:55:50 2020] Launched rgb2dvi_0_synth_1, synth_2...
-Run output will be captured here:
-rgb2dvi_0_synth_1: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/rgb2dvi_0_synth_1/runme.log
-synth_2: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 14:55:50 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2019.2
-  **** Build date : Oct 24 2019 at 19:17:01
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-****** Xilinx cs_server v2019.2.0
-  **** Build date : Oct 25 2019-02:33:05
-    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.730 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2269.367 ; gain = 1224.637
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 15:08:35 2020] Launched synth_2...
+launch_runs synth_2 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'I2C_AV_Config' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:16]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'I2C_Controller' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'I2C_OV7670_RGB565_Config' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v:17]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'VGA_Dispay' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'VIP_Bit_Dilation_Detector' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'application' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'bin_dec' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'debounce' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'ov7670_capture' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'ov7670_top' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scoreboard' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'track' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:23]
+WARNING: [filemgmt 20-736] The current top specification, "ov7670_top", does not uniquely identify a single design element. Using "ov7670_top" (Library: xil_defaultlib, File: C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v).
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'I2C_AV_Config()' found in library 'xil_defaultlib'
+Duplicate found at line 16 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v
+	(Active) Duplicate found at line 16 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'I2C_Controller()' found in library 'xil_defaultlib'
+Duplicate found at line 16 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v
+	(Active) Duplicate found at line 16 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'I2C_OV7670_RGB565_Config()' found in library 'xil_defaultlib'
+Duplicate found at line 17 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v
+	(Active) Duplicate found at line 17 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VGA_Dispay()' found in library 'xil_defaultlib'
+Duplicate found at line 29 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v
+	(Active) Duplicate found at line 29 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Bit_Dilation_Detector()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v
+	(Active) Duplicate found at line 34 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Video_Image_Processor()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'application()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'bin_dec()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v
+	(Active) Duplicate found at line 3 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'debounce()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'ov7670_capture()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'ov7670_top()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scoreboard()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'track()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v
+[Mon Feb 10 21:52:28 2020] Launched synth_2...
 Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 15:08:35 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-close [ open C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v w ]
-add_files C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v
 update_compile_order -fileset sources_1
-close [ open C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v w ]
-add_files C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v
-update_compile_order -fileset sources_1
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-update_compile_order -fileset sources_1
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: ov7670_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1598.656 ; gain = 17.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ov7670_top' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/clock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (2#1) [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/clock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Dispay' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:29]
+	Parameter hRez bound to: 640 - type: integer 
+	Parameter hStartSync bound to: 656 - type: integer 
+	Parameter hEndSync bound to: 752 - type: integer 
+	Parameter hMaxCount bound to: 800 - type: integer 
+	Parameter vRez bound to: 480 - type: integer 
+	Parameter vStartSync bound to: 490 - type: integer 
+	Parameter vEndSync bound to: 492 - type: integer 
+	Parameter vMaxCount bound to: 525 - type: integer 
+	Parameter hsync_active bound to: 0 - type: integer 
+	Parameter vsync_active bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'application' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:23]
+WARNING: [Synth 8-6014] Unused sequential element block_en_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:83]
+WARNING: [Synth 8-5788] Register x_loc_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:123]
+WARNING: [Synth 8-5788] Register y_loc_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:124]
+WARNING: [Synth 8-5788] Register disx_a_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:126]
+WARNING: [Synth 8-5788] Register disx_p_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:129]
+WARNING: [Synth 8-5788] Register disy_p_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:130]
+WARNING: [Synth 8-5788] Register disx_p2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:132]
+WARNING: [Synth 8-5788] Register disy_p2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:133]
+WARNING: [Synth 8-5788] Register disx_l_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:135]
+WARNING: [Synth 8-5788] Register disy_l_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:136]
+WARNING: [Synth 8-5788] Register disx_i_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:138]
+WARNING: [Synth 8-5788] Register disy_i_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:139]
+WARNING: [Synth 8-5788] Register disx_c_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:141]
+WARNING: [Synth 8-5788] Register disy_c_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:142]
+WARNING: [Synth 8-5788] Register disx_a2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:144]
+WARNING: [Synth 8-5788] Register disy_a2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:145]
+WARNING: [Synth 8-5788] Register disx_t_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:147]
+WARNING: [Synth 8-5788] Register disy_t_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:148]
+WARNING: [Synth 8-5788] Register disx_i2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:150]
+WARNING: [Synth 8-5788] Register disy_i2_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:151]
+WARNING: [Synth 8-5788] Register disx_o_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:153]
+WARNING: [Synth 8-5788] Register disy_o_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:154]
+WARNING: [Synth 8-5788] Register disx_n_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:157]
+WARNING: [Synth 8-5788] Register disy_n_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:158]
+WARNING: [Synth 8-3848] Net disy_a in module/entity application does not have driver. [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'application' (3#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:23]
+INFO: [Synth 8-6157] synthesizing module 'scaling' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:23]
+WARNING: [Synth 8-5788] Register x_loc_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:69]
+WARNING: [Synth 8-5788] Register y_loc_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:70]
+WARNING: [Synth 8-5788] Register disx_s_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:73]
+WARNING: [Synth 8-5788] Register disy_s_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:74]
+WARNING: [Synth 8-5788] Register disx_c_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:76]
+WARNING: [Synth 8-5788] Register disy_c_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:77]
+WARNING: [Synth 8-5788] Register disx_a_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:79]
+WARNING: [Synth 8-5788] Register disy_a_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:80]
+WARNING: [Synth 8-5788] Register disx_l_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:82]
+WARNING: [Synth 8-5788] Register disy_l_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:83]
+WARNING: [Synth 8-5788] Register disx_i_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:85]
+WARNING: [Synth 8-5788] Register disy_i_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:86]
+WARNING: [Synth 8-5788] Register disx_n_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:88]
+WARNING: [Synth 8-5788] Register disy_n_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:89]
+WARNING: [Synth 8-5788] Register disx_g_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:91]
+WARNING: [Synth 8-5788] Register disy_g_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'scaling' (4#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:23]
+INFO: [Synth 8-6157] synthesizing module 'scoreboard' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin_dec' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bin_dec' (5#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v:3]
+WARNING: [Synth 8-5788] Register x_loc_n_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:150]
+WARNING: [Synth 8-5788] Register y_loc_n_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:151]
+WARNING: [Synth 8-5788] Register disx_0_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:164]
+WARNING: [Synth 8-5788] Register disy_0_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:165]
+WARNING: [Synth 8-5788] Register disx_1_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:184]
+WARNING: [Synth 8-5788] Register disy_1_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:185]
+WARNING: [Synth 8-5788] Register disx_2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:197]
+WARNING: [Synth 8-5788] Register disy_2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:198]
+WARNING: [Synth 8-5788] Register disx_3_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:213]
+WARNING: [Synth 8-5788] Register disy_3_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:214]
+WARNING: [Synth 8-5788] Register disx_4_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:229]
+WARNING: [Synth 8-5788] Register disy_4_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:230]
+WARNING: [Synth 8-5788] Register disx_5_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:243]
+WARNING: [Synth 8-5788] Register disy_5_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:244]
+WARNING: [Synth 8-5788] Register disx_6_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:258]
+WARNING: [Synth 8-5788] Register disy_6_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:259]
+WARNING: [Synth 8-5788] Register disx_7_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:273]
+WARNING: [Synth 8-5788] Register disy_7_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:274]
+WARNING: [Synth 8-5788] Register disx_8_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:287]
+WARNING: [Synth 8-5788] Register disy_8_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:288]
+WARNING: [Synth 8-5788] Register disx_9_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:303]
+WARNING: [Synth 8-5788] Register disy_9_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:304]
+WARNING: [Synth 8-5788] Register x_loc_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:479]
+WARNING: [Synth 8-5788] Register y_loc_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:480]
+WARNING: [Synth 8-5788] Register disx_s_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:482]
+WARNING: [Synth 8-5788] Register disy_s_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:483]
+WARNING: [Synth 8-5788] Register disx_c_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:485]
+WARNING: [Synth 8-5788] Register disy_c_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:486]
+WARNING: [Synth 8-5788] Register disx_o_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:488]
+WARNING: [Synth 8-5788] Register disy_o_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:489]
+WARNING: [Synth 8-5788] Register disx_r_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:491]
+WARNING: [Synth 8-5788] Register disy_r_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:492]
+WARNING: [Synth 8-5788] Register disx_e_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:494]
+WARNING: [Synth 8-5788] Register disy_e_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:495]
+WARNING: [Synth 8-5788] Register disx_b_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:497]
+WARNING: [Synth 8-5788] Register disy_b_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:498]
+WARNING: [Synth 8-5788] Register disx_o2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:500]
+WARNING: [Synth 8-5788] Register disy_o2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:501]
+WARNING: [Synth 8-5788] Register disx_a_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:503]
+WARNING: [Synth 8-5788] Register disy_a_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:504]
+WARNING: [Synth 8-5788] Register disx_r2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:506]
+WARNING: [Synth 8-5788] Register disy_r2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:507]
+WARNING: [Synth 8-5788] Register disx_d_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:509]
+WARNING: [Synth 8-5788] Register disy_d_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:510]
+INFO: [Synth 8-6155] done synthesizing module 'scoreboard' (6#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:23]
+WARNING: [Synth 8-5788] Register lcd_data_r0_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:268]
+WARNING: [Synth 8-5788] Register vga_hsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:290]
+WARNING: [Synth 8-5788] Register vga_vsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:295]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Dispay' (7#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:29]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (8#1) [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VIP_Bit_Erosion_Detector' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v:34]
+	Parameter IMG_HDISP bound to: 10'b1010000000 
+	Parameter IMG_VDISP bound to: 10'b0111100000 
+INFO: [Synth 8-6157] synthesizing module 'VIP_Matrix_Generate_3X3_1Bit' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v:34]
+	Parameter IMG_HDISP bound to: 10'b1010000000 
+	Parameter IMG_VDISP bound to: 10'b0111100000 
+INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/Shift_RAM_3X3_8bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3_8bit' (9#1) [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/Shift_RAM_3X3_8bit_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (8) of module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v:91]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (8) of module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'VIP_Matrix_Generate_3X3_1Bit' (10#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'VIP_Bit_Erosion_Detector' (11#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v:34]
+INFO: [Synth 8-6157] synthesizing module 'VIP_Bit_Dilation_Detector' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v:34]
+	Parameter IMG_HDISP bound to: 10'b1010000000 
+	Parameter IMG_VDISP bound to: 10'b0111100000 
+INFO: [Synth 8-6155] done synthesizing module 'VIP_Bit_Dilation_Detector' (12#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v:34]
+INFO: [Synth 8-6157] synthesizing module 'Face_Posion' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:23]
+	Parameter ROW_CNT bound to: 320 - type: integer 
+	Parameter COL_CNT bound to: 240 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element per_frame_clken_r_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:181]
+WARNING: [Synth 8-6014] Unused sequential element per_frame_href_r_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:182]
+WARNING: [Synth 8-6014] Unused sequential element per_img_r_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'Face_Posion' (13#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Video_Image_Processor' (14#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v:23]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:67]
+WARNING: [Synth 8-3848] Net points in module/entity ov7670_capture does not have driver. [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_capture' (15#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
+INFO: [Synth 8-6157] synthesizing module 'I2C_AV_Config' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:16]
+	Parameter LUT_SIZE bound to: 167 - type: integer 
+	Parameter CLK_Freq bound to: 25000000 - type: integer 
+	Parameter I2C_Freq bound to: 10000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:104]
+INFO: [Synth 8-6157] synthesizing module 'I2C_OV7670_RGB565_Config' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v:17]
+	Parameter Read_DATA bound to: 0 - type: integer 
+	Parameter SET_OV7670 bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'I2C_OV7670_RGB565_Config' (16#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v:17]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Controller' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller' (17#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_AV_Config' (18#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:16]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (19#1) [C:/Users/11986/Desktop/Dilation_erosion/.Xil/Vivado-10684-DESKTOP-LEMV09J/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_top' (20#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
+WARNING: [Synth 8-3917] design ov7670_top has port OV7670_PWDN driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[11]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[10]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[9]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[8]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[7]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[6]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[5]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[4]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[3]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[2]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[1]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[0]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[11]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[10]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[9]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[8]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[7]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[6]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[5]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[4]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[3]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[2]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[1]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[0]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[15]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[14]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[13]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[12]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[11]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[10]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[9]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[8]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[7]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[6]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[5]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[4]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[3]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[2]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[1]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[0]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[9]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[8]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[7]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[6]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[5]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[4]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[3]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[2]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[1]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[0]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[9]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[8]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[7]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[6]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[5]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[4]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[3]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[2]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[1]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[0]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port btn3
+WARNING: [Synth 8-3331] design scoreboard has unconnected port sw0
+WARNING: [Synth 8-3331] design scoreboard has unconnected port sw2
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[11]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[10]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[9]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[8]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[7]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[6]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[5]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[4]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[3]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[2]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[1]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[0]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[11]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[10]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[9]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[8]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[7]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[6]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[5]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[4]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[3]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[2]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[1]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[0]
+WARNING: [Synth 8-3331] design scaling has unconnected port sw0
+WARNING: [Synth 8-3331] design scaling has unconnected port sw1
+WARNING: [Synth 8-3331] design application has unconnected port sw1
+WARNING: [Synth 8-3331] design application has unconnected port sw2
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[15]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[14]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[13]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[12]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[11]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[10]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[9]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[8]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1661.660 ; gain = 80.867
+---------------------------------------------------------------------------------
 
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 16:08:31 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 16:08:32 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1661.660 ; gain = 80.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1661.660 ; gain = 80.867
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.dcp' for cell 'clock_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer.dcp' for cell 'frame_buffer_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb_to_hdmi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit.dcp' for cell 'capture/u_Video_Image_Processor/VIP_Bit_Dilation_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u1_Shift_RAM_3X3_8bit'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1661.660 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, clock_inst/inst/clkin1_ibufg, from the path connected to top-level port: clk_125M 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clock_inst/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
 
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 16:16:04 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 16:16:04 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock_board.xdc] for cell 'clock_inst/inst'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock_board.xdc] for cell 'clock_inst/inst'
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.xdc] for cell 'clock_inst/inst'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.xdc] for cell 'clock_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ov7670_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb_to_hdmi/U0'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb_to_hdmi/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/constrs_1/new/OV7670_top.xdc]
+Finished Parsing XDC File [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/constrs_1/new/OV7670_top.xdc]
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb_to_hdmi/U0'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb_to_hdmi/U0'
+Completed Processing XDC Constraints
 
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 16:23:23 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 16:23:23 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1767.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
 
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 16:31:39 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 16:31:39 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-reset_run impl_2
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1785.617 ; gain = 204.824
+56 Infos, 199 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1785.617 ; gain = 206.180
 reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 16:33:52 2020] Launched synth_2...
+launch_runs synth_2 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'I2C_AV_Config' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:16]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'I2C_Controller' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'I2C_OV7670_RGB565_Config' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v:17]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'VGA_Dispay' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'VIP_Bit_Dilation_Detector' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'VGA_Dispay' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v:29]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'application' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'bin_dec' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'debounce' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'ov7670_capture' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'ov7670_top' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scoreboard' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'track' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:23]
+WARNING: [filemgmt 20-736] The current top specification, "ov7670_top", does not uniquely identify a single design element. Using "ov7670_top" (Library: xil_defaultlib, File: C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v).
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'I2C_AV_Config()' found in library 'xil_defaultlib'
+Duplicate found at line 16 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v
+	(Active) Duplicate found at line 16 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'I2C_Controller()' found in library 'xil_defaultlib'
+Duplicate found at line 16 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v
+	(Active) Duplicate found at line 16 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'I2C_OV7670_RGB565_Config()' found in library 'xil_defaultlib'
+Duplicate found at line 17 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v
+	(Active) Duplicate found at line 17 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VGA_Dispay()' found in library 'xil_defaultlib'
+Duplicate found at line 29 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v
+Duplicate found at line 29 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v
+	(Active) Duplicate found at line 29 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Video_Image_Processor.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Bit_Dilation_Detector()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v
+	(Active) Duplicate found at line 34 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'application()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'bin_dec()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v
+	(Active) Duplicate found at line 3 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'debounce()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'ov7670_capture()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'ov7670_top()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scoreboard()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'track()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v
+	(Active) Duplicate found at line 23 of file C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v
+[Mon Feb 10 21:57:51 2020] Launched synth_2...
 Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 16:33:52 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 16:41:52 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 16:41:52 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 16:49:56 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 16:49:56 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-update_compile_order -fileset sources_1
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 16:56:57 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 16:56:57 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 17:06:13 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 17:06:13 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-update_compile_order -fileset sources_1
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 17:16:18 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 17:16:18 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 17:20:36 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 17:20:36 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 18:23:10 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 18:23:10 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 18:23:42 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 18:23:42 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 18:36:49 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 18:36:49 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 18:46:06 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 18:46:06 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-reset_run synth_2
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2
-
-launch_runs impl_2 -to_step write_bitstream -jobs 4
-[Sat Feb  8 18:53:24 2020] Launched synth_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/runme.log
-[Sat Feb  8 18:53:24 2020] Launched impl_2...
-Run output will be captured here: C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/impl_2/ov7670_top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A8BA07A
+write_schematic -format pdf -orientation portrait C:/Users/11986/Desktop/schematic1.pdf
+C:/Users/11986/Desktop/schematic1.pdf
+write_schematic -format pdf -orientation portrait C:/Users/11986/Desktop/schematic2.pdf
+C:/Users/11986/Desktop/schematic2.pdf
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Feb  8 19:00:43 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 23:54:04 2020...

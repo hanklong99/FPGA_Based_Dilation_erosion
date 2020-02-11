@@ -1,6 +1,27 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Sun Feb  9 15:16:54 2020
+| Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rgb2dvi_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of rgb2dvi_0 (digilentinc.com:ip:rgb2dvi:1.4 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
 | Date         : Wed Feb  5 15:00:59 2020
 | Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
