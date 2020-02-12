@@ -4,58 +4,29 @@
 
 
 ****** Vivado v2019.2 (64-bit)
-  **** SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
-  **** IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source ov7670_top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/vivado-library-master/ip'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2019.2/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11986/Desktop/vivado-library-master/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.2/data/ip'.
 Command: synth_design -top ov7670_top -part xc7z020clg400-1
 Starting synth_design
-WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
-
-INFO: [IP_Flow 19-2162] IP 'rgb2dvi_0' is locked:
-* IP definition 'rgb2dvi (1.4)' for IP 'rgb2dvi_0' (customized with software release 2019.2) was not found in the IP Catalog. * Current project part 'xc7z020clg400-1' and the part 'xc7z010clg400-1' used to customize the IP 'rgb2dvi_0' do not match.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3044 
-WARNING: [Synth 8-2611] redeclaration of ansi port pclk is not allowed [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:43]
-WARNING: [Synth 8-2611] redeclaration of ansi port rst_n is not allowed [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:44]
-WARNING: [Synth 8-976] post_clken has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:93]
-WARNING: [Synth 8-2654] second declaration of post_clken ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:93]
-INFO: [Synth 8-994] post_clken is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:45]
-WARNING: [Synth 8-976] disx_c has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:75]
-WARNING: [Synth 8-2654] second declaration of disx_c ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:75]
-INFO: [Synth 8-994] disx_c is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:63]
-WARNING: [Synth 8-976] disy_c has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:76]
-WARNING: [Synth 8-2654] second declaration of disy_c ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:76]
-INFO: [Synth 8-994] disy_c is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:64]
-WARNING: [Synth 8-976] x_min has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:103]
-WARNING: [Synth 8-2654] second declaration of x_min ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:103]
-INFO: [Synth 8-994] x_min is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:71]
-WARNING: [Synth 8-976] x_max has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:104]
-WARNING: [Synth 8-2654] second declaration of x_max ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:104]
-INFO: [Synth 8-994] x_max is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:72]
-WARNING: [Synth 8-976] y_min has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:105]
-WARNING: [Synth 8-2654] second declaration of y_min ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:105]
-INFO: [Synth 8-994] y_min is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:73]
-WARNING: [Synth 8-976] y_max has already been declared [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:106]
-WARNING: [Synth 8-2654] second declaration of y_max ignored [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:106]
-INFO: [Synth 8-994] y_max is declared here [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:74]
+INFO: Helper process launched with PID 12284 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 995.902 ; gain = 242.246
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 997.504 ; gain = 235.574
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'ov7670_top' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/debounce.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-20576-DESKTOP-QCQ218O/realtime/clock_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clock' (2#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-20576-DESKTOP-QCQ218O/realtime/clock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3296-DESKTOP-LEMV09J/realtime/clock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (2#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3296-DESKTOP-LEMV09J/realtime/clock_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'VGA_Dispay' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
 	Parameter hRez bound to: 640 - type: integer 
 	Parameter hStartSync bound to: 656 - type: integer 
@@ -94,84 +65,71 @@ WARNING: [Synth 8-5788] Register disx_n_reg in module application is has both Se
 WARNING: [Synth 8-5788] Register disy_n_reg in module application is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:156]
 WARNING: [Synth 8-3848] Net disy_a in module/entity application does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:46]
 INFO: [Synth 8-6155] done synthesizing module 'application' (3#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:23]
-INFO: [Synth 8-6157] synthesizing module 'track' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:23]
-WARNING: [Synth 8-6014] Unused sequential element disy_d_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:165]
-WARNING: [Synth 8-5788] Register x_loc_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:121]
-WARNING: [Synth 8-5788] Register y_loc_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:122]
-WARNING: [Synth 8-5788] Register x_loc_n_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:124]
-WARNING: [Synth 8-5788] Register y_loc_n_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:125]
-WARNING: [Synth 8-5788] Register disx_e_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:128]
-WARNING: [Synth 8-5788] Register disy_e_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:129]
-WARNING: [Synth 8-5788] Register disx_i_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:131]
-WARNING: [Synth 8-5788] Register disy_i_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:132]
-WARNING: [Synth 8-5788] Register disx_o_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:134]
-WARNING: [Synth 8-5788] Register disy_o_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:135]
-WARNING: [Synth 8-5788] Register disx_u_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:137]
-WARNING: [Synth 8-5788] Register disy_u_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:138]
-WARNING: [Synth 8-5788] Register disx_p_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:140]
-WARNING: [Synth 8-5788] Register disy_p_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:141]
-WARNING: [Synth 8-5788] Register disx_l_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:143]
-WARNING: [Synth 8-5788] Register disy_l_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:144]
-WARNING: [Synth 8-5788] Register disx_c_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:146]
-WARNING: [Synth 8-5788] Register disy_c_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:147]
-WARNING: [Synth 8-5788] Register disx_t_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:149]
-WARNING: [Synth 8-5788] Register disy_t_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:150]
-WARNING: [Synth 8-5788] Register disx_n_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:152]
-WARNING: [Synth 8-5788] Register disy_n_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:153]
-WARNING: [Synth 8-5788] Register disx_s_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:155]
-WARNING: [Synth 8-5788] Register disy_s_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:156]
-WARNING: [Synth 8-5788] Register disx_r_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:158]
-WARNING: [Synth 8-5788] Register disy_r_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:159]
-WARNING: [Synth 8-5788] Register disx_b_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:161]
-WARNING: [Synth 8-5788] Register disy_b_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:162]
-WARNING: [Synth 8-5788] Register disx_d_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:164]
-WARNING: [Synth 8-5788] Register disx_0_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:168]
-WARNING: [Synth 8-5788] Register disy_0_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:169]
-WARNING: [Synth 8-5788] Register disx_1_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:171]
-WARNING: [Synth 8-5788] Register disy_1_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:172]
-WARNING: [Synth 8-5788] Register disx_2_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:174]
-WARNING: [Synth 8-5788] Register disy_2_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:175]
-WARNING: [Synth 8-5788] Register disx_3_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:177]
-WARNING: [Synth 8-5788] Register disy_3_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:178]
-WARNING: [Synth 8-5788] Register disx_4_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:180]
-WARNING: [Synth 8-5788] Register disy_4_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:181]
-WARNING: [Synth 8-5788] Register disx_5_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:183]
-WARNING: [Synth 8-5788] Register disy_5_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:184]
-WARNING: [Synth 8-5788] Register disx_6_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:186]
-WARNING: [Synth 8-5788] Register disy_6_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:187]
-WARNING: [Synth 8-5788] Register disx_7_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:189]
-WARNING: [Synth 8-5788] Register disy_7_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:190]
-WARNING: [Synth 8-5788] Register disx_8_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:192]
-WARNING: [Synth 8-5788] Register disy_8_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:193]
-WARNING: [Synth 8-5788] Register disx_9_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:195]
-WARNING: [Synth 8-5788] Register disy_9_reg in module track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:196]
-INFO: [Synth 8-6155] done synthesizing module 'track' (4#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:23]
-WARNING: [Synth 8-7023] instance 'u_track' of module 'track' has 10 connections declared, but only 8 given [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:212]
+INFO: [Synth 8-6157] synthesizing module 'scaling' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:23]
+WARNING: [Synth 8-5788] Register x_loc_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:67]
+WARNING: [Synth 8-5788] Register y_loc_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:68]
+WARNING: [Synth 8-5788] Register disx_s_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:71]
+WARNING: [Synth 8-5788] Register disy_s_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:72]
+WARNING: [Synth 8-5788] Register disx_c_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:74]
+WARNING: [Synth 8-5788] Register disy_c_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:75]
+WARNING: [Synth 8-5788] Register disx_a_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:77]
+WARNING: [Synth 8-5788] Register disy_a_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:78]
+WARNING: [Synth 8-5788] Register disx_l_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:80]
+WARNING: [Synth 8-5788] Register disy_l_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:81]
+WARNING: [Synth 8-5788] Register disx_i_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:83]
+WARNING: [Synth 8-5788] Register disy_i_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:84]
+WARNING: [Synth 8-5788] Register disx_n_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:86]
+WARNING: [Synth 8-5788] Register disy_n_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:87]
+WARNING: [Synth 8-5788] Register disx_g_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:89]
+WARNING: [Synth 8-5788] Register disy_g_reg in module scaling is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'scaling' (4#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:23]
 INFO: [Synth 8-6157] synthesizing module 'scoreboard' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bin_dec' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'bin_dec' (5#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/bin_dec.v:3]
-WARNING: [Synth 8-5788] Register x_loc_n_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:121]
-WARNING: [Synth 8-5788] Register y_loc_n_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:122]
-WARNING: [Synth 8-5788] Register disx_0_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:127]
-WARNING: [Synth 8-5788] Register disy_0_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:128]
-WARNING: [Synth 8-5788] Register disx_1_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:145]
-WARNING: [Synth 8-5788] Register disy_1_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:146]
-WARNING: [Synth 8-5788] Register disx_2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:158]
-WARNING: [Synth 8-5788] Register disy_2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:159]
-WARNING: [Synth 8-5788] Register disx_3_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:174]
-WARNING: [Synth 8-5788] Register disy_3_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:175]
-WARNING: [Synth 8-5788] Register disx_4_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:190]
-WARNING: [Synth 8-5788] Register disy_4_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:191]
-WARNING: [Synth 8-5788] Register disx_5_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:204]
-WARNING: [Synth 8-5788] Register disy_5_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:205]
-WARNING: [Synth 8-5788] Register disx_6_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:219]
-WARNING: [Synth 8-5788] Register disy_6_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:220]
-WARNING: [Synth 8-5788] Register disx_7_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:234]
-WARNING: [Synth 8-5788] Register disy_7_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:235]
-WARNING: [Synth 8-5788] Register disx_8_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:248]
-WARNING: [Synth 8-5788] Register disy_8_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:249]
-WARNING: [Synth 8-5788] Register disx_9_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:264]
-WARNING: [Synth 8-5788] Register disy_9_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:265]
+WARNING: [Synth 8-5788] Register x_loc_n_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:148]
+WARNING: [Synth 8-5788] Register y_loc_n_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:149]
+WARNING: [Synth 8-5788] Register disx_0_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:162]
+WARNING: [Synth 8-5788] Register disy_0_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:163]
+WARNING: [Synth 8-5788] Register disx_1_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:182]
+WARNING: [Synth 8-5788] Register disy_1_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:183]
+WARNING: [Synth 8-5788] Register disx_2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:195]
+WARNING: [Synth 8-5788] Register disy_2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:196]
+WARNING: [Synth 8-5788] Register disx_3_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:211]
+WARNING: [Synth 8-5788] Register disy_3_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:212]
+WARNING: [Synth 8-5788] Register disx_4_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:227]
+WARNING: [Synth 8-5788] Register disy_4_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:228]
+WARNING: [Synth 8-5788] Register disx_5_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:241]
+WARNING: [Synth 8-5788] Register disy_5_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:242]
+WARNING: [Synth 8-5788] Register disx_6_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:256]
+WARNING: [Synth 8-5788] Register disy_6_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:257]
+WARNING: [Synth 8-5788] Register disx_7_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:271]
+WARNING: [Synth 8-5788] Register disy_7_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:272]
+WARNING: [Synth 8-5788] Register disx_8_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:285]
+WARNING: [Synth 8-5788] Register disy_8_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:286]
+WARNING: [Synth 8-5788] Register disx_9_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:301]
+WARNING: [Synth 8-5788] Register disy_9_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:302]
+WARNING: [Synth 8-5788] Register x_loc_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:477]
+WARNING: [Synth 8-5788] Register y_loc_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:478]
+WARNING: [Synth 8-5788] Register disx_s_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:480]
+WARNING: [Synth 8-5788] Register disy_s_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:481]
+WARNING: [Synth 8-5788] Register disx_c_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:483]
+WARNING: [Synth 8-5788] Register disy_c_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:484]
+WARNING: [Synth 8-5788] Register disx_o_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:486]
+WARNING: [Synth 8-5788] Register disy_o_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:487]
+WARNING: [Synth 8-5788] Register disx_r_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:489]
+WARNING: [Synth 8-5788] Register disy_r_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:490]
+WARNING: [Synth 8-5788] Register disx_e_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:492]
+WARNING: [Synth 8-5788] Register disy_e_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:493]
+WARNING: [Synth 8-5788] Register disx_b_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:495]
+WARNING: [Synth 8-5788] Register disy_b_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:496]
+WARNING: [Synth 8-5788] Register disx_o2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:498]
+WARNING: [Synth 8-5788] Register disy_o2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:499]
+WARNING: [Synth 8-5788] Register disx_a_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:501]
+WARNING: [Synth 8-5788] Register disy_a_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:502]
+WARNING: [Synth 8-5788] Register disx_r2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:504]
+WARNING: [Synth 8-5788] Register disy_r2_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:505]
+WARNING: [Synth 8-5788] Register disx_d_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:507]
+WARNING: [Synth 8-5788] Register disy_d_reg in module scoreboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:508]
 INFO: [Synth 8-6155] done synthesizing module 'scoreboard' (6#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:23]
 INFO: [Synth 8-6157] synthesizing module 'position' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:23]
 	Parameter ROW_CNT bound to: 440 - type: integer 
@@ -180,39 +138,42 @@ WARNING: [Synth 8-6014] Unused sequential element per_frame_clken_r_reg was remo
 WARNING: [Synth 8-6014] Unused sequential element per_frame_href_r_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:191]
 WARNING: [Synth 8-6014] Unused sequential element per_img_r_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:193]
 INFO: [Synth 8-6155] done synthesizing module 'position' (7#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/position.v:23]
-WARNING: [Synth 8-5788] Register lcd_data_r0_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:342]
-WARNING: [Synth 8-5788] Register vga_hsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:364]
-WARNING: [Synth 8-5788] Register vga_vsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:369]
+WARNING: [Synth 8-5788] Register lcd_data_r0_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:375]
+WARNING: [Synth 8-5788] Register vga_hsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:397]
+WARNING: [Synth 8-5788] Register vga_vsync_reg in module VGA_Dispay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:402]
 INFO: [Synth 8-6155] done synthesizing module 'VGA_Dispay' (8#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/VGA_Display.v:29]
-INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-20576-DESKTOP-QCQ218O/realtime/frame_buffer_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (9#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-20576-DESKTOP-QCQ218O/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3296-DESKTOP-LEMV09J/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (9#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3296-DESKTOP-LEMV09J/realtime/frame_buffer_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Img_Processor' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Median_Filter' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Shift_RAM_3X3.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-20576-DESKTOP-QCQ218O/realtime/Shift_RAM_3X3_8bit_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3_8bit' (10#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-20576-DESKTOP-QCQ218O/realtime/Shift_RAM_3X3_8bit_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3' (11#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Shift_RAM_3X3.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Median_filter_3x3' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter_3x3.v:23]
-INFO: [Synth 8-6157] synthesizing module 'sort' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Sort.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'sort' (12#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Sort.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Median_filter_3x3' (13#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter_3x3.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Median_Filter' (14#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Median_Filter.v:23]
-INFO: [Synth 8-6157] synthesizing module 'dilation' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/dilation.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'dilation' (15#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/dilation.v:23]
-INFO: [Synth 8-6157] synthesizing module 'erosion' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/erosion.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'erosion' (16#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/erosion.v:23]
-WARNING: [Synth 8-3848] Net ram_addr in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:33]
-WARNING: [Synth 8-3848] Net x_min in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:35]
-WARNING: [Synth 8-3848] Net x_max in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:36]
-WARNING: [Synth 8-3848] Net y_min in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:37]
-WARNING: [Synth 8-3848] Net y_max in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:38]
-WARNING: [Synth 8-3848] Net points in module/entity Img_Processor does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'Img_Processor' (17#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/Img_Processor.v:23]
-WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:62]
-WARNING: [Synth 8-6014] Unused sequential element address_next_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:63]
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'ov7670_capture' (18#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Video_Image_Processor' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VIP_Bit_Erosion_Detector' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v:34]
+	Parameter IMG_HDISP bound to: 10'b1010000000 
+	Parameter IMG_VDISP bound to: 10'b0111100000 
+INFO: [Synth 8-6157] synthesizing module 'VIP_Matrix_Generate_3X3_1Bit' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v:34]
+	Parameter IMG_HDISP bound to: 10'b1010000000 
+	Parameter IMG_VDISP bound to: 10'b0111100000 
+INFO: [Synth 8-6157] synthesizing module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3296-DESKTOP-LEMV09J/realtime/Shift_RAM_3X3_8bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_RAM_3X3_8bit' (10#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3296-DESKTOP-LEMV09J/realtime/Shift_RAM_3X3_8bit_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (8) of module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v:91]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (8) of module 'Shift_RAM_3X3_8bit' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'VIP_Matrix_Generate_3X3_1Bit' (11#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'VIP_Bit_Erosion_Detector' (12#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v:34]
+INFO: [Synth 8-6157] synthesizing module 'VIP_Bit_Dilation_Detector' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v:34]
+	Parameter IMG_HDISP bound to: 10'b1010000000 
+	Parameter IMG_VDISP bound to: 10'b0111100000 
+INFO: [Synth 8-6155] done synthesizing module 'VIP_Bit_Dilation_Detector' (13#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v:34]
+INFO: [Synth 8-6157] synthesizing module 'Face_Posion' [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:23]
+	Parameter ROW_CNT bound to: 320 - type: integer 
+	Parameter COL_CNT bound to: 240 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element per_frame_clken_r_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:181]
+WARNING: [Synth 8-6014] Unused sequential element per_frame_href_r_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:182]
+WARNING: [Synth 8-6014] Unused sequential element per_img_r_reg was removed.  [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'Face_Posion' (14#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Video_Image_Processor' (15#1) [C:/Users/11986/Desktop/OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v:23]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:67]
+WARNING: [Synth 8-3848] Net points in module/entity ov7670_capture does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_capture' (16#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_capture.v:23]
+WARNING: [Synth 8-7023] instance 'capture' of module 'ov7670_capture' has 18 connections declared, but only 17 given [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:142]
 INFO: [Synth 8-6157] synthesizing module 'I2C_AV_Config' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:16]
 	Parameter LUT_SIZE bound to: 167 - type: integer 
 	Parameter CLK_Freq bound to: 25000000 - type: integer 
@@ -221,118 +182,119 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/1198
 INFO: [Synth 8-6157] synthesizing module 'I2C_OV7670_RGB565_Config' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v:17]
 	Parameter Read_DATA bound to: 0 - type: integer 
 	Parameter SET_OV7670 bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'I2C_OV7670_RGB565_Config' (19#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_OV7670_RGB565_Config' (17#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_OV7670_RGB565_Config.v:17]
 INFO: [Synth 8-6157] synthesizing module 'I2C_Controller' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller' (20#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_AV_Config' (21#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:16]
-INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-20576-DESKTOP-QCQ218O/realtime/rgb2dvi_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (22#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-20576-DESKTOP-QCQ218O/realtime/rgb2dvi_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ov7670_top' (23#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller' (18#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_Controller.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_AV_Config' (19#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/I2C_AV_Config.v:16]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3296-DESKTOP-LEMV09J/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (20#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/.Xil/Vivado-3296-DESKTOP-LEMV09J/realtime/rgb2dvi_0_stub.v:6]
+WARNING: [Synth 8-3848] Net points in module/entity ov7670_top does not have driver. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_top' (21#1) [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/ov7670_top.v:23]
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_PWDN driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[16]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[15]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[14]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[13]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[12]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[11]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[10]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[9]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[8]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[1]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port ram_addr[0]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[11]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[10]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[9]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[8]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[1]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_min[0]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[11]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[10]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[9]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[8]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[1]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port x_max[0]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[11]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[10]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[9]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[8]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[1]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_min[0]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[11]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[10]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[9]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[8]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[1]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port y_max[0]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[15]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[14]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[13]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[12]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[11]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[10]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[9]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[8]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[1]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port points[0]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[9]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[8]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[1]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_x[0]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[9]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[8]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[7]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[6]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[5]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[4]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[3]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[2]
-WARNING: [Synth 8-3331] design Img_Processor has unconnected port lcd_y[1]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[11]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[10]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[9]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[8]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[7]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[6]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[5]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[4]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[3]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[2]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[1]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_x[0]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[11]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[10]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[9]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[8]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[7]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[6]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[5]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[4]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[3]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[2]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[1]
+WARNING: [Synth 8-3331] design Face_Posion has unconnected port lcd_y[0]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[15]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[14]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[13]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[12]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[11]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[10]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[9]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[8]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[7]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[6]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[5]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[4]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[3]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[2]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[1]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port points[0]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[9]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[8]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[7]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[6]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[5]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[4]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[3]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[2]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[1]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_x[0]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[9]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[8]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[7]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[6]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[5]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[4]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[3]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[2]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[1]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port lcd_y[0]
+WARNING: [Synth 8-3331] design ov7670_capture has unconnected port btn3
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[11]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[10]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[9]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[8]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[7]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[6]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[5]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[4]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[3]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[2]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[1]
+WARNING: [Synth 8-3331] design scaling has unconnected port x_center[0]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[11]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[10]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[9]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[8]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[7]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[6]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[5]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[4]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[3]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[2]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[1]
+WARNING: [Synth 8-3331] design scaling has unconnected port y_center[0]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[15]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[14]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[13]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[12]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[11]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[10]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[9]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[8]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[7]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[6]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[5]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[4]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[3]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[2]
+WARNING: [Synth 8-3331] design VGA_Dispay has unconnected port points[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1092.398 ; gain = 338.742
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1100.410 ; gain = 338.480
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -345,34 +307,30 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1092.398 ; gain = 338.742
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1100.410 ; gain = 338.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1092.398 ; gain = 338.742
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1100.410 ; gain = 338.480
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1092.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1100.410 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb_to_hdmi'
-Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb_to_hdmi'
 Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock/clock_in_context.xdc] for cell 'clock_inst'
 Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock/clock_in_context.xdc] for cell 'clock_inst'
 Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'frame_buffer_inst'
 Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'frame_buffer_inst'
-Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit'
-Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit'
-Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit'
-Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit'
-Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/dilation_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit'
-Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/dilation_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit'
-Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/dilation_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit'
-Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/dilation_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit'
-Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/erosion_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit'
-Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/erosion_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit'
-Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/erosion_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit'
-Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/processor/erosion_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit'
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/u_Video_Image_Processor/VIP_Bit_Dilation_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u1_Shift_RAM_3X3_8bit'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/u_Video_Image_Processor/VIP_Bit_Dilation_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u1_Shift_RAM_3X3_8bit'
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/u_Video_Image_Processor/VIP_Bit_Dilation_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u2_Shift_RAM_3X3_8bit'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/u_Video_Image_Processor/VIP_Bit_Dilation_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u2_Shift_RAM_3X3_8bit'
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u1_Shift_RAM_3X3_8bit'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u1_Shift_RAM_3X3_8bit'
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u2_Shift_RAM_3X3_8bit'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit_in_context.xdc] for cell 'capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u2_Shift_RAM_3X3_8bit'
+Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb_to_hdmi'
+Finished Parsing XDC File [c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb_to_hdmi'
 Parsing XDC File [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/constrs_1/new/OV7670_top.xdc]
 WARNING: [Vivado 12-507] No nets matched 'OV7670_PCLK_IBUF'. [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/constrs_1/new/OV7670_top.xdc:21]
 Finished Parsing XDC File [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/constrs_1/new/OV7670_top.xdc]
@@ -381,24 +339,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/ov7670_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1220.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1223.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1220.336 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1223.453 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1220.336 ; gain = 466.680
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1223.453 ; gain = 461.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1220.336 ; gain = 466.680
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1223.453 ; gain = 461.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_125M. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock/clock_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_125M. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock/clock_in_context.xdc, line 4).
 Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Clk_n. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Clk_n. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
 Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Clk_p. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
@@ -415,19 +375,15 @@ Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Data_p[1]. (constraint file 
 Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Data_p[1]. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
 Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Data_p[2]. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Data_p[2]. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
-Applied set_property IO_BUFFER_TYPE = NONE for clk_125M. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock/clock_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_125M. (constraint file  c:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock/clock_in_context.xdc, line 4).
-Applied set_property DONT_TOUCH = true for rgb_to_hdmi. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for clock_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for frame_buffer_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for capture/processor/dilation_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for capture/processor/erosion_inst/u_Shift_RAM_3X3/u1_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for capture/processor/dilation_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for capture/processor/erosion_inst/u_Shift_RAM_3X3/u2_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for capture/u_Video_Image_Processor/VIP_Bit_Dilation_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u1_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u1_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for capture/u_Video_Image_Processor/VIP_Bit_Dilation_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u2_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/u2_Shift_RAM_3X3_8bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rgb_to_hdmi. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1220.336 ; gain = 466.680
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1223.453 ; gain = 461.523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'disx_a_reg[9:0]' into 'disy_p_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:124]
 INFO: [Synth 8-4471] merging register 'disy_p2_reg[9:0]' into 'disy_p_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:131]
@@ -439,38 +395,23 @@ INFO: [Synth 8-4471] merging register 'disy_t_reg[9:0]' into 'disy_p_reg[9:0]' [
 INFO: [Synth 8-4471] merging register 'disy_i2_reg[9:0]' into 'disy_p_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:149]
 INFO: [Synth 8-4471] merging register 'disy_o_reg[9:0]' into 'disy_p_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:152]
 INFO: [Synth 8-4471] merging register 'disy_n_reg[9:0]' into 'disy_p_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/application.v:156]
-INFO: [Synth 8-4471] merging register 'disy_i_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:132]
-INFO: [Synth 8-4471] merging register 'disy_o_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:135]
-INFO: [Synth 8-4471] merging register 'disy_u_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:138]
-INFO: [Synth 8-4471] merging register 'disy_p_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:141]
-INFO: [Synth 8-4471] merging register 'disy_l_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:144]
-INFO: [Synth 8-4471] merging register 'disy_c_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:147]
-INFO: [Synth 8-4471] merging register 'disy_t_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:150]
-INFO: [Synth 8-4471] merging register 'disy_n_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:153]
-INFO: [Synth 8-4471] merging register 'disy_s_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:156]
-INFO: [Synth 8-4471] merging register 'disy_r_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:159]
-INFO: [Synth 8-4471] merging register 'disy_b_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:162]
-INFO: [Synth 8-4471] merging register 'disx_0_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:168]
-INFO: [Synth 8-4471] merging register 'disy_0_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:169]
-INFO: [Synth 8-4471] merging register 'disy_1_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:172]
-INFO: [Synth 8-4471] merging register 'disy_2_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:175]
-INFO: [Synth 8-4471] merging register 'disy_3_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:178]
-INFO: [Synth 8-4471] merging register 'disy_4_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:181]
-INFO: [Synth 8-4471] merging register 'disy_5_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:184]
-INFO: [Synth 8-4471] merging register 'disy_6_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:187]
-INFO: [Synth 8-4471] merging register 'disy_7_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:190]
-INFO: [Synth 8-4471] merging register 'disy_8_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:193]
-INFO: [Synth 8-4471] merging register 'disy_9_reg[9:0]' into 'disy_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:196]
-INFO: [Synth 8-4471] merging register 'x_loc_n_reg[9:0]' into 'x_loc_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:124]
-INFO: [Synth 8-4471] merging register 'disx_1_reg[9:0]' into 'disx_e_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:171]
-INFO: [Synth 8-4471] merging register 'disx_i_reg[9:0]' into 'disx_2_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:131]
-INFO: [Synth 8-4471] merging register 'disx_o_reg[9:0]' into 'disx_3_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:134]
-INFO: [Synth 8-4471] merging register 'disx_u_reg[9:0]' into 'disx_4_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:137]
-INFO: [Synth 8-4471] merging register 'disx_5_reg[9:0]' into 'disx_p_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:183]
-INFO: [Synth 8-4471] merging register 'disx_l_reg[9:0]' into 'disx_6_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:143]
-INFO: [Synth 8-4471] merging register 'disx_c_reg[9:0]' into 'disx_7_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:146]
-INFO: [Synth 8-4471] merging register 'disx_8_reg[9:0]' into 'disx_t_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:192]
-INFO: [Synth 8-4471] merging register 'disx_9_reg[9:0]' into 'disx_n_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/track.v:195]
+INFO: [Synth 8-4471] merging register 'disx_s_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:71]
+INFO: [Synth 8-4471] merging register 'disy_c_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:75]
+INFO: [Synth 8-4471] merging register 'disy_a_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:78]
+INFO: [Synth 8-4471] merging register 'disy_l_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:81]
+INFO: [Synth 8-4471] merging register 'disy_i_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:84]
+INFO: [Synth 8-4471] merging register 'disy_n_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:87]
+INFO: [Synth 8-4471] merging register 'disy_g_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scaling.v:90]
+INFO: [Synth 8-4471] merging register 'disx_s_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:480]
+INFO: [Synth 8-4471] merging register 'disy_c_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:484]
+INFO: [Synth 8-4471] merging register 'disy_o_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:487]
+INFO: [Synth 8-4471] merging register 'disy_r_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:490]
+INFO: [Synth 8-4471] merging register 'disy_e_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:493]
+INFO: [Synth 8-4471] merging register 'disy_b_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:496]
+INFO: [Synth 8-4471] merging register 'disy_o2_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:499]
+INFO: [Synth 8-4471] merging register 'disy_a_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:502]
+INFO: [Synth 8-4471] merging register 'disy_r2_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:505]
+INFO: [Synth 8-4471] merging register 'disy_d_reg[9:0]' into 'disy_s_reg[9:0]' [C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/new/scoreboard.v:508]
 INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'I2C_AV_Config'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -481,7 +422,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'I
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'mSetup_ST_reg' using encoding 'sequential' in module 'I2C_AV_Config'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1220.336 ; gain = 466.680
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1223.453 ; gain = 461.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -494,12 +435,12 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 7     
 	   2 Input     14 Bit       Adders := 2     
-	   2 Input     13 Bit       Adders := 2     
-	   2 Input     12 Bit       Adders := 213   
-	   3 Input     12 Bit       Adders := 13    
-	   2 Input     11 Bit       Adders := 80    
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 206   
+	   3 Input     12 Bit       Adders := 19    
+	   2 Input     11 Bit       Adders := 83    
 	   2 Input     10 Bit       Adders := 5     
 	   3 Input     10 Bit       Adders := 4     
 	   2 Input      8 Bit       Adders := 2     
@@ -508,29 +449,30 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
-	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 7     
-	               12 Bit    Registers := 12    
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 9     
+	               12 Bit    Registers := 24    
 	               11 Bit    Registers := 1     
-	               10 Bit    Registers := 58    
-	                8 Bit    Registers := 62    
+	               10 Bit    Registers := 62    
+	                8 Bit    Registers := 3     
 	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 4     
-	                3 Bit    Registers := 3     
-	                2 Bit    Registers := 12    
-	                1 Bit    Registers := 23    
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 51    
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 	   2 Input     18 Bit        Muxes := 4     
-	   2 Input     17 Bit        Muxes := 2     
-	  26 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 6     
+	   2 Input     17 Bit        Muxes := 5     
+	   8 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 8     
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 4     
-	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 8     
+	   2 Input     11 Bit        Muxes := 5     
 	  13 Input     11 Bit        Muxes := 1     
+	  14 Input     11 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 3     
-	   2 Input      8 Bit        Muxes := 42    
 	  62 Input      8 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
@@ -538,8 +480,8 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
 	   7 Input      2 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 7     
-	   2 Input      1 Bit        Muxes := 92    
+	   3 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 58    
 	   4 Input      1 Bit        Muxes := 3     
 	   5 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 3     
@@ -589,17 +531,21 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
-Module track 
+Module scaling 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     12 Bit       Adders := 65    
-	   3 Input     12 Bit       Adders := 10    
-	   2 Input     11 Bit       Adders := 25    
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 24    
+	   3 Input     12 Bit       Adders := 7     
+	   2 Input     11 Bit       Adders := 12    
 +---Registers : 
 	               16 Bit    Registers := 1     
-	               10 Bit    Registers := 17    
+	               10 Bit    Registers := 9     
 +---Muxes : 
-	  26 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
 Module bin_dec 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -615,19 +561,21 @@ Detailed RTL Component Info :
 Module scoreboard 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     12 Bit       Adders := 102   
-	   2 Input     11 Bit       Adders := 31    
+	   2 Input     12 Bit       Adders := 136   
+	   3 Input     12 Bit       Adders := 7     
+	   2 Input     11 Bit       Adders := 47    
 	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 1     
-	               10 Bit    Registers := 22    
+	               10 Bit    Registers := 34    
 	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 3     
+	  14 Input     11 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 10    
-	   3 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 3     
 	   5 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 2     
@@ -649,10 +597,11 @@ Module VGA_Dispay
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     12 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 2     
 +---Registers : 
 	               16 Bit    Registers := 2     
-	               12 Bit    Registers := 4     
+	               12 Bit    Registers := 8     
 	               10 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
@@ -662,52 +611,49 @@ Detailed RTL Component Info :
 	   5 Input      3 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-Module Shift_RAM_3X3__xdcDup__1 
+Module VIP_Matrix_Generate_3X3_1Bit__xdcDup__1 
 Detailed RTL Component Info : 
 +---Registers : 
-	                8 Bit    Registers := 10    
-	                2 Bit    Registers := 2     
-Module sort 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module VIP_Bit_Erosion_Detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
+Module VIP_Matrix_Generate_3X3_1Bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module VIP_Bit_Dilation_Detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
+Module Face_Posion 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 6     
-Module Median_Filter 
-Detailed RTL Component Info : 
-+---Registers : 
-	                3 Bit    Registers := 2     
-Module Shift_RAM_3X3__xdcDup__2 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 10    
-	                2 Bit    Registers := 2     
-Module dilation 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 4     
-	                2 Bit    Registers := 2     
-Module Shift_RAM_3X3 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 10    
-	                2 Bit    Registers := 2     
-Module erosion 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 4     
-	                2 Bit    Registers := 2     
 Module ov7670_capture 
 Detailed RTL Component Info : 
 +---Registers : 
-	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     17 Bit        Muxes := 2     
-	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 4     
 Module I2C_Controller 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -758,111 +704,125 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_PWDN driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[1]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[0]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[2]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[3]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[3]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[4]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[5]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[6]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/row3_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[1]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[0]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[2]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[2]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[3]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[2]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[3]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[4]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[3]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[4]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[5]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[4]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[5]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[6]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[5]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[6]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p33_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[6]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[7]' (FDCE) to 'capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit1_reg[6]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit1_reg[7]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit1_reg[5]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit1_reg[4]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit1_reg[3]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit1_reg[2]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit1_reg[1]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit3_reg[6]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit3_reg[7]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit3_reg[5]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit3_reg[4]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit3_reg[3]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit3_reg[2]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit3_reg[1]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[6]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[7]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[5]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[4]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[3]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[2]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit2_reg[1]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[6]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[7]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[5]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[4]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[3]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[2]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/dilation_inst/post_img_Bit4_reg[1]' (FDC) to 'capture/processor/dilation_inst/post_img_Bit4_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[6]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[7]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[5]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[4]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[3]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[2]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[1]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/row3_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[6]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[7]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[7]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[5]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[5]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[4]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[4]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[3]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[3]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[2]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[2]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[1]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[1]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p33_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[6]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[7]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[5]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[4]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[3]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[2]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[1]' (FDCE) to 'capture/processor/erosion_inst/u_Shift_RAM_3X3/matrix_p32_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[6]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[7]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[5]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[4]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[3]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[2]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit1_reg[1]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[6]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[7]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[5]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[4]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[3]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[2]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit3_reg[1]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[6]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[7]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[5]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[4]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[3]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[2]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit2_reg[1]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[0]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[2]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[1]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[2]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[2]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[3]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[3]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[4]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[4]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[5]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[5]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[6]'
-INFO: [Synth 8-3886] merging instance 'capture/processor/erosion_inst/post_img_Bit4_reg[6]' (FDC) to 'capture/processor/erosion_inst/post_img_Bit4_reg[7]'
 INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/position_inst/y_min_reg[10]' (FDCE) to 'u_VGA_Dispay/position_inst/y_min_reg[11]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\position_inst/y_min_reg[11] )
 INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/position_inst/x_max_reg[10]' (FDCE) to 'u_VGA_Dispay/position_inst/x_max_reg[11]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\position_inst/x_max_reg[11] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/position_inst/x_min_reg[10]' (FDCE) to 'u_VGA_Dispay/position_inst/x_min_reg[11]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\position_inst/x_min_reg[11] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/position_inst/y_max_reg[10]' (FDCE) to 'u_VGA_Dispay/position_inst/y_max_reg[11]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\position_inst/y_max_reg[11] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_9_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_9_reg[9]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[4]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_9_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_9_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_9_reg[9] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_8_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_8_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_8_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_8_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_8_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_8_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_8_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_8_reg[9]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[4]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_8_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_8_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_8_reg[9] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[4]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_7_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_7_reg[9]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_7_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_7_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_7_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_7_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_7_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_7_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_7_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_7_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_7_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_7_reg[9] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[4]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_6_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_6_reg[9]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_6_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_6_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_6_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_6_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_6_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_6_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_6_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_6_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_6_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_6_reg[9] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disx_5_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disx_5_reg[9]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[4]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[6]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[7]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_5_reg[8]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_5_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_5_reg[9] )
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_4_reg[0]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_4_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_4_reg[1]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_4_reg[2]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_4_reg[3]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_4_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_4_reg[4]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_VGA_Dispay/u_scoreboard/disy_4_reg[5]' (FDE) to 'u_VGA_Dispay/u_scoreboard/disy_4_reg[6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_4_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_3_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_2_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dispay/u_scoreboard/\y_loc_n_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\y_loc_n_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dispay/u_scoreboard/\x_loc_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\x_loc_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_application/\x_g_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_application/\x_g_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_application/\x_g_reg[1] )
@@ -875,55 +835,43 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dis
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dispay/u_application/\x_g_reg[9] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dispay/u_application/\x_loc_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_application/\x_loc_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_9_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_8_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_7_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_6_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_5_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_4_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_3_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_2_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disx_1_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\disy_0_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dispay/u_scoreboard/\y_loc_n_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\y_loc_n_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_track/\x_loc_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dispay/u_track/\x_loc_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_VGA_Dispay/u_scaling/\x_loc_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scaling/\disx_g_reg[9] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\x_center_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\lcd_scoreboard_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_track/\lcd_track_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scaling/\lcd_scaling_reg[4] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_application/\lcd_block_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/i_0/\c_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (IIC/\mI2C_CLK_DIV_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (btn_debounce/o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_scoreboard/\lcd_scoreboard_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\btn_debounce/c_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IIC/mI2C_CLK_DIV_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\btn_debounce/o_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\x_sum_reg[11] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/\x_sum_reg[11] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_VGA_Dispay/u_application/i_1/\y_g_reg[9] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1220.336 ; gain = 466.680
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1223.453 ; gain = 461.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -952,13 +900,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 1220.336 ; gain = 466.680
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1223.453 ; gain = 461.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1220.336 ; gain = 466.680
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1223.453 ; gain = 461.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -970,7 +918,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 1226.668 ; gain = 473.012
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1234.512 ; gain = 472.582
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -994,13 +942,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1231.098 ; gain = 477.441
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1239.719 ; gain = 477.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1231.098 ; gain = 477.441
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1239.719 ; gain = 477.789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1019,37 +967,37 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1231.098 ; gain = 477.441
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1239.719 ; gain = 477.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1231.098 ; gain = 477.441
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1239.719 ; gain = 477.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1231.098 ; gain = 477.441
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1239.719 ; gain = 477.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1231.098 ; gain = 477.441
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1239.719 ; gain = 477.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|ov7670_top  | capture/processor/Median_Filter_inst/per_clken_r_reg[2] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|ov7670_top  | capture/processor/erosion_inst/per_vsync_r_reg[1]       | 13     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-+------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|ov7670_top  | capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/per_frame_clken_r_reg[1] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|ov7670_top  | capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/per_frame_vsync_r_reg[1] | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -1065,96 +1013,84 @@ Report BlackBoxes:
 |1     |clock              |         1|
 |2     |frame_buffer       |         1|
 |3     |rgb2dvi_0          |         1|
-|4     |Shift_RAM_3X3_8bit |         6|
+|4     |Shift_RAM_3X3_8bit |         4|
 +------+-------------------+----------+
 
 Report Cell Usage: 
-+------+-----------------------+------+
-|      |Cell                   |Count |
-+------+-----------------------+------+
-|1     |Shift_RAM_3X3_8bit     |     1|
-|2     |Shift_RAM_3X3_8bit__10 |     1|
-|3     |Shift_RAM_3X3_8bit__6  |     1|
-|4     |Shift_RAM_3X3_8bit__7  |     1|
-|5     |Shift_RAM_3X3_8bit__8  |     1|
-|6     |Shift_RAM_3X3_8bit__9  |     1|
-|7     |clock                  |     1|
-|8     |frame_buffer           |     1|
-|9     |rgb2dvi_0              |     1|
-|10    |BUFG                   |     1|
-|11    |CARRY4                 |   976|
-|12    |LUT1                   |   244|
-|13    |LUT2                   |  2984|
-|14    |LUT3                   |   748|
-|15    |LUT4                   |   428|
-|16    |LUT5                   |   146|
-|17    |LUT6                   |   489|
-|18    |MUXF7                  |    10|
-|19    |MUXF8                  |     4|
-|20    |SRL16E                 |     2|
-|21    |FDCE                   |   613|
-|22    |FDPE                   |    12|
-|23    |FDRE                   |   131|
-|24    |IBUF                   |     6|
-|25    |IOBUF                  |     1|
-|26    |OBUF                   |     5|
-+------+-----------------------+------+
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |Shift_RAM_3X3_8bit    |     1|
+|2     |Shift_RAM_3X3_8bit__4 |     1|
+|3     |Shift_RAM_3X3_8bit__5 |     1|
+|4     |Shift_RAM_3X3_8bit__6 |     1|
+|5     |clock                 |     1|
+|6     |frame_buffer          |     1|
+|7     |rgb2dvi_0             |     1|
+|8     |BUFG                  |     1|
+|9     |CARRY4                |   930|
+|10    |LUT1                  |   330|
+|11    |LUT2                  |  2660|
+|12    |LUT3                  |   762|
+|13    |LUT4                  |   281|
+|14    |LUT5                  |   135|
+|15    |LUT6                  |   399|
+|16    |MUXF7                 |    10|
+|17    |MUXF8                 |     4|
+|18    |SRL16E                |     2|
+|19    |FDCE                  |   418|
+|20    |FDPE                  |    12|
+|21    |FDRE                  |   196|
+|22    |IBUF                  |    17|
+|23    |IOBUF                 |     1|
+|24    |OBUF                  |     5|
++------+----------------------+------+
 
 Report Instance Areas: 
-+------+-------------------------------+-------------------------+------+
-|      |Instance                       |Module                   |Cells |
-+------+-------------------------------+-------------------------+------+
-|1     |top                            |                         |  6873|
-|2     |  IIC                          |I2C_AV_Config            |   246|
-|3     |    u_I2C_Controller           |I2C_Controller           |    95|
-|4     |    u_I2C_OV7725_RGB565_Config |I2C_OV7670_RGB565_Config |    81|
-|5     |  capture                      |ov7670_capture           |   926|
-|6     |    processor                  |Img_Processor            |   869|
-|7     |      Median_Filter_inst       |Median_Filter            |   645|
-|8     |        u_Median_filter_3x3    |Median_filter_3x3        |   350|
-|9     |          u_sort_1             |sort                     |   114|
-|10    |          u_sort_2             |sort_0                   |   113|
-|11    |          u_sort_3             |sort_1                   |     9|
-|12    |          u_sort_4             |sort_2                   |    38|
-|13    |          u_sort_5             |sort_3                   |    31|
-|14    |          u_sort_6             |sort_4                   |    31|
-|15    |          u_sort_7             |sort_5                   |    14|
-|16    |        u_Shift_RAM_3X3        |Shift_RAM_3X3__xdcDup__1 |   288|
-|17    |      dilation_inst            |dilation                 |   127|
-|18    |        u_Shift_RAM_3X3        |Shift_RAM_3X3__xdcDup__2 |   100|
-|19    |      erosion_inst             |erosion                  |    97|
-|20    |        u_Shift_RAM_3X3        |Shift_RAM_3X3            |    74|
-|21    |  u_VGA_Dispay                 |VGA_Dispay               |  5633|
-|22    |    position_inst              |position                 |   261|
-|23    |    u_application              |application              |  1191|
-|24    |    u_scoreboard               |scoreboard               |  1699|
-|25    |      u_bin_dec                |bin_dec                  |    99|
-|26    |    u_track                    |track                    |  1030|
-+------+-------------------------------+-------------------------+------+
++------+---------------------------------------+----------------------------------------+------+
+|      |Instance                               |Module                                  |Cells |
++------+---------------------------------------+----------------------------------------+------+
+|1     |top                                    |                                        |  6220|
+|2     |  IIC                                  |I2C_AV_Config                           |   246|
+|3     |    u_I2C_Controller                   |I2C_Controller                          |    95|
+|4     |    u_I2C_OV7725_RGB565_Config         |I2C_OV7670_RGB565_Config                |    81|
+|5     |  capture                              |ov7670_capture                          |   282|
+|6     |    u_Video_Image_Processor            |Video_Image_Processor                   |   101|
+|7     |      VIP_Bit_Dilation_Detector_inst   |VIP_Bit_Erosion_Detector                |    72|
+|8     |        u_VIP_Matrix_Generate_3X3_1Bit |VIP_Matrix_Generate_3X3_1Bit__xdcDup__1 |    42|
+|9     |      VIP_Bit_Erosion_Detector_inst    |VIP_Bit_Dilation_Detector               |    29|
+|10    |        u_VIP_Matrix_Generate_3X3_1Bit |VIP_Matrix_Generate_3X3_1Bit            |    21|
+|11    |  u_VGA_Dispay                         |VGA_Dispay                              |  5613|
+|12    |    position_inst                      |position                                |   288|
+|13    |    u_application                      |application                             |  1171|
+|14    |    u_scaling                          |scaling                                 |   629|
+|15    |    u_scoreboard                       |scoreboard                              |  1206|
+|16    |      u_bin_dec                        |bin_dec                                 |    90|
++------+---------------------------------------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1231.098 ; gain = 477.441
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1239.719 ; gain = 477.789
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 134 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1231.098 ; gain = 349.504
-Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1231.098 ; gain = 477.441
+Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 1239.719 ; gain = 354.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1239.719 ; gain = 477.789
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1243.164 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 991 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1240.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 945 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1243.164 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1240.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-278 Infos, 237 Warnings, 0 Critical Warnings and 0 Errors encountered.
+254 Infos, 206 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 1243.164 ; gain = 786.809
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1243.164 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1240.043 ; gain = 775.121
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1240.043 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/ov7670_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ov7670_top_utilization_synth.rpt -pb ov7670_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Feb  8 18:54:42 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 12 08:54:37 2020...

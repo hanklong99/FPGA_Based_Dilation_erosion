@@ -39,6 +39,7 @@ module VGA_Dispay(
 	output 	reg 			vga_hsync,
 	output 	reg 			vga_vsync,
     input                   sw1,
+    input                   btn3,
     
 	output 		[16:0] 		frame_addr,
 	input 		[15:0] 		frame_pixel,
@@ -114,6 +115,33 @@ always @ (posedge clk or negedge rst_n)begin
     end
 end
 
+//-----------------------------------------------------------
+//scaling range calculation
+reg [11:0] x_sub;
+reg [11:0] y_sub;
+reg [11:0] x_scaling;
+reg [11:0] y_scaling;
+always @ (posedge clk or negedge rst_n)begin
+    if(!rst_n)begin
+        x_sub <= 0;
+        y_sub <= 0;
+    end
+    else begin
+        x_sub <= x_max - x_min;
+        y_sub <= y_max - y_min;
+    end
+end
+
+always @ (posedge clk or negedge rst_n)begin
+    if(!rst_n)begin
+        x_scaling <= 0;
+        y_scaling <= 0;
+    end
+    else begin
+        x_scaling <= x_sub[11:2];
+        y_scaling <= y_sub[11:2];
+    end
+end
 //------------------------------------------------------------
 //frame_en
 reg 	[2:0] frame_en;
@@ -130,9 +158,12 @@ always@(posedge clk or negedge rst_n)begin
 		|| lcd_x == x_min && lcd_y >= y_min && lcd_y <= y_max
 		|| lcd_x == x_max && lcd_y >= y_min && lcd_y <= y_max
 		|| lcd_x == x_center && lcd_y >= y_min && lcd_y <= y_max
-		|| lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max)
-		
-		frame_en <= 3'b001;
+		|| lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max)begin
+		if (btn3 == 1)
+		  frame_en <= 3'b001;
+		else
+		  frame_en <= 3'b000;
+    end
 //    else if(   (lcd_x == x_center && lcd_y >= y_min && lcd_y <= y_max)
 //            || (lcd_y == y_center && lcd_x >= x_min && lcd_x <= x_max) )
 //         frame_en <= 3'b001;
@@ -207,18 +238,20 @@ application u_application(
 //end
 
 //-------------------------------------------------
-//track 
-wire [15:0]	lcd_track;
-track u_track(
+//scaling
+wire [15:0]	lcd_scaling;
+scaling u_scaling(
     .clk(clk),
     .rst_n(rst_n),
     .x_center(x_center),
     .y_center(y_center),
+    .x_scaling(x_scaling),
+    .y_scaling(y_scaling),
     .lcd_x(lcd_x),
     .lcd_y(lcd_y),
 
     .sw1(sw1),
-    .lcd_track(lcd_track)
+    .lcd_scaling(lcd_scaling)
     );
 
 wire [15:0] lcd_scoreboard;
@@ -229,7 +262,7 @@ scoreboard u_scoreboard(
     .lcd_x (lcd_x),
     .lcd_y (lcd_y),
 
-    .sw1 ( ),
+    .sw1 (sw1),
     .lcd_scoreboard (lcd_scoreboard)
     );
 
@@ -245,7 +278,7 @@ always@(posedge clk or negedge rst_n)begin
 	else if (frame_en == 3'b001) 
 	   lcd_data <= `YELLOW;
 	else if (frame_en == 3'b010)
-	   lcd_data <= lcd_track;
+	   lcd_data <= lcd_scaling;
 	else if (frame_en == 3'b011)
 	   lcd_data <= lcd_scoreboard;
 	else if (frame_en == 3'b100)

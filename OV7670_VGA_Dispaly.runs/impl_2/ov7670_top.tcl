@@ -72,15 +72,15 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.cache/wt [current_project]
   set_property parent.project_path C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.xpr [current_project]
-  set_property ip_repo_paths C:/Users/vivado-library-master/ip [current_project]
+  set_property ip_repo_paths C:/Users/11986/Desktop/vivado-library-master/ip [current_project]
   update_ip_catalog
   set_property ip_cache_permissions disable [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.runs/synth_2/ov7670_top.dcp
-  read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
   read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/clock/clock.xci
   read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
   read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/Shift_RAM_3X3_8bit/Shift_RAM_3X3_8bit.xci
+  read_ip -quiet C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
   read_xdc C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.srcs/constrs_1/new/OV7670_top.xdc
   link_design -top ov7670_top -part xc7z020clg400-1
   close_msg_db -file init_design.pb

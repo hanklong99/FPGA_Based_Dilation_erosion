@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date         : Sat Feb  8 18:55:52 2020
-| Host         : DESKTOP-QCQ218O running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Feb 12 08:55:40 2020
+| Host         : DESKTOP-LEMV09J running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file ov7670_top_control_sets_placed.rpt
 | Design       : ov7670_top
 | Device       : xc7z020
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    46 |
-|    Minimum number of control sets                        |    46 |
+| Total control sets                                       |    35 |
+|    Minimum number of control sets                        |    35 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    83 |
+| Unused register locations in slices containing registers |   102 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    46 |
-| >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     2 |
-| >= 6 to < 8        |     2 |
-| >= 8 to < 10       |    13 |
+| Total control sets |    35 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     3 |
 | >= 10 to < 12      |     5 |
-| >= 12 to < 14      |     1 |
+| >= 12 to < 14      |     2 |
 | >= 14 to < 16      |     0 |
-| >= 16              |    22 |
+| >= 16              |    17 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,67 +58,56 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             157 |           64 |
-| No           | No                    | Yes                    |             155 |           61 |
-| No           | Yes                   | No                     |              59 |           23 |
-| Yes          | No                    | No                     |             171 |          150 |
-| Yes          | No                    | Yes                    |             470 |          166 |
-| Yes          | Yes                   | No                     |              81 |           38 |
+| No           | No                    | No                     |             153 |           77 |
+| No           | No                    | Yes                    |             206 |           69 |
+| No           | Yes                   | No                     |              78 |           28 |
+| Yes          | No                    | No                     |              66 |           26 |
+| Yes          | No                    | Yes                    |             223 |           80 |
+| Yes          | Yes                   | No                     |              52 |           17 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------+------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
-|        Clock Signal       |                                       Enable Signal                                      |                           Set/Reset Signal                           | Slice Load Count | Bel Load Count |
-+---------------------------+------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
-|  OV7670_PCLK_IBUF_BUFG    | capture/d_latch[7]_i_1_n_0                                                               |                                                                      |                1 |              1 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | capture/processor/erosion_inst/clear                                 |                1 |              4 |
-|  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/mI2C_GO4_out                                                        |                                                                      |                2 |              4 |
-|  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/SD_COUNTER                                                          |                                                                      |                3 |              6 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_application/y_g                                                           | u_VGA_Dispay/position_inst/rst_n                                     |                2 |              7 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/E[0]                                | u_VGA_Dispay/position_inst/rst_n                                     |                2 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_1/max_data2_carry_0[0]   | u_VGA_Dispay/position_inst/rst_n                                     |                3 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_2/E[0]                   | u_VGA_Dispay/position_inst/rst_n                                     |                3 |              8 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_scoreboard/u_bin_dec/one[3]_i_1_n_0                                       | u_VGA_Dispay/position_inst/rst_n                                     |                1 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data1_inferred__1/i__carry[0]   | u_VGA_Dispay/position_inst/rst_n                                     |                3 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data1_inferred__1/i__carry_0[0] | u_VGA_Dispay/position_inst/rst_n                                     |                2 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data2_inferred__0/i__carry[0]   | u_VGA_Dispay/position_inst/rst_n                                     |                2 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data2_inferred__0/i__carry_0[0] | u_VGA_Dispay/position_inst/rst_n                                     |                3 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/max_data2_carry[0]                  | u_VGA_Dispay/position_inst/rst_n                                     |                3 |              8 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_application/score0                                                        | u_VGA_Dispay/position_inst/rst_n                                     |                2 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_6/E[0]                   | u_VGA_Dispay/position_inst/rst_n                                     |                2 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Median_filter_3x3/u_sort_1/E[0]                   | u_VGA_Dispay/position_inst/rst_n                                     |                3 |              8 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                                                          |                                                                      |                3 |              9 |
-|  clock_inst/inst/clk_out1 |                                                                                          | rgb_to_hdmi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                3 |             10 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_max[9]_i_1_n_0                                              | u_VGA_Dispay/position_inst/rst_n                                     |                5 |             10 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_min[9]_i_1_n_0                                              | u_VGA_Dispay/position_inst/rst_n                                     |                5 |             10 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/y_max[9]_i_1_n_0                                              | u_VGA_Dispay/position_inst/rst_n                                     |                5 |             10 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/y_min[9]_i_1_n_0                                              | u_VGA_Dispay/position_inst/rst_n                                     |                2 |             10 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | capture/processor/erosion_inst/SR[0]                                 |                4 |             13 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/Q[0]                                                     | u_VGA_Dispay/position_inst/rst_n                                     |                9 |             16 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/we                                                                               | u_VGA_Dispay/position_inst/rst_n                                     |                9 |             16 |
-|  clock_inst/inst/clk_out1 | IIC/LUT_INDEX_rep[7]_i_1_n_0                                                             |                                                                      |                6 |             16 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_scoreboard/u_bin_dec/p_0_in                                               | u_VGA_Dispay/position_inst/rst_n                                     |                3 |             16 |
-|  clock_inst/inst/clk_out1 | rst_n_IBUF                                                                               | u_VGA_Dispay/lcd_data_r0[15]_i_1_n_0                                 |                6 |             16 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/lcd_data[15]_i_1_n_0                                                        | u_VGA_Dispay/position_inst/rst_n                                     |                5 |             16 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/erosion_inst/per_clken_r_reg[1]_0[0]                                   | capture/processor/erosion_inst/clear                                 |                5 |             17 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/address[0]_i_1_n_0                                                          | u_VGA_Dispay/position_inst/rst_n                                     |                5 |             17 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/E[0]                                                | u_VGA_Dispay/position_inst/rst_n                                     |               12 |             24 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/vCounter                                                                    | u_VGA_Dispay/position_inst/rst_n                                     |               13 |             24 |
-|  clock_inst/inst/clk_out1 |                                                                                          | rgb_to_hdmi/U0/DataEncoders[0].DataEncoder/SR[0]                     |               15 |             32 |
-|  clock_inst/inst/clk_out1 | sw1_IBUF                                                                                 | u_VGA_Dispay/position_inst/rst_n                                     |               14 |             32 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                                                          | u_VGA_Dispay/position_inst/rst_n                                     |               21 |             36 |
-|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_max_f0                                                      | u_VGA_Dispay/position_inst/rst_n                                     |               14 |             40 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/u_Shift_RAM_3X3/read_clken                          | u_VGA_Dispay/position_inst/rst_n                                     |               20 |             51 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/erosion_inst/u_Shift_RAM_3X3/per_clken_r_reg_n_0_[0]                   | u_VGA_Dispay/position_inst/rst_n                                     |               24 |             51 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/u_Shift_RAM_3X3/per_clken_r_reg_n_0_[0]                  | u_VGA_Dispay/position_inst/rst_n                                     |               17 |             72 |
-|  clock_inst/inst/clk_out1 |                                                                                          | u_VGA_Dispay/position_inst/rst_n                                     |               40 |            119 |
-|  clock_inst/inst/clk_out1 |                                                                                          |                                                                      |               61 |            150 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/Median_Filter_inst/E[0]                                                |                                                                      |               53 |            208 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/processor/dilation_inst/Q[0]                                                     |                                                                      |               56 |            208 |
-|  OV7670_PCLK_IBUF_BUFG    | capture/we                                                                               |                                                                      |               56 |            208 |
-+---------------------------+------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
++---------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+|        Clock Signal       |                                                   Enable Signal                                                  |                           Set/Reset Signal                           | Slice Load Count | Bel Load Count |
++---------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_scaling/x_loc                                                                                     |                                                                      |                1 |              1 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/we                                                                                                       | u_VGA_Dispay/position_inst/rst_n                                     |                1 |              2 |
+|  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/mI2C_GO4_out                                                                                |                                                                      |                1 |              4 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                                                  | capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/clear  |                1 |              4 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                                                  |                                                                      |                3 |              5 |
+|  clock_inst/inst/clk_out1 | IIC/u_I2C_Controller/SD_COUNTER                                                                                  |                                                                      |                4 |              6 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                                                  | OV7670_VSYNC_IBUF                                                    |                1 |              6 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_application/y_g                                                                                   | u_VGA_Dispay/position_inst/rst_n                                     |                3 |              7 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_scoreboard/u_bin_dec/one[3]_i_1_n_0                                                               | u_VGA_Dispay/position_inst/rst_n                                     |                4 |              8 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_application/score0                                                                                | u_VGA_Dispay/position_inst/rst_n                                     |                2 |              8 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/u_Video_Image_Processor/VIP_Bit_Dilation_Detector_inst/u_VIP_Matrix_Generate_3X3_1Bit/matrix_p13_i_1_n_0 | u_VGA_Dispay/position_inst/rst_n                                     |                1 |              8 |
+|  clock_inst/inst/clk_out1 |                                                                                                                  | rgb_to_hdmi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                3 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_max[9]_i_1_n_0                                                                      | u_VGA_Dispay/position_inst/rst_n                                     |                3 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_min[9]_i_1_n_0                                                                      | u_VGA_Dispay/position_inst/rst_n                                     |                5 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/y_max[9]_i_1_n_0                                                                      | u_VGA_Dispay/position_inst/rst_n                                     |                4 |             10 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/y_min[9]_i_1_n_0                                                                      | u_VGA_Dispay/position_inst/rst_n                                     |                4 |             10 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                                                  | capture/address[15]_i_1_n_0                                          |                5 |             13 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                                                  | capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/SR[0]  |                4 |             13 |
+|  clock_inst/inst/clk_out1 | rst_n_IBUF                                                                                                       | u_VGA_Dispay/lcd_data_r0[15]_i_1_n_0                                 |                6 |             16 |
+|  clock_inst/inst/clk_out1 | IIC/LUT_INDEX_rep[7]_i_1_n_0                                                                                     |                                                                      |                4 |             16 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/lcd_data[15]_i_1_n_0                                                                                | u_VGA_Dispay/position_inst/rst_n                                     |                6 |             16 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/u_scoreboard/u_bin_dec/p_0_in                                                                       | u_VGA_Dispay/position_inst/rst_n                                     |                4 |             16 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/dout[15]_i_1_n_0                                                                                         |                                                                      |                4 |             16 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/address[0]_i_1_n_0                                                                                  | u_VGA_Dispay/position_inst/rst_n                                     |                5 |             17 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/p_0_in                                                                                                   | OV7670_VSYNC_IBUF                                                    |                5 |             17 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/post_frame_clken                                   | capture/u_Video_Image_Processor/VIP_Bit_Erosion_Detector_inst/clear  |                5 |             17 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/p_0_in1_in                                                                                               |                                                                      |                6 |             17 |
+|  OV7670_PCLK_IBUF_BUFG    | capture/we                                                                                                       |                                                                      |                7 |             26 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/vCounter                                                                                            | u_VGA_Dispay/position_inst/rst_n                                     |               15 |             31 |
+|  clock_inst/inst/clk_out1 | sw1_IBUF                                                                                                         | u_VGA_Dispay/position_inst/rst_n                                     |               12 |             32 |
+|  clock_inst/inst/clk_out1 |                                                                                                                  | rgb_to_hdmi/U0/DataEncoders[0].DataEncoder/SR[0]                     |               14 |             32 |
+|  clock_inst/inst/clk_out1 | u_VGA_Dispay/position_inst/x_max_f0                                                                              | u_VGA_Dispay/position_inst/rst_n                                     |               12 |             40 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                                                                                  | u_VGA_Dispay/position_inst/rst_n                                     |               16 |             55 |
+|  clock_inst/inst/clk_out1 |                                                                                                                  |                                                                      |               74 |            150 |
+|  clock_inst/inst/clk_out1 |                                                                                                                  | u_VGA_Dispay/position_inst/rst_n                                     |               53 |            151 |
++---------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
 
 

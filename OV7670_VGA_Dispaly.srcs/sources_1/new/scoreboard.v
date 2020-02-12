@@ -26,7 +26,7 @@ module scoreboard(
     input  flag,
     input [9:0] lcd_x,
     input [9:0] lcd_y,
-
+    
     input sw1,
     output reg [15:0]	lcd_scoreboard
     );
@@ -105,23 +105,58 @@ reg [9:0] disy_0;
 reg [9:0] x_loc_n;
 reg [9:0] y_loc_n;
 
+//letters
+reg [9:0] x_loc;
+reg [9:0] y_loc;
+
+reg [9:0] disx_s;
+reg [9:0] disy_s;
+
+reg [9:0] disx_c;
+reg [9:0] disy_c;
+
+reg [9:0] disx_o;
+reg [9:0] disy_o;
+
+reg [9:0] disx_r;
+reg [9:0] disy_r;
+
+reg [9:0] disx_e;
+reg [9:0] disy_e;
+
+reg [9:0] disx_b;
+reg [9:0] disy_b;
+
+reg [9:0] disx_o2;
+reg [9:0] disy_o2;
+
+reg [9:0] disx_a;
+reg [9:0] disy_a;
+
+reg [9:0] disx_r2;
+reg [9:0] disy_r2;
+
+reg [9:0] disx_d;
+reg [9:0] disy_d;
 
 always @ (posedge clk or negedge rst_n) begin
 		if (!rst_n)begin
 			lcd_scoreboard <= 0;
 		end
-	
-		else if(lcd_y == 280 && lcd_x >= 440 && lcd_x <= 780
-			|| lcd_y == 510 && lcd_x >= 440 && lcd_x <= 780
-			|| lcd_x == 440 && lcd_y >= 280 && lcd_y <= 510
-			|| lcd_x == 780 && lcd_y >= 280 && lcd_y <= 510)begin
-			lcd_scoreboard <= `GREEN;
-		end
-		else begin
-			x_loc_n <= 500;
+
+		else if (sw1 == 1)begin
+		    x_loc_n <= 500;
 			y_loc_n <= 300;
-		  lcd_scoreboard <= 0;
-			if (lcd_x >= 497 && lcd_x <= 517) begin
+		    lcd_scoreboard <= 0;
+			//frame
+			if(lcd_y == 280 && lcd_x >= 440 && lcd_x <= 780
+				|| lcd_y == 510 && lcd_x >= 440 && lcd_x <= 780
+				|| lcd_x == 440 && lcd_y >= 280 && lcd_y <= 510
+				|| lcd_x == 780 && lcd_y >= 280 && lcd_y <= 510)begin
+				lcd_scoreboard <= `GREEN;
+			end
+
+			else if (lcd_x >= 497 && lcd_x <= 517) begin
 		
 				if (ten == 0) begin
 					disx_0 <= 0;
@@ -134,10 +169,12 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 9 + x_loc_n + disx_0 && lcd_x <= 12 + x_loc_n + disx_0 && lcd_y >= 6 + y_loc_n + disy_0 && lcd_y <= 9 + y_loc_n + disy_0 ) 
 					   || (lcd_x >= 6 + x_loc_n + disx_0 && lcd_x <= 9 + x_loc_n + disx_0 && lcd_y >= 9 + y_loc_n + disy_0 && lcd_y <= 12 + y_loc_n + disy_0 )
 					   || (lcd_x >= 3 + x_loc_n + disx_0 && lcd_x <= 6 + x_loc_n + disx_0 && lcd_y >= 12 + y_loc_n + disy_0 && lcd_y <= 15 + y_loc_n + disy_0 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
+					
 					else
-					   lcd_scoreboard <= 0;
+					lcd_scoreboard <= 0;
+					
 				end
 				
 				else if (ten == 1) begin
@@ -147,7 +184,7 @@ always @ (posedge clk or negedge rst_n) begin
 					if( (lcd_x >= 6 + x_loc_n + disx_1 && lcd_x <= 9 + x_loc_n + disx_1 && lcd_y >= 0 + y_loc_n + disy_1 && lcd_y <= 21 + y_loc_n + disy_1 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_1 && lcd_x <= 9 + x_loc_n + disx_1 && lcd_y >= 3 + y_loc_n + disy_1 && lcd_y <= 6 + y_loc_n + disy_1 )
 					   || (lcd_x >= 3 + x_loc_n + disx_1 && lcd_x <= 12 + x_loc_n + disx_1 && lcd_y >= 18 + y_loc_n + disy_1 && lcd_y <= 21 + y_loc_n + disy_1  ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -164,7 +201,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 6 + x_loc_n + disx_2 && lcd_x <= 9 + x_loc_n + disx_2 && lcd_y >= 12 + y_loc_n + disy_2 && lcd_y <= 15 + y_loc_n + disy_2 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_2 && lcd_x <= 6 + x_loc_n + disx_2 && lcd_y >= 15 + y_loc_n + disy_2 && lcd_y <= 18 + y_loc_n + disy_2 ) 
 					   || (lcd_x >= 0 + x_loc_n + disx_2 && lcd_x <= 15 + x_loc_n + disx_2 && lcd_y >= 18 + y_loc_n + disy_2 && lcd_y <= 21 + y_loc_n + disy_2 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -180,7 +217,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 12 + x_loc_n + disx_3 && lcd_x <= 15 + x_loc_n + disx_3 && lcd_y >= 12 + y_loc_n + disy_3 && lcd_y <= 18 + y_loc_n + disy_3 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_3 && lcd_x <= 12 + x_loc_n + disx_3 && lcd_y >= 18 + y_loc_n + disy_3 && lcd_y <= 21 + y_loc_n + disy_3 ) 
 					   || (lcd_x >= 0 + x_loc_n + disx_3 && lcd_x <= 3 + x_loc_n + disx_3 && lcd_y >= 15 + y_loc_n + disy_3 && lcd_y <= 18 + y_loc_n + disy_3 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -194,7 +231,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 6 + x_loc_n + disx_4 && lcd_x <= 9 + x_loc_n + disx_4 && lcd_y >= 3 + y_loc_n + disy_4 && lcd_y <= 6 + y_loc_n + disy_4 ) 
 					   || (lcd_x >= 9 + x_loc_n + disx_4 && lcd_x <= 12 + x_loc_n + disx_4 && lcd_y >= 0 + y_loc_n + disy_4 && lcd_y <= 21 + y_loc_n + disy_4 ) 
 					   || (lcd_x >= 0 + x_loc_n + disx_4 && lcd_x <= 15 + x_loc_n + disx_4 && lcd_y >= 12 + y_loc_n + disy_4 && lcd_y <= 15 + y_loc_n + disy_4 ))begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -209,7 +246,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 12 + x_loc_n + disx_5 && lcd_x <= 15 + x_loc_n + disx_5 && lcd_y >= 9 + y_loc_n + disy_5 && lcd_y <= 18 + y_loc_n + disy_5 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_5 && lcd_x <= 12 + x_loc_n + disx_5 && lcd_y >= 18 + y_loc_n + disy_5 && lcd_y <= 21 + y_loc_n + disy_5 ) 
 					   || (lcd_x >= 0 + x_loc_n + disx_5 && lcd_x <= 3 + x_loc_n + disx_5 && lcd_y >= 15 + y_loc_n + disy_5 && lcd_y <= 18 + y_loc_n + disy_5 ))begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -224,7 +261,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 0 + x_loc_n + disx_6 && lcd_x <= 12 + x_loc_n + disx_6 && lcd_y >= 9 + y_loc_n + disy_6 && lcd_y <= 12 + y_loc_n + disy_6 ) 
 					   || (lcd_x >= 12 + x_loc_n + disx_6 && lcd_x <= 15 + x_loc_n + disx_6 && lcd_y >= 12 + y_loc_n + disy_6 && lcd_y <= 18 + y_loc_n + disy_6 )
 					   || (lcd_x >= 3 + x_loc_n + disx_6 && lcd_x <= 12 + x_loc_n + disx_6 && lcd_y >= 18 + y_loc_n + disy_6 && lcd_y <= 21 + y_loc_n + disy_6 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -238,7 +275,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 9 + x_loc_n + disx_7 && lcd_x <= 12 + x_loc_n + disx_7 && lcd_y >= 6 + y_loc_n + disy_7 && lcd_y <= 9 + y_loc_n + disy_7 ) 
 					   || (lcd_x >= 6 + x_loc_n + disx_7 && lcd_x <= 9 + x_loc_n + disx_7 && lcd_y >= 9 + y_loc_n + disy_7 && lcd_y <= 12 + y_loc_n + disy_7 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_7 && lcd_x <= 6 + x_loc_n + disx_7 && lcd_y >= 12 + y_loc_n + disy_7 && lcd_y <= 21 + y_loc_n + disy_7 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -254,7 +291,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 0 + x_loc_n + disx_8 && lcd_x <= 3 + x_loc_n + disx_8 && lcd_y >= 12 + y_loc_n + disy_8 && lcd_y <= 18 + y_loc_n + disy_8 ) 
 					   || (lcd_x >= 12 + x_loc_n + disx_8 && lcd_x <= 15 + x_loc_n + disx_8 && lcd_y >= 3 + y_loc_n + disy_8 && lcd_y <= 9 + y_loc_n + disy_8 ) 
 					   || (lcd_x >= 12 + x_loc_n + disx_8 && lcd_x <= 15 + x_loc_n + disx_8 && lcd_y >= 12 + y_loc_n + disy_8 && lcd_y <= 18 + y_loc_n + disy_8 ))begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -269,7 +306,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 0 + x_loc_n + disx_9 && lcd_x <= 3 + x_loc_n + disx_9 && lcd_y >= 3 + y_loc_n + disy_9 && lcd_y <= 9 + y_loc_n + disy_9 ) 
 					   || (lcd_x >= 12 + x_loc_n + disx_9 && lcd_x <= 15 + x_loc_n + disx_9 && lcd_y >= 3 + y_loc_n + disy_9 && lcd_y <= 15 + y_loc_n + disy_9 ) 
 					   || (lcd_x >= 9 + x_loc_n + disx_9 && lcd_x <= 12 + x_loc_n + disx_9 && lcd_y >= 15 + y_loc_n + disy_9 && lcd_y <= 18 + y_loc_n + disy_9 ))begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -291,7 +328,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 9 + x_loc_n + disx_0 && lcd_x <= 12 + x_loc_n + disx_0 && lcd_y >= 6 + y_loc_n + disy_0 && lcd_y <= 9 + y_loc_n + disy_0 ) 
 					   || (lcd_x >= 6 + x_loc_n + disx_0 && lcd_x <= 9 + x_loc_n + disx_0 && lcd_y >= 9 + y_loc_n + disy_0 && lcd_y <= 12 + y_loc_n + disy_0 )
 					   || (lcd_x >= 3 + x_loc_n + disx_0 && lcd_x <= 6 + x_loc_n + disx_0 && lcd_y >= 12 + y_loc_n + disy_0 && lcd_y <= 15 + y_loc_n + disy_0 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -304,7 +341,7 @@ always @ (posedge clk or negedge rst_n) begin
 					if( (lcd_x >= 6 + x_loc_n + disx_1 && lcd_x <= 9 + x_loc_n + disx_1 && lcd_y >= 0 + y_loc_n + disy_1 && lcd_y <= 21 + y_loc_n + disy_1 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_1 && lcd_x <= 9 + x_loc_n + disx_1 && lcd_y >= 3 + y_loc_n + disy_1 && lcd_y <= 6 + y_loc_n + disy_1 )
 					   || (lcd_x >= 3 + x_loc_n + disx_1 && lcd_x <= 12 + x_loc_n + disx_1 && lcd_y >= 18 + y_loc_n + disy_1 && lcd_y <= 21 + y_loc_n + disy_1  ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -321,7 +358,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 6 + x_loc_n + disx_2 && lcd_x <= 9 + x_loc_n + disx_2 && lcd_y >= 12 + y_loc_n + disy_2 && lcd_y <= 15 + y_loc_n + disy_2 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_2 && lcd_x <= 6 + x_loc_n + disx_2 && lcd_y >= 15 + y_loc_n + disy_2 && lcd_y <= 18 + y_loc_n + disy_2 ) 
 					   || (lcd_x >= 0 + x_loc_n + disx_2 && lcd_x <= 15 + x_loc_n + disx_2 && lcd_y >= 18 + y_loc_n + disy_2 && lcd_y <= 21 + y_loc_n + disy_2 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -337,7 +374,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 12 + x_loc_n + disx_3 && lcd_x <= 15 + x_loc_n + disx_3 && lcd_y >= 12 + y_loc_n + disy_3 && lcd_y <= 18 + y_loc_n + disy_3 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_3 && lcd_x <= 12 + x_loc_n + disx_3 && lcd_y >= 18 + y_loc_n + disy_3 && lcd_y <= 21 + y_loc_n + disy_3 ) 
 					   || (lcd_x >= 0 + x_loc_n + disx_3 && lcd_x <= 3 + x_loc_n + disx_3 && lcd_y >= 15 + y_loc_n + disy_3 && lcd_y <= 18 + y_loc_n + disy_3 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -351,7 +388,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 6 + x_loc_n + disx_4 && lcd_x <= 9 + x_loc_n + disx_4 && lcd_y >= 3 + y_loc_n + disy_4 && lcd_y <= 6 + y_loc_n + disy_4 ) 
 					   || (lcd_x >= 9 + x_loc_n + disx_4 && lcd_x <= 12 + x_loc_n + disx_4 && lcd_y >= 0 + y_loc_n + disy_4 && lcd_y <= 21 + y_loc_n + disy_4 ) 
 					   || (lcd_x >= 0 + x_loc_n + disx_4 && lcd_x <= 15 + x_loc_n + disx_4 && lcd_y >= 12 + y_loc_n + disy_4 && lcd_y <= 15 + y_loc_n + disy_4 ))begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -366,7 +403,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 12 + x_loc_n + disx_5 && lcd_x <= 15 + x_loc_n + disx_5 && lcd_y >= 9 + y_loc_n + disy_5 && lcd_y <= 18 + y_loc_n + disy_5 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_5 && lcd_x <= 12 + x_loc_n + disx_5 && lcd_y >= 18 + y_loc_n + disy_5 && lcd_y <= 21 + y_loc_n + disy_5 ) 
 					   || (lcd_x >= 0 + x_loc_n + disx_5 && lcd_x <= 3 + x_loc_n + disx_5 && lcd_y >= 15 + y_loc_n + disy_5 && lcd_y <= 18 + y_loc_n + disy_5 ))begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -381,7 +418,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 0 + x_loc_n + disx_6 && lcd_x <= 12 + x_loc_n + disx_6 && lcd_y >= 9 + y_loc_n + disy_6 && lcd_y <= 12 + y_loc_n + disy_6 ) 
 					   || (lcd_x >= 12 + x_loc_n + disx_6 && lcd_x <= 15 + x_loc_n + disx_6 && lcd_y >= 12 + y_loc_n + disy_6 && lcd_y <= 18 + y_loc_n + disy_6 )
 					   || (lcd_x >= 3 + x_loc_n + disx_6 && lcd_x <= 12 + x_loc_n + disx_6 && lcd_y >= 18 + y_loc_n + disy_6 && lcd_y <= 21 + y_loc_n + disy_6 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -395,7 +432,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 9 + x_loc_n + disx_7 && lcd_x <= 12 + x_loc_n + disx_7 && lcd_y >= 6 + y_loc_n + disy_7 && lcd_y <= 9 + y_loc_n + disy_7 ) 
 					   || (lcd_x >= 6 + x_loc_n + disx_7 && lcd_x <= 9 + x_loc_n + disx_7 && lcd_y >= 9 + y_loc_n + disy_7 && lcd_y <= 12 + y_loc_n + disy_7 ) 
 					   || (lcd_x >= 3 + x_loc_n + disx_7 && lcd_x <= 6 + x_loc_n + disx_7 && lcd_y >= 12 + y_loc_n + disy_7 && lcd_y <= 21 + y_loc_n + disy_7 ) )begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -411,7 +448,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 0 + x_loc_n + disx_8 && lcd_x <= 3 + x_loc_n + disx_8 && lcd_y >= 12 + y_loc_n + disy_8 && lcd_y <= 18 + y_loc_n + disy_8 ) 
 					   || (lcd_x >= 12 + x_loc_n + disx_8 && lcd_x <= 15 + x_loc_n + disx_8 && lcd_y >= 3 + y_loc_n + disy_8 && lcd_y <= 9 + y_loc_n + disy_8 ) 
 					   || (lcd_x >= 12 + x_loc_n + disx_8 && lcd_x <= 15 + x_loc_n + disx_8 && lcd_y >= 12 + y_loc_n + disy_8 && lcd_y <= 18 + y_loc_n + disy_8 ))begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -426,7 +463,7 @@ always @ (posedge clk or negedge rst_n) begin
 					   || (lcd_x >= 0 + x_loc_n + disx_9 && lcd_x <= 3 + x_loc_n + disx_9 && lcd_y >= 3 + y_loc_n + disy_9 && lcd_y <= 9 + y_loc_n + disy_9 ) 
 					   || (lcd_x >= 12 + x_loc_n + disx_9 && lcd_x <= 15 + x_loc_n + disx_9 && lcd_y >= 3 + y_loc_n + disy_9 && lcd_y <= 15 + y_loc_n + disy_9 ) 
 					   || (lcd_x >= 9 + x_loc_n + disx_9 && lcd_x <= 12 + x_loc_n + disx_9 && lcd_y >= 15 + y_loc_n + disy_9 && lcd_y <= 18 + y_loc_n + disy_9 ))begin
-					   lcd_scoreboard <= `RED;
+					   lcd_scoreboard <= `GREEN;
 					end
 					else
 					   lcd_scoreboard <= 0;
@@ -434,6 +471,148 @@ always @ (posedge clk or negedge rst_n) begin
 			
 			end
 
+		end
+		
+		else if (sw1 == 0)begin
+			x_loc <= 520;
+			y_loc <= 300;
+			
+			disx_s <= 0;
+			disy_s <= 0;
+			
+			disx_c <= 18;
+			disy_c <= 0;
+			
+			disx_o <= 36;
+			disy_o <= 0;
+			
+			disx_r <= 54;
+			disy_r <= 0;
+			
+			disx_e <= 72;
+			disy_e <= 0;
+			
+			disx_b <= 90;
+			disy_b <= 0;
+			
+			disx_o2 <= 108;
+			disy_o2 <= 0;
+			
+			disx_a <= 126;
+			disy_a <= 0;
+			
+			disx_r2 <= 144;
+			disy_r2 <= 0;
+			
+			disx_d <= 162;
+			disy_d <= 0;
+			
+			//frame
+			if(lcd_y == 280 && lcd_x >= 440 && lcd_x <= 780
+				|| lcd_y == 510 && lcd_x >= 440 && lcd_x <= 780
+				|| lcd_x == 440 && lcd_y >= 280 && lcd_y <= 510
+				|| lcd_x == 780 && lcd_y >= 280 && lcd_y <= 510)begin
+				lcd_scoreboard <= `GREEN;
+			end
+			
+			//S
+		   else if( (lcd_x >= 3 + x_loc + disx_s && lcd_x <= 15 + x_loc + disx_s && lcd_y >= 0 + y_loc + disy_s && lcd_y <= 3 + y_loc + disy_s ) 
+			    || (lcd_x >= 0 + x_loc + disx_s && lcd_x <= 3 + x_loc + disx_s && lcd_y >= 3 + y_loc + disy_s && lcd_y <= 9 + y_loc + disy_s )
+			    || (lcd_x >= 3 + x_loc + disx_s && lcd_x <= 12 + x_loc + disx_s && lcd_y >= 9 + y_loc + disy_s && lcd_y <= 12 + y_loc + disy_s  )
+			    || (lcd_x >= 12 + x_loc + disx_s && lcd_x <= 15 + x_loc + disx_s && lcd_y >= 12 + y_loc + disy_s && lcd_y <= 18 + y_loc + disy_s  )
+			    || (lcd_x >= 0 + x_loc + disx_s && lcd_x <= 12 + x_loc + disx_s && lcd_y >= 18 + y_loc + disy_s && lcd_y <= 21 + y_loc + disy_s ) )begin
+			    lcd_scoreboard <= `GREEN;
+		    end
+			
+			// C
+		    else if( (lcd_x >= 3 + x_loc + disx_c && lcd_x <= 12 + x_loc + disx_c && lcd_y >= 0 + y_loc + disy_c && lcd_y <= 3 + y_loc + disy_c ) 
+				|| (lcd_x >= 0 + x_loc + disx_c && lcd_x <= 3 + x_loc + disx_c && lcd_y >= 3 + y_loc + disy_c && lcd_y <= 18 + y_loc + disy_c )
+				|| (lcd_x >= 3 + x_loc + disx_c && lcd_x <= 12 + x_loc + disx_c && lcd_y >= 18 + y_loc + disy_c && lcd_y <= 21 + y_loc + disy_c  )
+				|| (lcd_x >= 12 + x_loc + disx_c && lcd_x <= 15 + x_loc + disx_c && lcd_y >= 3 + y_loc + disy_c && lcd_y <= 6 + y_loc + disy_c  )
+				|| (lcd_x >= 12 + x_loc + disx_c && lcd_x <= 15 + x_loc + disx_c && lcd_y >= 15 + y_loc + disy_c && lcd_y <= 18 + y_loc + disy_c ) )begin
+				lcd_scoreboard <= `GREEN;
+			end
+	
+			// O
+		    else if( (lcd_x >= 3 + x_loc + disx_o && lcd_x <= 12 + x_loc + disx_o && lcd_y >= 0 + y_loc + disy_o && lcd_y <= 3 + y_loc + disy_o ) 
+			    || (lcd_x >= 0 + x_loc + disx_o && lcd_x <= 3 + x_loc + disx_o && lcd_y >= 3 + y_loc + disy_o && lcd_y <= 18 + y_loc + disy_o )
+			    || (lcd_x >= 12 + x_loc + disx_o && lcd_x <= 15 + x_loc + disx_o && lcd_y >= 3 + y_loc + disy_o && lcd_y <= 18 + y_loc + disy_o  )
+			    || (lcd_x >= 3 + x_loc + disx_o && lcd_x <= 12 + x_loc + disx_o && lcd_y >= 18 + y_loc + disy_o && lcd_y <= 21 + y_loc + disy_o ) )begin
+			    lcd_scoreboard <= `GREEN;
+		    end
+			
+			//R
+			else if( (lcd_x >= 0 + x_loc + disx_r && lcd_x <= 12 + x_loc + disx_r && lcd_y >= 0 + y_loc + disy_r && lcd_y <= 3 + y_loc + disy_r ) 
+				|| (lcd_x >= 12 + x_loc + disx_r && lcd_x <= 15 + x_loc + disx_r && lcd_y >= 3 + y_loc + disy_r && lcd_y <= 9 + y_loc + disy_r )
+				|| (lcd_x >= 0 + x_loc + disx_r && lcd_x <= 12 + x_loc + disx_r && lcd_y >= 9 + y_loc + disy_r && lcd_y <= 12 + y_loc + disy_r  )
+				|| (lcd_x >= 0 + x_loc + disx_r && lcd_x <= 3 + x_loc + disx_r && lcd_y >= 0 + y_loc + disy_r && lcd_y <= 21 + y_loc + disy_r  )
+				|| (lcd_x >= 6 + x_loc + disx_r && lcd_x <= 9 + x_loc + disx_r && lcd_y >= 12 + y_loc + disy_r && lcd_y <= 15 + y_loc + disy_r )
+				|| (lcd_x >= 9 + x_loc + disx_r && lcd_x <= 12 + x_loc + disx_r && lcd_y >= 15 + y_loc + disy_r && lcd_y <= 18 + y_loc + disy_r )
+				|| (lcd_x >= 12 + x_loc + disx_r && lcd_x <= 15 + x_loc + disx_r && lcd_y >= 18 + y_loc + disy_r && lcd_y <= 21 + y_loc + disy_r ) )begin
+				lcd_scoreboard <= `GREEN;
+			end
+			
+			// E
+			else if( (lcd_x >= 0 + x_loc + disx_e && lcd_x <= 15 + x_loc + disx_e && lcd_y >= 0 + y_loc + disy_e && lcd_y <= 3 + y_loc + disy_e ) 
+				|| (lcd_x >= 0 + x_loc + disx_e && lcd_x <= 3 + x_loc + disx_e && lcd_y >= 0 + y_loc + disy_e && lcd_y <= 21 + y_loc + disy_e )
+				|| (lcd_x >= 0 + x_loc + disx_e && lcd_x <= 12 + x_loc + disx_e && lcd_y >= 9 + y_loc + disy_e && lcd_y <= 12 + y_loc + disy_e  )
+				|| (lcd_x >= 0 + x_loc + disx_e && lcd_x <= 15 + x_loc + disx_e && lcd_y >= 18 + y_loc + disy_e && lcd_y <= 21 + y_loc + disy_e ) )begin
+				lcd_scoreboard <= `GREEN;
+			end
+			
+			//B
+			else if( (lcd_x >= 0 + x_loc + disx_b && lcd_x <= 12 + x_loc + disx_b && lcd_y >= 0 + y_loc + disy_b && lcd_y <= 3 + y_loc + disy_b ) 
+				|| (lcd_x >= 0 + x_loc + disx_b && lcd_x <= 3 + x_loc + disx_b && lcd_y >= 0 + y_loc + disy_b && lcd_y <= 21 + y_loc + disy_b )
+				|| (lcd_x >= 12 + x_loc + disx_b && lcd_x <= 15 + x_loc + disx_b && lcd_y >= 3 + y_loc + disy_b && lcd_y <= 9 + y_loc + disy_b  )
+				|| (lcd_x >= 0 + x_loc + disx_b && lcd_x <= 12 + x_loc + disx_b && lcd_y >= 9 + y_loc + disy_b && lcd_y <= 12 + y_loc + disy_b )
+				|| (lcd_x >= 12 + x_loc + disx_b && lcd_x <= 15 + x_loc + disx_b && lcd_y >= 12 + y_loc + disy_b && lcd_y <= 18 + y_loc + disy_b ) 
+				|| (lcd_x >= 0 + x_loc + disx_b && lcd_x <= 12 + x_loc + disx_b && lcd_y >= 18 + y_loc + disy_b && lcd_y <= 21 + y_loc + disy_b )  )begin
+				lcd_scoreboard <= `GREEN;
+			end
+			
+			// O2
+		    else if( (lcd_x >= 3 + x_loc + disx_o2 && lcd_x <= 12 + x_loc + disx_o2 && lcd_y >= 0 + y_loc + disy_o2 && lcd_y <= 3 + y_loc + disy_o2 ) 
+			    || (lcd_x >= 0 + x_loc + disx_o2 && lcd_x <= 3 + x_loc + disx_o2 && lcd_y >= 3 + y_loc + disy_o2 && lcd_y <= 18 + y_loc + disy_o2 )
+			    || (lcd_x >= 12 + x_loc + disx_o2 && lcd_x <= 15 + x_loc + disx_o2 && lcd_y >= 3 + y_loc + disy_o2 && lcd_y <= 18 + y_loc + disy_o2  )
+			    || (lcd_x >= 3 + x_loc + disx_o2 && lcd_x <= 12 + x_loc + disx_o2 && lcd_y >= 18 + y_loc + disy_o2 && lcd_y <= 21 + y_loc + disy_o2 ) )begin
+			    lcd_scoreboard <= `GREEN;
+		    end
+			
+			// A
+			else if( (lcd_x >= 3 + x_loc + disx_a && lcd_x <= 12 + x_loc + disx_a && lcd_y >= 0 + y_loc + disy_a && lcd_y <= 3 + y_loc + disy_a ) 
+				|| (lcd_x >= 0 + x_loc + disx_a && lcd_x <= 3 + x_loc + disx_a && lcd_y >= 3 + y_loc + disy_a && lcd_y <= 21 + y_loc + disy_a )
+				|| (lcd_x >= 12 + x_loc + disx_a && lcd_x <= 15 + x_loc + disx_a && lcd_y >= 3 + y_loc + disy_a && lcd_y <= 21 + y_loc + disy_a )
+				|| (lcd_x >= 0 + x_loc + disx_a && lcd_x <= 15 + x_loc + disx_a && lcd_y >= 9 + y_loc + disy_a && lcd_y <= 12 + y_loc + disy_a ) )begin
+				lcd_scoreboard <= `GREEN;
+			end
+			
+			//R2
+			else if( (lcd_x >= 0 + x_loc + disx_r2 && lcd_x <= 12 + x_loc + disx_r2 && lcd_y >= 0 + y_loc + disy_r2 && lcd_y <= 3 + y_loc + disy_r2 ) 
+				|| (lcd_x >= 12 + x_loc + disx_r2 && lcd_x <= 15 + x_loc + disx_r2 && lcd_y >= 3 + y_loc + disy_r2 && lcd_y <= 9 + y_loc + disy_r2 )
+				|| (lcd_x >= 0 + x_loc + disx_r2 && lcd_x <= 12 + x_loc + disx_r2 && lcd_y >= 9 + y_loc + disy_r2 && lcd_y <= 12 + y_loc + disy_r2  )
+				|| (lcd_x >= 0 + x_loc + disx_r2 && lcd_x <= 3 + x_loc + disx_r2 && lcd_y >= 0 + y_loc + disy_r2 && lcd_y <= 21 + y_loc + disy_r2  )
+				|| (lcd_x >= 6 + x_loc + disx_r2 && lcd_x <= 9 + x_loc + disx_r2 && lcd_y >= 12 + y_loc + disy_r2 && lcd_y <= 15 + y_loc + disy_r2 )
+				|| (lcd_x >= 9 + x_loc + disx_r2 && lcd_x <= 12 + x_loc + disx_r2 && lcd_y >= 15 + y_loc + disy_r2 && lcd_y <= 18 + y_loc + disy_r2 )
+				|| (lcd_x >= 12 + x_loc + disx_r2 && lcd_x <= 15 + x_loc + disx_r2 && lcd_y >= 18 + y_loc + disy_r2 && lcd_y <= 21 + y_loc + disy_r2 ) )begin
+				lcd_scoreboard <= `GREEN;
+			end
+			
+			//D
+			else if( (lcd_x >= 0 + x_loc + disx_d && lcd_x <= 12 + x_loc + disx_d && lcd_y >= 0 + y_loc + disy_d && lcd_y <= 3 + y_loc + disy_d ) 
+				|| (lcd_x >= 0 + x_loc + disx_d && lcd_x <= 3 + x_loc + disx_d && lcd_y >= 0 + y_loc + disy_d && lcd_y <= 21 + y_loc + disy_d )
+				|| (lcd_x >= 12 + x_loc + disx_d && lcd_x <= 15 + x_loc + disx_d && lcd_y >= 3 + y_loc + disy_d && lcd_y <= 18 + y_loc + disy_d  )
+				|| (lcd_x >= 0 + x_loc + disx_d && lcd_x <= 12 + x_loc + disx_d && lcd_y >= 18 + y_loc + disy_d && lcd_y <= 21 + y_loc + disy_d ) )begin
+				lcd_scoreboard <= `GREEN;
+			end
+			
+			else begin
+			     lcd_scoreboard <= 0;
+		    end
+			
+		end
+		
+		else begin
+			lcd_scoreboard <= 0;
 		end
 	end
 
