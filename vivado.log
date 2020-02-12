@@ -30,3 +30,10 @@ update_compile_order -fileset sources_1
 add_files {C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_RGB888_YCbCr444.v C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/RGB565_YCbCr_gray.v C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v}
 WARNING: [filemgmt 56-12] File 'C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v' cannot be added to the project because it already exists in the project, skipping this file
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Couldn't access process for termination
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 12 10:10:41 2020...
