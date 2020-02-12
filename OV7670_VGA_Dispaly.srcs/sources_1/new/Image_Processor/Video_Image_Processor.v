@@ -30,7 +30,7 @@ module Video_Image_Processor
 	input				per_frame_vsync, 
 	input				per_frame_href,	 
 	input				per_frame_clken, 
-	input		[15:0]  per_img,
+	input		        per_img,
 
 	//Image data has been processd
 	output				post_frame_vsync, 
@@ -48,31 +48,31 @@ module Video_Image_Processor
 //-------------------------------------------------------
 //RGB888_YCbCr444
 //Image data has been processd
-wire			post_gray_vsync;
-wire			post_gray_href;
-wire			post_gray_clken;
-wire	[0:0]	post_img_Y;
+//wire			post_gray_vsync;
+//wire			post_gray_href;
+//wire			post_gray_clken;
+//wire	[0:0]	post_img_Y;
 //wire	[7:0]	post_img_Cb;
 //wire	[7:0]	post_img_Cr;
 
 //--------------------------------------------------------------
 //
-RGB565_YCbCr_gray u_RGB565_YCbCr_gray(
-	.clk					(clk),//COMS pixel clk 24Mhz
-	.rst_n					(rst_n),
-	.cmos_R					(per_img[15:11]),
-	.cmos_G					(per_img[10:5]),
-	.cmos_B					(per_img[4:0]),
-	.per_frame_clken		(per_frame_clken),
-	.per_frame_vsync		(per_frame_vsync),
-	.per_frame_href			(per_frame_href),
-	.img_Y						(post_img_Y),
-	.img_Cb						(),
-	.img_Cr						(),
-	.post_frame_clken		(post_gray_clken),
-	.post_frame_vsync		(post_gray_vsync),
-	.post_frame_href		(post_gray_href)
-);
+//RGB565_YCbCr_gray u_RGB565_YCbCr_gray(
+//	.clk					(clk),//COMS pixel clk 24Mhz
+//	.rst_n					(rst_n),
+//	.cmos_R					(per_img[15:11]),
+//	.cmos_G					(per_img[10:5]),
+//	.cmos_B					(per_img[4:0]),
+//	.per_frame_clken		(per_frame_clken),
+//	.per_frame_vsync		(per_frame_vsync),
+//	.per_frame_href			(per_frame_href),
+//	.img_Y						(post_img_Y),
+//	.img_Cb						(),
+//	.img_Cr						(),
+//	.post_frame_clken		(post_gray_clken),
+//	.post_frame_vsync		(post_gray_vsync),
+//	.post_frame_href		(post_gray_href)
+//);
 
 //--------------------------------------
 //Bit Image Process with Erosion before Dilation Detector.
@@ -87,10 +87,10 @@ VIP_Bit_Erosion_Detector VIP_Bit_Dilation_Detector_inst
 	.rst_n					(rst_n),				//global reset
 
 	//Image data prepred to be processd
-	.per_frame_vsync		(post_gray_vsync),	//Prepared Image data vsync valid signal
-	.per_frame_href			(post_gray_href),		//Prepared Image data href vaild  signal
-	.per_frame_clken		(post_gray_clken),	//Prepared Image data output/capture enable clock
-	.per_img_Bit			(post_img_Y),		//Processed Image Bit flag outout(1: Value, 0:inValid)
+	.per_frame_vsync		(per_frame_vsync),	//Prepared Image data vsync valid signal
+	.per_frame_href			(per_frame_href),		//Prepared Image data href vaild  signal
+	.per_frame_clken		(per_frame_clken),	//Prepared Image data output/capture enable clock
+	.per_img_Bit			(per_img),		//Processed Image Bit flag outout(1: Value, 0:inValid)
 
 	//Image data has been processd
 	.post_frame_vsync		(post2_frame_vsync),		//Processed Image data vsync valid signal
@@ -128,7 +128,6 @@ VIP_Bit_Erosion_Detector_inst
 	.post_frame_clken		(post3_frame_clken),		//Processed Image data output/capture enable clock
 	.post_img_Bit			(post3_img_Bit)			//Processed Image Bit flag outout(1: Value, 0:inValid)
 );
-
 //-------------------------------------------------------
 //
 wire			post4_frame_vsync;	//Processed Image data vsync valid signal
@@ -146,26 +145,34 @@ Face_Posion Face_Posion_inst(
     .post_frame_vsync       (post4_frame_vsync),
     .post_frame_href        (post4_frame_href ),
     .post_frame_clken       (post4_frame_clken),
-    .x_min                  (x_min),
-    .x_max                  (x_max),
-    .y_min                  (y_min),
-    .y_max                  (y_max),
+    .x_min_f                  (x_min),
+    .x_max_f                  (x_max),
+    .y_min_f                  (y_min),
+    .y_max_f                  (y_max),
     .lcd_x                  (lcd_x),
 	.lcd_y                  (lcd_y),
     .post_img               (post4_img        )
     );
 
 //-------------------------------------------------------
-//assign  post_img = {16{post3_img_Bit}};    //Gray
-assign  post_img = post4_img;
+//assign  post_img = {16{post_img_Y}};    //Gray
+assign  post_img = {16{post2_img_Bit}};
+//assign  post_img = post4_img;
+
 //Gray
-/*
+/*assign  post_frame_vsync    = post_gray_vsync;
+assign  post_frame_href     = post_gray_href;
+assign  post_frame_clken    = post_gray_clken;
+*/
+
 assign  post_frame_vsync    = post3_frame_vsync;
 assign  post_frame_href     = post3_frame_href;
 assign  post_frame_clken    = post3_frame_clken;
-*/
+
+
+/*
 assign  post_frame_vsync    = post4_frame_vsync;
 assign  post_frame_href     = post4_frame_href;
 assign  post_frame_clken    = post4_frame_clken;
-
+*/
 endmodule

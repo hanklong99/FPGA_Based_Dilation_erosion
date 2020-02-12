@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/11986/Desktop/Dilation_erosion/OV7670_VGA_Dispaly.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/11986/Desktop/Dilation_erosion_2_12/OV7670_VGA_Dispaly.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a553cc64d70b4c4c904577c499d15841"/>
@@ -55,7 +55,7 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v">
+      <File Path="$PSRCDIR/sources_1/new/Image_Processor/Face_Posion.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -83,13 +83,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Shift_RAM_3X3.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/VGA_Display.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -97,28 +90,28 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v">
+      <File Path="$PSRCDIR/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v">
+      <File Path="$PSRCDIR/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v">
+      <File Path="$PSRCDIR/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v">
+      <File Path="$PSRCDIR/sources_1/new/Image_Processor/Video_Image_Processor.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -160,13 +153,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/scaling.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/scoreboard.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -176,6 +162,62 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/ov7670_top.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Face_Posion.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Shift_RAM_3X3.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Bit_Erosion_Detector.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_Matrix_Generate_3X3_1Bit.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/Video_Image_Processor.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/scaling.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -253,14 +295,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Image_Processor/VIP_Bit_Dilation_Detector.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/RGB565_YCbCr_gray.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -270,6 +304,22 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../OV7670_button/OV7670_VGA_Dispaly.srcs/sources_1/new/Image_Processor/VIP_RGB888_YCbCr444.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Image_Processor/VIP_RGB888_YCbCr444.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Image_Processor/RGB565_YCbCr_gray.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

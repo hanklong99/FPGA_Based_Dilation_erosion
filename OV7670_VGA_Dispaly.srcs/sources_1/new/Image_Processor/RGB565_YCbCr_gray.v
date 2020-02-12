@@ -19,7 +19,7 @@ module RGB565_YCbCr_gray(
 );
 
 //--------------------------------------------
-//RGB565 to RGB 888 高位补低位
+//RGB565 to RGB 888 高位补低�?
 wire 	[7:0]	cmos_R0;
 wire 	[7:0]	cmos_G0;
 wire 	[7:0]	cmos_B0;
@@ -30,7 +30,7 @@ assign cmos_B0	= 	{cmos_B, cmos_B[4:2]};
 
 
 //--------------------------------------------
-/*//Refer to <OV7725 Camera Module Software Applicaton Note> page 5
+/*Refer to <OV7725 Camera Module Software Applicaton Note> page 5
 	Y 	=	(77 *R 	+ 	150*G 	+ 	29 *B)>>8
 	Cb 	=	(-43*R	- 	85 *G	+ 	128*B)>>8 + 128
 	Cr 	=	(128*R 	-	107*G  	-	21 *B)>>8 + 128

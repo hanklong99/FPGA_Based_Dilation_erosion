@@ -30,10 +30,10 @@ module Face_Posion(
     output          post_frame_vsync,
     output          post_frame_href,
     output          post_frame_clken,
-    output  reg [11:0]  x_min,
-    output  reg [11:0]  x_max,
-    output  reg [11:0]  y_min,
-    output  reg [11:0]  y_max,
+    output  reg [11:0]  x_min_f,
+    output  reg [11:0]  x_max_f,
+    output  reg [11:0]  y_min_f,
+    output  reg [11:0]  y_max_f,
     input 			[11:0]	lcd_x,
 	input 			[11:0]	lcd_y,
     output     [15:0]      post_img
@@ -41,15 +41,21 @@ module Face_Posion(
 
 //parameter   ROW_CNT = 16;   //just test
 //parameter   COL_CNT = 4;    //just test
-parameter   ROW_CNT = 640;
-parameter   COL_CNT = 480;
+parameter   ROW_CNT = 320;
+parameter   COL_CNT = 240;
 
 reg     [11:0]  cnt_x;
 reg     [11:0]  cnt_y;
+
+reg [11:0]  x_min;
+reg [11:0]  x_max;
+reg [11:0]  y_min;
+reg [11:0]  y_max;
+
 wire    row_flag;
 
 
-wire flag ;//开始本帧数据
+wire flag ;//�?始本帧数�?
 assign flag = (cnt_x == 1 && cnt_y == 1)? 1'b1:1'b0;
 
 //-------------------------------------------------------
@@ -129,6 +135,29 @@ always @(posedge clk or negedge rst_n)begin
         y_max <= cnt_y;
     else 
         y_max <= y_max;
+end
+
+//-------------------------------------------------------
+//x_max_f, x_min_f, y_max_f, y_min_f
+always @(posedge clk or negedge rst_n)begin
+    if(rst_n == 1'b0)begin
+        x_max_f <= 0;
+        x_min_f <= 0;
+        y_max_f <= 0;
+        y_min_f <= 0;
+    end
+    else if(cnt_x == 0 && cnt_y == 0) begin
+        x_max_f <= x_max;
+        x_min_f <= x_min;
+        y_max_f <= y_max;
+        y_min_f <= y_min;
+        end
+    else begin
+        x_max_f <= x_max_f;
+        x_min_f <= x_min_f;
+        y_max_f <= y_max_f;
+        y_min_f <= y_min_f;
+    end
 end
 
 //-------------------------------------------------------
